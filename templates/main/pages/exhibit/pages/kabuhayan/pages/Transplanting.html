@@ -1,0 +1,82 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+  <!-- Document Title -->
+  <title>DOST R3 | Virtual Exhibit</title>
+
+  {% include 'includes/exhibit/favi.html' %}
+  {% include 'includes/exhibit/css.html' %}
+
+
+</head>
+
+<body data-spy="scroll" data-target=".onpage-navigation" data-offset="60">
+  <main>
+    <div class="page-loader">
+      <div class="loader">Loading...</div>
+    </div>
+
+    {% include 'main/components/navs/NavExhibit.html' %}
+    
+    <div class="main">
+        <section class="module bg-dark-60 portfolio-page-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-sm-offset-3">
+                        <h2 class="module-title font-alt">Transplanting</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="module">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-8 col-lg-8">
+                        <div class="post-images-slider">
+                            <ul class="slides">
+                                <li><img class="center-block"
+                                        src="{% static 'images/assets/kabuhayan/SMART Hybrid Rice Production Project/Transplanting/02.png' %}"
+                                        alt="Slider Image" /></li>
+                                <li><img class="center-block"
+                                    src="{% static 'images/assets/kabuhayan/SMART Hybrid Rice Production Project/Transplanting/transplanter.png' %}"
+
+                                        alt="Slider Image" /></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-4">
+                        <div class="work-details">
+                            <h5 class="work-details-title font-alt">Project Details</h5>
+                            <p>The distribution of the transplanters is a component of the SMARTer Hybrid Rice Production Project Phase 2 under the Expanded Implementation of the Community Empowerment through Science and Technology (eCEST) program of the agency. Aside from the transplanters, the technology intervention also include the use of appropriate hybrid rice variety, double mulching technique in seedling preparation and carrageenan plant growth promoter which are all aimed at improving the yield per hectare to up to 200 cavans. The said project is scheduled to be implemented in the different provinces in the 4th quarter of this year. <br><br>
+                                The said equipment, which can accommodate 4 rows of simultaneous transplanting with plant spacing of 20 cm and hill spacing of 18 cm, not only makes transplanting more efficient but can also reduce the cost of labor during planting season. With the use of mechanized transplanting technologies, some of the poor rice production practices in the Philippines can be eliminated, one of which is the improper plant spacing which prevents the rice plant from achieving maximum tillering levels. Proper spacing can increase the yield by 25% to 39% over improper plant spacing. This will allow the rice plant achieve maximum tiller levels and improve its productivity. Aside from ensuring optimum planting density, seedling stress caused by traditional uprooting practices are eliminated.<br><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <hr class="divider-w">
+        
+    </div>
+      
+      {% include 'main/pages/exhibit/pages/kabuhayan/widgets/RelatedProjects.html' %}
+       
+      {% include 'main/components/footers/modules/FooterModule_1.html' %}
+      {% include 'main/components/footers/Footer.html' %}
+
+    </div>
+  </main>
+
+  {% include 'includes/exhibit/js.html' %}
+
+</body>
+
+</html>

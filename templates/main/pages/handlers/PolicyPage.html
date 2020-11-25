@@ -1,0 +1,112 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>DOST R3 | Virtual Exhibit</title>
+    
+    {% include 'includes/exhibit/favi.html' %}
+    {% include 'includes/exhibit/css.html' %}
+
+  </head>
+  <body data-spy="scroll" data-target=".onpage-navigation" data-offset="60">
+    <main>
+      <div class="page-loader">
+        <div class="loader">Loading...</div>
+      </div>
+
+      {% include 'main/components/navs/NavRegistration.html' %}
+
+      <section class="module bg-dark-60 faq-page-header" data-background="{% static 'images/gifs/policy.gif' %}">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6 col-sm-offset-3">
+              <h2 class="module-title font-alt">Privacy Policy</h2>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="module">
+        <div class="container">
+          <div class="row mb-60">
+          </div>
+          <div class="row">
+            <div class="col-sm-8 col-sm-offset-2">
+              <div role="tabpanel">
+                <ul class="nav nav-tabs font-alt" role="tablist">
+                  <li class="active"><a href="#privacy" data-toggle="tab"><span class="icon-lock"></span>&nbsp;Website Privacy Policy</a></li>
+                </ul>
+                <div class="tab-content">
+                  <div class="tab-pane active" id="privacy">
+                    <div class="panel-group" id="accordion">
+                      <div class="panel panel-default">
+                        <div class="panel-heading">
+                          <h4 class="panel-title font-alt"><a data-toggle="collapse" data-parent="#accordion" href="#privacy1">STATEMENT OF POLICY</a></h4>
+                        </div>
+                        <div class="panel-collapse collapse in" id="privacy1">
+                          <div class="panel-body"><span style="color: #00ADEC">DOST Region III</span> assures every user of the website that every personal data shall be protected with the agency’s best ability. As what is stated in the Data Privacy Act of 2012, the agency will do its duty “to protect the fundamental human right of privacy of communication while ensuring free flow of information to promote innovation and growth”.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="panel panel-default">
+                        <div class="panel-heading">
+                          <h4 class="panel-title font-alt"><a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#privacy2">PRIVACY NOTICE</a></h4>
+                        </div>
+                        <div class="panel-collapse collapse" id="privacy2">
+                          <div class="panel-body">
+                            <span style="font-weight: bold;">Personal Information</span><br>
+                            When you send your concerns or questions to us, the following personal information are being collected:<br>
+                            1. Your full name.<br>
+                            2. Your e-mail address.<br>
+                            3. Your address.<br>
+
+                            
+                            <span style="font-weight: bold;">Use</span><br>
+                            Any information that the <span style="color: #00ADEC">Deparment of Science and Technology Region 3</span> <a href="https://region3.dost.gov.ph/" target="_blank">(region3.dost.gov.ph)</a> will collect from its users shall be used primarily to give the site’s editors and administrators some useful data on the website usage and activities of users.<br>
+
+                            Should users be required to provide personal information such as name and email address (for subscriptions or correspondence), such information will only be used for the said purpose only. Rest assured that the information collected from users will not be used for marketing nor commercial purposes.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane" id="sales">
+                    <div class="panel-group" id="accordion">
+                      <div class="panel panel-default">
+                        <div class="panel-heading">
+                          <h4 class="panel-title font-alt"><a data-toggle="collapse" data-parent="#accordion" href="#sales1">Sales Question 1</a></h4>
+                        </div>
+                        <div class="panel-collapse collapse in" id="sales1">
+                          <div class="panel-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="panel panel-default">
+                        <div class="panel-heading">
+                          <h4 class="panel-title font-alt"><a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#sales2">Sales Question 2</a></h4>
+                        </div>
+                        <div class="panel-collapse collapse" id="sales2">
+                          <div class="panel-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {% include 'main/components/footers/modules/FooterModule_1.html' %}
+      {% include 'main/components/footers/Footer.html' %}
+
+    </main>
+    {% include 'includes/exhibit/js.html' %}
+  </body>
+</html>

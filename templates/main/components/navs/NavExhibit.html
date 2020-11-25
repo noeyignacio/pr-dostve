@@ -1,0 +1,47 @@
+{% load static %}
+
+<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#custom-collapse"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+        <a class="navbar-brand a-hidden" href="{% url 'exhibit'%}">
+          <img src="{% static 'images/logo/DOST.png' %}" width="20">&nbsp;NSTW<span style="color: #00ADEC">DOST III</span></a>
+        </a>
+      </div>
+      <div class="collapse navbar-collapse" id="custom-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown"><a  href="{% url 'exhibit' %}" >Home</a>
+          <li class="dropdown"><a  href="https://region3.dost.gov.ph/index.php/transparency/2-uncategorised/208-nstw-2020-dost-iii-opening-message#introduction" target="_blank">Programs</a>
+          </li>
+          <li class="dropdown"><a class="dropdown-toggle" href="{% url 'exhibit'%}" data-toggle="dropdown">Exhibits</a>
+            <ul class="dropdown-menu">
+              <li class="dropdown"><a class="dropdown-toggle" href="" data-toggle="dropdown"><i class="fas fa-road"></i>&nbsp;Kinabukasan</a>
+                <ul class="dropdown-menu">
+                  <li><a href="{% url 'bataanProjects' %}"><i class="fas fa-project-diagram"></i>&nbsp;Bataan Projects</a></li>
+                  <li><a href="{% url 'bulacanProjects' %}"><i class="fas fa-project-diagram"></i>&nbsp;Bulacan Project</a></li>
+                  <li><a href="{% url 'pampangaProjects' %}"><i class="fas fa-project-diagram"></i>&nbsp;Pampanga Projects</a></li>
+                  <li><a href="{% url 'tarlacProjects' %}"><i class="fas fa-project-diagram"></i>&nbsp;Tarlac Projects</a></li>
+                  <li><a href="{% url 'otherProjects' %}"><i class="fas fa-stream"></i>&nbsp;Others</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="{% url 'kaayusan' %}"><i class="fas fa-sort-amount-up-alt"></i>&nbsp;Kaayusan</a></li>
+              <li class="dropdown"><a href="{% url 'kalusugan' %}"><i class="fas fa-heartbeat"></i>&nbsp;Kalusugan</a></li>
+              <li class="dropdown"><a class="dropdown-toggle" href="" data-toggle="dropdown"><i class="fas fa-store-alt"></i>&nbsp;Kabuhayan</a>
+                <ul class="dropdown-menu">
+                  <li><a href="{% url 'carra' %}"><i class="fab fa-pagelines"></i>&nbsp;Carrageenan</a></li>
+                  <li><a href="{% url 'cashew' %}"><i class="fas fa-seedling"></i>&nbsp;Cashew Industry</a></li>
+                  <li><a href="{% url 'double' %}"><i class="fas fa-dna"></i>&nbsp;Double Mulching</a></li>
+                  <li><a href="{% url 'women' %}"><i class="fas fa-female"></i>&nbsp;Empowering Women</a></li>
+                  <li><a href="{% url 'hydro' %}"><i class="fas fa-water"></i>&nbsp;Hydroponics</a></li>
+                  <li><a href="{% url 'pump' %}"><i class="fas fa-solar-panel"></i>&nbsp;Solar Power Pump</a></li>
+                  <li><a href="{% url 'pump' %}"><i class="fas fa-tools"></i>&nbsp;SETUP2.0</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="{% url 'guide' %}" >Guide Me</a></li>
+          <li class="dropdown"><a href="{% url 'home' %}" ><span class="title-glow-2">Exit</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>

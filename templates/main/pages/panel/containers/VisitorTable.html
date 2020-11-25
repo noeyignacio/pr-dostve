@@ -1,0 +1,185 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>DOST R3 | Admin Panel</title>
+
+    {% include 'includes/dashboard/favi.html' %}
+    {% include 'includes/dashboard/css.html' %}
+  
+</head>
+
+<body>
+
+    <nav class="sidenav navbar navbar-vertical fixed-left navbar-expand-xs navbar-light bg-yellow" id="sidenav-main">
+        <div class="scrollbar-inner">
+          <!-- Brand -->
+          <div class="sidenav-header d-flex align-items-center">
+            <a class="navbar-brand" href="{% url 'dostr3admindahsboard' %}">
+              <img src="{% static 'images/panel/login/buzzflow.png' %}" class="navbar-brand-img" alt="...">
+              BUZZFLOW
+            </a>
+            <div class="ml-auto">
+              
+              <div class="sidenav-toggler d-none d-xl-block" data-action="sidenav-unpin" data-target="#sidenav-main">
+                <div class="sidenav-toggler-inner">
+                  <i class="sidenav-toggler-line"></i>
+                  <i class="sidenav-toggler-line"></i>
+                  <i class="sidenav-toggler-line"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="navbar-inner">
+            <!-- Collapse -->
+            <div class="collapse navbar-collapse" id="sidenav-collapse-main">
+              <!-- Nav items -->
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#navbar-dashboards" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-dashboards">
+                      <i class="fas fa-chart-line"></i>
+                      <span class="nav-link-text">&nbsp;Main</span>
+                    </a>
+                    <div class="collapse" id="navbar-dashboards">
+                      <ul class="nav nav-sm flex-column">
+                        <li class="nav-item">
+                          <a href="{% url 'dostr3admindahsboard' %}" class="nav-link">
+                            <i class="fas fa-columns"></i>&nbsp;Dashboard</a>
+                        </li>
+                      </ul>
+                    </div>
+                </li>
+                {% include 'main/pages/panel/components/tabs/TableTab.html' %}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+  <!-- Main content -->
+  <div class="main-content" id="panel">
+    <nav class="navbar navbar-top navbar-expand navbar-dark bg-dark border-bottom">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav align-items-center ml-md-auto">
+            <li class="nav-item d-xl-none">
+              <div class="pr-3 sidenav-toggler sidenav-toggler-dark" data-action="sidenav-pin" data-target="#sidenav-main">
+                <div class="sidenav-toggler-inner">
+                  <i class="sidenav-toggler-line"></i>
+                  <i class="sidenav-toggler-line"></i>
+                  <i class="sidenav-toggler-line"></i>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <ul class="navbar-nav align-items-center ml-auto ml-md-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link pr-0" href="" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <div class="media align-items-center">
+                  <div class="media-body ml-2 d-none d-lg-block">
+                    <span class="mb-0 text-sm  font-weight-bold">DOSTR3ADMIN</span>
+                  </div>
+                </div>
+              </a>
+              <div class="dropdown-menu dropdown-menu-right">
+                <div class="dropdown-header noti-title">
+                  <h6 class="text-overflow m-0">Welcome!</h6>
+                </div>
+                <div class="dropdown-divider"></div>
+                <a href="{% url 'logout' %}" class="dropdown-item">
+                  <i class="ni ni-user-run"></i>
+                  <span>Logout</span>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="header bg-dark pb-6">
+      <div class="container-fluid">
+        <div class="header-body">
+          <div class="row align-items-center py-4">
+            <div class="col-lg-6 col-7">
+              <nav aria-label="breadcrumb" class="d-none d-md-inline-block ml-md-4">
+                <ol class="breadcrumb breadcrumb-links breadcrumb-dark">
+                  <li class="breadcrumb-item"><a href="{% url 'visitortable' %}"><i class="fas fa-users"></i></a></li>
+                  <li class="breadcrumb-item"><a href="{% url 'visitortable' %}">Visitors</a></li>
+                </ol>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid mt--6">
+        <!-- Table -->
+        <div class="row">
+          <div class="col">
+            <div class="card">
+              <!-- Card header -->
+              <div class="card-header">
+                <h3 class="mb-0">Attendance/Registered</h3>
+                <br>
+                <p class="text-sm mb-0">
+                  1. Press <span style="color: red; font-weight: bold;">Copy</span> to copy these data on your clipboard.
+                </p>
+                <p class="text-sm mb-0">
+                  2. Press <span style="color: rgb(17, 37, 153); font-weight: bold;"">CSV</span> to download the datatables' data.
+                </p>
+                <p class="text-sm mb-0">
+                  3. Press <span style="color: rgb(255, 0, 119); font-weight: bold;"">Print</span> to print these data as PDF.
+                </p>
+              </div>
+              <div class="table-responsive py-4">
+                <table class="table table-flush " id="datatable-buttons">
+                  <thead class="thead-light">
+                    <tr>
+                      <th>Name</th>
+                      <th>Province</th>
+                      <th>Age</th>
+                      <th>Gender</th>
+                      <th>Institution</th>
+                      <th>Category</th>
+                    </tr>
+                  </thead>
+                  <tfoot>
+                    <tr>
+                      <th></th>
+                      <th></th>
+                      <th></th>
+                      <th></th>
+                      <th></th>
+                      <th></th>
+                    </tr>
+                  </tfoot>
+                  <tbody>
+                    {% for v in visitors %}
+                    <tr>
+                      <th>{{ v.name }}</th>
+                      <th>{{ v.province }}</th>
+                      <th>{{ v.age }}</th>
+                      <th>{{ v.gender }}</th>
+                      <th>{{ v.institution }}</th>
+                      <th>{{ v.category }}</th>
+                    </tr>
+                    {% endfor %}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+  </div>
+ 
+  {% include 'includes/dashboard/js.html' %}
+</body>
+
+</html>

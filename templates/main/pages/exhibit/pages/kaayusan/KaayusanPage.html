@@ -1,0 +1,173 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Document Title -->
+    <title>DOST R3 | Virtual Exhibit</title>
+
+    {% include 'includes/exhibit/favi.html' %}
+    {% include 'includes/exhibit/css.html' %}
+
+  </head>
+  <body data-spy="scroll" data-target=".onpage-navigation" data-offset="60">
+    <main>
+      <div class="page-loader">
+        <div class="loader">Loading...</div>
+      </div>
+      
+      {% include 'main/components/navs/NavExhibit.html' %}
+
+      <section class="home-section home-parallax home-fade" id="home">
+        <div class="hero-slider">
+          <ul class="slides">
+            <li class="bg-dark-30 bg-dark">
+              <div class="titan-caption">
+                <div class="caption-content">
+                  <div class="font-alt mb-30 titan-title-size-1">Kaayusan</div>
+                  <div class="font-alt mb-40 titan-title-size-4">Design and Development of Disaster-Use Converted Ketch (D.U.C.K.)</div>
+                </div>
+              </div>
+            </li>
+            <li class="bg-dark-30 bg-dark>
+              <div class="titan-caption">
+                <div class="caption-content">
+                    <div class="font-alt mb-30 titan-title-size-1">Kaayusan</div>
+                  <div class="font-alt mb-30 titan-title-size-3">Prototype Development of Severe Weather 
+                      <br>Amphibious Navigator (SWAN) Using Local Abaca Composites
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="bg-dark-30 bg-dark">
+              <div class="titan-caption">
+                <div class="caption-content">
+                    <div class="font-alt mb-30 titan-title-size-1">Kaayusan</div>
+                  <div class="font-alt mb-40 titan-title-size-3">Juan Time Clock & Display Board</div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <div class="main">
+        <section class="module" id="about">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-8 col-sm-offset-2">
+                <div class="module-subtitle font-serif large-text">Kaayusan refers to order or to the state of things in harmony. The theme focuses on projects that aid in disaster mitigation which includes disaster relief and response operation, disaster risk reduction and management intervention, and information dissemination.</div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <hr class="divider-w">
+
+        <section class="module">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="post">
+                    <div class="post-images-slider">
+                      <ul class="slides">
+                        <li><img src="{% static 'images/assets/kaayusan/duck/1.png' %}" alt="Slider Image"/></li>
+                        <li><img src="{% static 'images/assets/kaayusan/duck/2.png' %}" alt="Slider Image"/></li>
+                        <li><img src="{% static 'images/assets/kaayusan/duck/3.png' %}" alt="Slider Image"/></li>
+                        <li><img src="{% static 'images/assets/kaayusan/duck/4.png' %}" alt="Slider Image"/></li>
+                        <li><img src="{% static 'images/assets/kaayusan/duck/5.png' %}" alt="Slider Image"/></li>
+                        <li><img src="{% static 'images/assets/kaayusan/duck/6.png' %}" alt="Slider Image"/></li>
+                        <li><img src="{% static 'images/assets/kaayusan/duck/7.png' %}" alt="Slider Image"/></li>
+                        <li><img src="{% static 'images/assets/kaayusan/duck/8.png' %}" alt="Slider Image"/></li>
+                        <li><img src="{% static 'images/assets/kaayusan/duck/9.png' %}" alt="Slider Image"/></li>
+                        <li><img src="{% static 'images/assets/kaayusan/duck/10.png' %}" alt="Slider Image"/></li>
+                        <li><img src="{% static 'images/assets/kaayusan/duck/11.png' %}" alt="Slider Image"/></li>
+                        <li><img src="{% static 'images/assets/kaayusan/duck/12.png' %}" alt="Slider Image"/></li>
+                      </ul>
+                    </div>
+                    <div class="post-header font-alt">
+                      <h2 class="post-title">Design and Development of Disaster-Use Converted Ketch (D.U.C.K.)</h2>
+                      <div class="post-meta">By&nbsp;DHVSU, Bacolor, Pampanga
+                      </div>
+                    </div>
+                    <div class="post-entry">
+                      <p>This research and development project aims to design and develop an amphibious vehicle intended to enhance disaster relief and response operation most especially during typhoons and floods. DUCK stands for Disaster-Use Converted Ketch, which is a transport system that can be used both inland and water. It will be designed according to the needs of the flood-affected areas in the province. DUCK can be used to rescue affected people and transport them to evacuation areas and to distribute relief goods even too hard to reach affected areas. DUCK will benefit the Pampanga Province and when proven efficient, it can be duplicated in other areas of the Region.</p>
+                      <p>The design and simulator software specifically for buoyancy and loading capacity will be used in this research project. This DUCK will be readily available in times of severe weather especially in the presence of severe typhoons and floods. Typhoon and flood adaptation and mitigation using DUCK may be implemented in Pampanga after the completion, testing, and analysis of the prototype.</p>
+                      <p>Status as of October 2020</p>
+                      <p>
+                        1. Completion of breaking system tube. <br>
+                        2. Completion of seal/full weld skid plate.<br>
+                        3. 100% completed work of additional floaters.<br>
+                        4. Completion of extension of steering rod to avoid clash with skid plate.<br>
+                        5. 100% completed work in the fabrication and relocation of fuel tank.<br>
+                        6. Completion of front axle propeller shaft installed and tested.<br>
+                        7. 100% completed work of exhaust pipe and muffler<br>
+                        8. Work completed, winch/fairlead roller+bracket+synthetic rope to be attached.<br>
+                        9. Propulsion System - 100% completed, manually tested for function.<br>
+                        10. Red and Blue ambulance lightings and vhf radio set mounting completed.<br>
+                        11. Conducted site inspection at Bancal, Guagua and found location suitable for float test.<br>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="post">
+                    <div class="post-images-slider">
+                      <ul class="slides">
+                        <li><img src="{% static 'images/assets/kaayusan/swan/1.png' %}" alt="Slider Image"/></li>
+                        <li><img src="{% static 'images/assets/kaayusan/swan/2.png' %}" alt="Slider Image"/></li>
+                        <li><img src="{% static 'images/assets/kaayusan/swan/3.png' %}" alt="Slider Image"/></li>
+                        <li><img src="{% static 'images/assets/kaayusan/swan/4.png' %}" alt="Slider Image"/></li>
+                        <li><img src="{% static 'images/assets/kaayusan/swan/5.png' %}" alt="Slider Image"/></li>
+                        <li><img src="{% static 'images/assets/kaayusan/swan/6.png' %}" alt="Slider Image"/></li>
+                      </ul>
+                    </div>
+                    <div class="post-header font-alt">
+                      <h2 class="post-title">Prototype Development of Severe Weather Amphibious Navigator (SWAN) Using Local Abaca Composites</h2>
+                      <div class="post-meta">By&nbsp;Wesleyan University – Philippines, Cabanatuan City</div>
+                    </div>
+                    <div class="post-entry">
+                      <p>The S.W.A.N. (Severe Weather Amphibious Navigator) is a prototype amphibious navigator designed to enhance disaster relief and response to flood operation with its on-road, off-road and amphibious capabilities. Its upper deck is made of abaca fiber composites woven into fabrics. Molded with a glass fiber reinforced composite hull, the SWAN is lighter and stronger. SWAN is a conversion of an existing truck, its under chassis and engine is mounted to the hull to form the whole structure.</p>
+                      <p>The project is funded by the DOST and monitored by the Philippine Council for Industry Energy, and Emerging Technology Research and Development  (DOST PCIEERD). It is a collaborative project among Central Luzon Industry and Energy Research and Development Consortium (CLIERDEC) member institutions and was one of the priority projects of DOST Region III Regional Director Julius Ceasar V. Sicat. (DOST).</p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="post">
+                      <div class="post-images-slider">
+                        <ul class="slides">
+                          <li><img src="{% static 'images/assets/kaayusan/clock/1.png' %}" alt="Slider Image"/></li>
+                          <li><img src="{% static 'images/assets/kaayusan/clock/2.png' %}" alt="Slider Image"/></li>
+                          <li><img src="{% static 'images/assets/kaayusan/clock/3.png' %}" alt="Slider Image"/></li>
+                          <li><img src="{% static 'images/assets/kaayusan/clock/4.png' %}" alt="Slider Image"/></li>
+                          <li><img src="{% static 'images/assets/kaayusan/clock/5.png' %}" alt="Slider Image"/></li>
+                          <li><img src="{% static 'images/assets/kaayusan/clock/6.png' %}" alt="Slider Image"/></li>
+                        </ul>
+                      </div>
+                      <div class="post-header font-alt">
+                        <h2 class="post-title">Juan Time Clock & Display Board</h2>
+                        <div class="post-meta">By&nbsp;Department of Science and Technology</div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+          </section>
+          
+          <section class="module bg-dark-60 pt-0 pb-0 parallax-bg testimonial" data-background="{% static 'images/gifs/engine.gif' %}">
+            <div class="testimonials-slider pt-140 pb-140">
+            </div>
+          </section>
+        
+        {% include 'main/components/footers/modules/FooterModule_1.html' %}
+        {% include 'main/components/footers/Footer.html' %}
+        
+      </div>
+    </main>
+    {% include 'includes/exhibit/js.html' %}
+  </body>
+</html>

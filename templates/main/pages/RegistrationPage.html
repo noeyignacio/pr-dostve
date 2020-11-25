@@ -1,0 +1,105 @@
+{% load static %}
+
+<!DOCTYPE html>
+
+<html lang="en-US" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Document Title -->
+        <title>DOST R3 | Registration</title>
+
+        {% include 'includes/exhibit/favi.html' %}
+        {% include 'includes/exhibit/css.html' %}
+        
+
+    </head>
+    <body>
+
+    <main>
+        <div class="page-loader">
+            <div class="loader">Loading...</div>
+        </div>
+
+        {% include 'main/components/navs/NavRegistration.html' %}
+
+        <div class="main">
+            <section class="module bg-dark-30" data-background="{% static 'images/gifs/wallpaper.gif' %}">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 col-sm-offset-3">
+                            <h1 class="module-title font-alt mb-0">Registration</h1>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="module">
+                <div class="container">
+                    <div class="row-sm">
+                        <div class="col-sm-12">
+                            <h4 class="font-alt">Register</h4>
+                            <hr class="divider-w mb-10">
+                            <form name="registrationForm" class="form" method="POST" action=""
+                                id="registrationForm">
+                                {% csrf_token %}
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="form-group" >
+                                            Name (Ex.: Anonymous or etc...)
+                                            {{ form.name }}
+                                        </div>
+                                        <div class="form-group">
+                                            Province
+                                            {{ form.province }}
+                                        </div>
+                                        <div class="form-group">
+                                            Age
+                                            {{ form.age }}
+                                        </div>
+                                        <div class="form-group">
+                                            Gender
+                                            {{ form.gender }}
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            Institution
+                                            {{ form.institution }}
+                                        </div>
+                                        <div class="form-group">
+                                            Category
+                                            {{ form.category }}
+                                        </div>
+                                        <div class="alert alert-warning" role="alert"><strong>Note:</strong> This will serve
+                                            as
+                                            an Exhibit Attendance.</div>
+                                    </div>
+                                </div>
+
+                                {% for message in messages %}
+                                    <div class="alert alert-danger" role="alert">
+                                        <button class="close" type="button" data-dismiss="alert" aria-hidden="true">&times;</button><i class="fa fa-diamond"></i>
+                                        <strong>Error:</strong>&nbsp;{{ message }}</div>
+                                {% endfor %}
+
+                                <div class="form-group">
+                                    <input type="submit" class="btn btn-block btn-round btn-b" />
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {% include 'main/components/footers/modules/FooterModule_1.html' %}
+            {% include 'main/components/footers/Footer.html' %}
+
+        </div>
+    </main>
+
+
+    {% include 'includes/exhibit/js.html' %}    
+    </body>
+</html>

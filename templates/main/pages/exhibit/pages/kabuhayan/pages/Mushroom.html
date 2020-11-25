@@ -1,0 +1,82 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+  <!-- Document Title -->
+  <title>DOST R3 | Virtual Exhibit</title>
+
+  {% include 'includes/exhibit/favi.html' %}
+  {% include 'includes/exhibit/css.html' %}
+
+
+</head>
+
+<body data-spy="scroll" data-target=".onpage-navigation" data-offset="60">
+  <main>
+    <div class="page-loader">
+      <div class="loader">Loading...</div>
+    </div>
+
+    {% include 'main/components/navs/NavExhibit.html' %}
+    
+    <div class="main">
+        <section class="module bg-dark-60 portfolio-page-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-sm-offset-3">
+                        <h2 class="module-title font-alt">MUSH-ROOM FOR IMPROVEMENT</hh2>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="module">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-8 col-lg-8">
+                        <div class="post-images-slider">
+                            <ul class="slides">
+                                <li><img class="center-block"
+                                        src="{% static 'images/assets/kabuhayan/Livelihood Projects/Mush-room for Improvement/124693457_389206922520178_307719661316999667_n.png' %}"
+                                        alt="Slider Image" />
+                                </li>
+                                <li><img class="center-block"
+                                    src="{% static 'images/assets/kabuhayan/Livelihood Projects/Mush-room for Improvement/BPSU.Mushroom5.png' %}"
+                                    alt="Slider Image" />
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-4">
+                        <div class="work-details">
+                            <h5 class="work-details-title font-alt">Nutritive and health-promoting value of mushrooms.</h5>
+                            <p>Health-promoting value of mushrooms is the effect of readily available proteins, carbohydrates, essential unsaturated fatty acids, as well as minerals and vitamins contained in them. Many cultivated and wildgrowing species also exhibit salutogenic properties. They are to be attributed to the presence of bioactive substances, mainly polysaccharides, triterpenoids, and phenolic compounds. The immunostimulatory, antibacterial, antiviral, anti-inflammatory, anticarcinogenic, antidiabetic, and antiallergenic actions were documented for different mushroom species. Substances obtained from fungi are also capable of reducing blood cholesterol and triglyceride levels, they normalise blood pressure and protect the liver. At present, mushrooms are considered to be functional food. Beneficial health effects may be achieved through the direct consumption of fruiting bodies or the use of dietary supplements in the form of ready-to-use preparations containing mushroom extracts.<br><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <hr class="divider-w">
+        
+    </div>
+      
+      {% include 'main/pages/exhibit/pages/kabuhayan/widgets/RelatedProjects.html' %}
+       
+      {% include 'main/components/footers/modules/FooterModule_1.html' %}
+      {% include 'main/components/footers/Footer.html' %}
+
+    </div>
+  </main>
+
+  {% include 'includes/exhibit/js.html' %}
+
+</body>
+
+</html>
