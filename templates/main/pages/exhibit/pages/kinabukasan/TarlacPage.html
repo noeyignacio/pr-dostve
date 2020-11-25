@@ -1,0 +1,124 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+    <!-- Document Title -->
+    <title>DOST R3 | Virtual Exhibit</title>
+
+    {% include 'includes/exhibit/favi.html' %}
+    {% include 'includes/exhibit/css.html' %}
+
+  </head>
+  <body data-spy="scroll" data-target=".onpage-navigation" data-offset="60">
+    <main>
+      <div class="page-loader">
+        <div class="loader">Loading...</div>
+      </div>
+
+      {% include 'main/components/navs/NavExhibit.html' %}
+
+
+      <section class="home-section bg-dark-30" id="home">
+        <div class="video-player"
+        data-property="{videoURL:'https://www.youtube.com/watch?v=MIdMxKRtBoc&ab_channel=Sojourn', containment:'.home-section', startAt:18, mute:true, autoPlay:true, loop:true, opacity:1, showControls:false, showYTLogo:false, vol:25}">
+      </div>
+        <div class="video-controls-box">
+          <div class="container">
+            <div class="video-controls"><a class="fa fa-volume-up" id="video-volume" href="#">&nbsp;</a><a class="fa fa-pause" id="video-play" href="#">&nbsp;</a></div>
+          </div>
+        </div>
+        <div class="titan-caption">
+          <div class="caption-content">
+            <div class="font-alt mb-30 titan-title-size-1">Kinabukasan</div>
+            <div class="font-alt mb-40 titan-title-size-4">TARLAC PROJECTS</div>
+          </div>
+        </div>
+      </section>
+      <div class="main">
+        <section class="module" id="about">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-8 col-sm-offset-2">
+                <h2 class="module-title font-alt">WELCOME TO TARLAC</h2>
+                <div class="module-subtitle font-serif large-text">Tarlac is the most multicultural of the Central Luzon provinces. A mixture of four distinct groups – the Pampangos, Ilocanos, Pangasinenses and Tagalogs – share this province and living together. They have researched and developed about Sweet Potato R&D Center, Solar Powered Innovative Cart, and Food Safety Control System for Street Food and Ambulant Vendors.</div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-2 col-sm-offset-5">
+              </div>
+            </div>
+          </div>
+        </section>
+        <hr class="divider-w">
+        <section class="module bg-dark-60" data-background="{% static 'images/assets/kinabukasan/bg/sweet.PNG' %}">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="video-box">
+                  <div class="video-box-icon"><a class="video-pop-up" href="https://www.youtube.com/watch?v=TT7Djn-jd3o"><span class="icon-video"></span></a></div>
+                  <div class="video-title font-alt">Sweet Potato R&D Center</div>
+                  <div class="video-subtitle font-alt">The project aims to strengthen, increase and sustain the Sweet Potato-Clean Planting Material (SP-CPM) production efficiency and effectivity through science and technology and precision agriculture interventions. The project involves 3 components: Optimization of SP-CPM production protocol; Establishment of spatial information in Central Luzon; and Integrated crop management.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <section class="module bg-dark-60 pt-0 pb-0 parallax-bg testimonial" data-background="{% static 'images/gifs/farm1.gif' %}">
+            <div class="testimonials-slider pt-140 pb-140">
+            </div>
+        </section>
+
+        <section class="module bg-dark-60" data-background="{% static 'images/assets/kinabukasan/bg/mist.PNG' %}">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="video-box">
+                    <div class="video-box-icon"><a class="video-pop-up" href="https://www.youtube.com/watch?v=7iSF4MzVV2I"><span class="icon-video"></span></a></div>
+                    <div class="video-title font-alt">Project MIST (Municipal Innovation through Science and Technology)</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </section>
+
+
+        <section class="module bg-dark-60 pt-0 pb-0 parallax-bg testimonial" data-background="{% static 'images/gifs/farm.gif' %}">
+            <div class="testimonials-slider pt-140 pb-140">
+            </div>
+        </section>
+
+        <section class="module bg-dark-60" data-background="{% static 'images/assets/kinabukasan/bg/food-safety.PNG' %}">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="video-box">
+                    <div class="video-box-icon"><a class="video-pop-up" href="https://www.youtube.com/watch?v=VDsCo-eIAc4"><span class="icon-video"></span></a></div>
+                    <div class="video-title font-alt">Food Safety Control System for Street Food and Ambulant Vendors</div>
+                    <div class="video-subtitle font-alt">The project aims to establish Food Safety Control System Pilot Model through research-based assessment among selected food service establishments and ambulant street food vendors of Tarlac City. Through Tarlac State University’s Food Technology Department, profiling, environmental scanning and product sampling among respondents were conducted. The activities resulted to reliable data and information which will serve as basis for factual decision approach among policy making bodies of the LGU of Tarlac City towards its mandate of protecting the consumers’ health and welfare.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </section>
+
+        <section class="module bg-dark-60 pt-0 pb-0 parallax-bg testimonial" data-background="{% static 'images/gifs/store.gif' %}">
+            <div class="testimonials-slider pt-140 pb-140">
+            </div>
+        </section>
+
+        {% include 'main/components/footers/modules/FooterModule_1.html' %}
+        {% include 'main/components/footers/Footer.html' %}
+
+      </div>
+    </main>
+
+    {% include 'includes/exhibit/js.html' %}
+    
+  </body>
+</html>

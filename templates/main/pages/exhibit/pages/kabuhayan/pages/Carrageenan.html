@@ -1,0 +1,105 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+  <!-- Document Title -->
+  <title>DOST R3 | Virtual Exhibit</title>
+
+  {% include 'includes/exhibit/favi.html' %}
+  {% include 'includes/exhibit/css.html' %}
+
+
+</head>
+
+<body data-spy="scroll" data-target=".onpage-navigation" data-offset="60">
+  <main>
+    <div class="page-loader">
+      <div class="loader">Loading...</div>
+    </div>
+
+    {% include 'main/components/navs/NavExhibit.html' %}
+    
+    <div class="main">
+        <section class="module bg-dark-60 portfolio-page-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-sm-offset-3">
+                        <h2 class="module-title font-alt">Carrageenan</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="module">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-8 col-lg-8">
+                        <div class="post-images-slider">
+                            <ul class="slides">
+                                <li><img class="center-block"
+                                        src="{% static 'images/assets/kabuhayan/SMART Hybrid Rice Production Project/Carrageenan 2.png' %}"
+                                        alt="Slider Image" /></li>
+                                <li><img class="center-block"
+                                    src="{% static 'images/assets/kabuhayan/SMART Hybrid Rice Production Project/Carrageenan.png' %}"
+
+                                        alt="Slider Image" /></li>
+                                <li><img class="center-block"
+                                    src="{% static 'images/assets/kabuhayan/SMART Hybrid Rice Production Project/received_2564773177077066.png' %}"
+
+                                        alt="Slider Image" /></li>
+                                <li><img class="center-block"
+
+                                    src="{% static 'images/assets/kabuhayan/SMART Hybrid Rice Production Project/received_338948683749352.png' %}"
+
+                                        alt="Slider Image" /></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-4">
+                        <div class="work-details">
+                            <h5 class="work-details-title font-alt">Project Details</h5>
+                            <p>Carrageenan is a natural ingredient that comes from red seaweed (Irish moss -
+                                Chondrus Crispus). It is often used as an additive in different food making
+                                processes and food preservation. Through countless innovation and research,
+                                carrageenan, was further innovated through modified safe irradiation technology for
+                                the promotion of plant growth.<br><br>
+                                On the effectiveness of the Carrageenan Plant Growth Promoter (CPGP), the National
+                                Crop Protection Center (NCPC) under the leadership of Dr. Gil Magsino, claimed that
+                                the field applied with the technology was resistant to the tungro virus whilst the
+                                neighboring field have been observed to highly affected by the crop disease. For the
+                                yield performance, it has been found that the CPGP can increase rice yield for up to
+                                25-30 percent. There are also researches contributing to the claims on greener and
+                                taller plants, more and taller tillers, and increase on the grain weight and
+                                quality. <br><br>
+                                After seeing the beneficial effects of using the CPGP during the SMART Hybrid Rice
+                                Production project in Central Luzon, the participating farmers are now buying on
+                                their own and are using the CPGP in their rice crop production.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <hr class="divider-w">
+        
+    </div>
+      
+      {% include 'main/pages/exhibit/pages/kabuhayan/widgets/RelatedProjects.html' %}
+       
+      {% include 'main/components/footers/modules/FooterModule_1.html' %}
+      {% include 'main/components/footers/Footer.html' %}
+
+    </div>
+  </main>
+
+  {% include 'includes/exhibit/js.html' %}
+
+</body>
+
+</html>

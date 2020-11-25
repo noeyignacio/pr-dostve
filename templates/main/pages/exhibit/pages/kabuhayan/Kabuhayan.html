@@ -1,0 +1,391 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Document Title -->
+    <title>DOST R3 | Virtual Exhibit</title>
+
+    {% include 'includes/exhibit/favi.html' %}
+    {% include 'includes/exhibit/css.html' %}
+
+  </head>
+  <body data-spy="scroll" data-target=".onpage-navigation" data-offset="60">
+    <main>
+      <div class="page-loader">
+        <div class="loader">Loading...</div>
+      </div>
+      
+      {% include 'main/components/navs/NavExhibit.html' %}
+
+      <section class="home-section home-parallax home-fade" id="home">
+        <div class="hero-slider">
+          <ul class="slides">
+            <li class="bg-dark-30 bg-dark">
+              <div class="titan-caption">
+                <div class="caption-content">
+                  <div class="font-alt mb-30 titan-title-size-1">Kabuhayan</div>
+                  <div class="font-alt mb-40 titan-title-size-4">Community Empowerment Thru Science and Technology(CEST)</div>
+                </div>
+              </div>
+            </li>
+            <li class="bg-dark-30 bg-dark">
+              <div class="titan-caption">
+                <div class="caption-content">
+                  <div class="font-alt mb-30 titan-title-size-1">Kabuhayan</div>
+                  <div class="font-alt mb-40 titan-title-size-4">BRINGING TECHNOLOGY AND INNOVATION TO THE MSME CHALLENGE
+
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="bg-dark-30 bg-dark">
+              <div class="titan-caption">
+                <div class="caption-content">
+                  <div class="font-alt mb-30 titan-title-size-1">Kabuhayan</div>
+                  <div class="font-alt mb-40 titan-title-size-4">KA-SETUP eNews</div>
+                </div>
+              </div>
+            </li>
+            <li class="bg-dark-30 bg-dark">
+              <div class="titan-caption">
+                <div class="caption-content">
+                  <div class="font-alt mb-30 titan-title-size-1">Kabuhayan</div>
+                  <div class="font-alt mb-40 titan-title-size-4">Featured Story</div>
+                </div>
+              </div>
+            </li>
+            
+          </ul>
+        </div>
+      </section>
+      <div class="main">
+        <section class="module" id="about">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-8 col-sm-offset-2">
+                <div class="module-subtitle font-serif large-text">Kabuhayan refers to livelihood or the means of making a living. This theme focuses on projects that aid farmers, food processing companies, enterprises, and furniture companies, increase their production.
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <hr class="divider-w">
+
+
+        <section class="module bg-dark-60" data-background="{% static 'images/assets/kabuhayan/bg/Setup.PNG' %}">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="video-box">
+                  <div class="video-box-icon"><a class="video-pop-up" href="https://www.youtube.com/watch?v=JLSstuskOeI"><span class="icon-video"></span></a></div>
+                  <div class="video-title font-alt">SETUP 2.0</div>
+                  <div class="video-subtitle font-alt">
+                    Setup Assistance
+                   <br>
+                   DOST expanded its assistance to MSMEs from solely technical assistance in transferring technologies to provision of Innovation - Enabling Fund (iFund) to acquire technology and/or processing/production equipment; provision of consultancy services, laboratory analysis and label designs/packaging systems.
+                 </div>
+                </div>
+              </div>
+            </div>
+          </div>
+       </section>
+
+       <section class="module bg-dark-60 pt-0 pb-0 parallax-bg testimonial" data-background="{% static 'images/gifs/store1.gif' %}">
+        <div class="testimonials-slider pt-140 pb-140">
+        </div>
+      </section>
+
+      <section class="module pb-0">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <ul class="filter font-alt" id="filters">
+                <li><a class="current wow fadeInUp" href="#" data-filter="*">SETUP 2.0</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <ul class="works-grid works-grid-gut works-hover-w works-grid-3" id="works-grid">
+          <li class="work-item"><a>
+              <div class="work-image"><img src="{% static 'images/assets/kabuhayan/Setup/DSC07707.png' %}" alt=" Item"/></div>
+              <div class="work-caption font-alt">
+                <h3 class="work-title">SETUP 2.0</h3>
+              </div></a></li>
+          <li class="work-item"><a>
+              <div class="work-image"><img src="{% static 'images/assets/kabuhayan/Setup/IMG_6611.png' %}" alt=" Item"/></div>
+              <div class="work-caption font-alt">
+                <h3 class="work-title">SETUP 2.0</h3>
+              </div></a></li>
+          <li class="work-item"><a>
+              <div class="work-image"><img src="{% static 'images/assets/kabuhayan/Setup/Screen Shot 2017-07-18 at 9.02.30 AM.png' %}" alt=" Item"/></div>
+              <div class="work-caption font-alt">
+                <h3 class="work-title">SETUP 2.0</h3>
+              </div></a></li>
+        </ul>
+      </section>
+
+      <section class="module bg-dark-60 pt-0 pb-0 parallax-bg testimonial" data-background="{% static 'images/gifs/store1.gif' %}">
+        <div class="testimonials-slider pt-140 pb-140">
+        </div>
+      </section>
+
+        <section class="module bg-dark-60" data-background="{% static 'images/assets/kalusugan/bg/kalusugan.png' %}">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="video-box">
+                    <div class="video-box-icon"><a class="video-pop-up" href="https://www.youtube.com/watch?v=LY2sQcmF_eU"><span class="icon-video"></span></a></div>
+                    <div class="video-title font-alt">C E S T</div>
+                    <div class="video-subtitle font-alt">
+                       Economic Dedvelopment/Livelihood Opportunities
+                      <br>
+                      - Aim to Establish rural-based enterprises and/or infusion of appropriate technologies to improve/develop product/services and/or operations
+                    </div>
+                    <div class="video-subtitle font-alt">
+                      Health and Nutrition
+                      <br>
+                      - Addresses pressing issues on health and Nutrition by extending health care services and providing S&T interventions to imporve health status of the community
+                      <br> 
+                      ...
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </section>
+
+        <section class="module bg-dark-60 pt-0 pb-0 parallax-bg testimonial" data-background="{% static 'images/gifs/store1.gif' %}">
+            <div class="testimonials-slider pt-140 pb-140">
+            </div>
+        </section>
+
+        <section class="module">
+          <div class="container">
+            <ul class="works-grid works-hover-w" id="works-grid">
+              <li class="work-item"><a>
+                  <div class="work-image"><img src="{% static 'images/assets/kabuhayan/page/CEST Brochure front page.jpg' %}" alt=" Item"/></div>
+                  <div class="work-caption font-alt">
+                    <h3 class="work-title">C E S T</h3>
+                    <div class="work-descr">Front Page</div>
+                  </div></a>
+              </li>
+              <li class="work-item"><a>
+                <div class="work-image"><img src="{% static 'images/assets/kabuhayan/page/CEST Brochure back page.jpg' %}" alt=" Item"/></div>
+                <div class="work-caption font-alt">
+                  <h3 class="work-title">C E S T</h3>
+                  <div class="work-descr">Back Page</div>
+                </div></a>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="module bg-dark-60" data-background="{% static 'images/assets/kalusugan/bg/kalusugan.png' %}">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="video-box">
+                  <div class="video-box-icon"><a class="video-pop-up" href="https://www.youtube.com/watch?v=UaAK2R2qZVo"><span class="icon-video"></span></a></div>
+                  <div class="video-title font-alt">C E S T</div>
+                </div>
+              </div>
+            </div>
+          </div>
+       </section>
+        
+
+      <section class="module bg-dark-60 pt-0 pb-0 parallax-bg testimonial" data-background="{% static 'images/gifs/store1.gif' %}">
+          <div class="testimonials-slider pt-140 pb-140">
+          </div>
+      </section>
+
+      <section class="module">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <ul class="filter font-alt" id="filters">
+                <li><a class="current wow fadeInUp" href="" data-filter="*">AT IBA PA </a></li>
+              </ul>
+            </div>
+          </div>
+          <ul class="works-grid works-grid-gut works-grid-4 works-hover-w" id="works-grid">
+            <li class="work-item economic"><a href="{% url 'carra' %}">
+                <div class="work-image"><img
+                    src="{% static 'images/assets/kabuhayan/SMART Hybrid Rice Production Project/Compact Impeller Brown Rice Mill/IMG_0009.png' %}"
+                    alt="Item"/>
+                </div>
+                <div class="work-caption font-alt">
+                  <h3 class="work-title">Compact Impeller Brown Rice Mill</h3>
+                  <div class="work-descr">Economic Development</div>
+                </div>
+              </a></li>
+            <li class="work-item livelihood"><a href="{% url 'cashew' %}">
+                <div class="work-image"><img
+                    src="{% static 'images/assets/kabuhayan/Livelihood Projects/Women in Action, Improving the Cashew industry in Conversion/Cashew Processing-3.png' %}"
+                    alt="Item" />
+                </div>
+                <div class="work-caption font-alt">
+                  <h3 class="work-title">Women in Action, Improving the Cashew industry in Conversion</h3>
+                  <div class="work-descr">Livelihood</div>
+                </div>
+              </a></li>
+            <li class="work-item education"><a href="{% url 'books' %}">
+                <div class="work-image">
+                  <img src="{% static 'images/assets/kabuhayan/STARBOOKS/STARBOOKS 13.png' %}" alt="Item" />
+                </div>
+                <div class="work-caption font-alt">
+                  <h3 class="work-title">STARBOOKS</h3>
+                  <div class="work-descr">Education and Human Development</div>
+                </div>
+              </a></li>
+            <li class="work-item economic"><a href="{% url 'transplant' %}">
+                <div class="work-image"><img
+                  src="{% static 'images/assets/kabuhayan/SMART Hybrid Rice Production Project/Transplanting/transplanter.png' %}"
+                    alt="Item" />
+                </div>
+                <div class="work-caption font-alt">
+                  <h3 class="work-title">Transplanting</h3>
+                  <div class="work-descr">Economic Development</div>
+                </div>
+              </a></li>
+            <li class="work-item economic"><a href="{% url 'double' %}">
+                <div class="work-image"><img
+                  src="{% static 'images/assets/kabuhayan/SMART Hybrid Rice Production Project/Double Mulching Technique/03.png' %}"
+                    alt="Item" />
+                </div>
+                <div class="work-caption font-alt">
+                  <h3 class="work-title">Double Mulching Technique</h3>
+                  <div class="work-descr">Economic Development</div>
+                </div>
+              </a></li>
+            <li class="work-item economic"><a href="{% url 'hydro' %}">
+                <div class="work-image"><img
+                  src="{% static 'images/assets/kabuhayan/High Value Crops Production through Hydroponics Technology/GNHS_Hydroponics1.png' %}"
+                    alt=" Item" />
+                </div>
+                <div class="work-caption font-alt">
+                  <h3 class="work-title">High Value Crops Production through Hydroponics Technology</h3>
+                  <div class="work-descr">Economic Development</div>
+                </div>
+              </a></li>
+            <li class="work-item livelihood"><a href="{% url 'zambelena' %}">
+                <div class="work-image"><img
+                  src="{% static 'images/assets/kabuhayan/Livelihood Projects/Samahang Zambaleña sews their way to success/DSC_0746.png' %}"
+                    alt=" Item" />
+                </div>
+                <div class="work-caption font-alt">
+                  <h3 class="work-title">Sewing Their Way To Success</h3>
+                  <div class="work-descr">Livelihood</div>
+                </div>
+              </a></li>
+            <li class="work-item economic"><a href="{% url 'carra' %}">
+                <div class="work-image"><img
+                  src="{% static 'images/assets/kabuhayan/Portasol (Drying trays)/104948681_596171961023419_7521249719040124674_n.png' %}"
+                    alt=" Item" />
+                </div>
+                <div class="work-caption font-alt">
+                  <h3 class="work-title">Portasol</h3>
+                  <div class="work-descr">Economic Development</div>
+                </div>
+              </a></li>
+            <li class="work-item livelihood"><a href="{% url 'women' %}">
+                <div class="work-image"><img
+                  src="{% static 'images/assets/kabuhayan/Livelihood Projects/Empowering Women through Science and Technology/Fish Processing-0.PNG' %}"
+                    alt=" Item" />
+                </div>
+                <div class="work-caption font-alt">
+                  <h3 class="work-title">Empowering Women through Science and Technology</h3>
+                  <div class="work-descr">Livelihood Projects</div>
+                </div>
+              </a></li>
+            <li class="work-item economic"><a href="{% url 'carra' %}">
+                <div class="work-image">
+                  <img
+                  src="{% static 'images/assets/kabuhayan/SMART Hybrid Rice Production Project/Carrageenan.png' %}"
+                    alt=" Item" />
+                </div>
+                <div class="work-caption font-alt">
+                  <h3 class="work-title">Carrageenan</h3>
+                  <div class="work-descr">Economic Development</div>
+                </div>
+              </a>
+            </li>
+            <li class="work-item economic"><a href="{% url 'mushroom' %}">
+                <div class="work-image"><img
+                  src="{% static 'images/assets/kabuhayan/Livelihood Projects/Mush-room for Improvement/BPSU.Mushroom5.png' %}"
+                    alt=" Item" />
+                </div>
+                <div class="work-caption font-alt">
+                  <h3 class="work-title">Mush-room for Improvement</h3>
+                  <div class="work-descr">Livelihood</div>
+                </div>
+              </a>
+            </li>
+            <li class="work-item economic"><a href="{% url 'pump' %}">
+                <div class="work-image"><img 
+                  src="{% static 'images/assets/kabuhayan/Solar Powered Pump/SolarPoweredPumpArayat.png' %}"
+                    alt=" Item" />
+                </div>
+                <div class="work-caption font-alt">
+                  <h3 class="work-title">Solar Powered Pump</h3>
+                  <div class="work-descr">Economic Development</div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="module bg-dark-60 pt-0 pb-0 parallax-bg testimonial" data-background="{% static 'images/gifs/store2.gif' %}">
+        <div class="testimonials-slider pt-140 pb-140">
+        </div>
+      </section>
+      <section class="module bg-dark-60" data-background="{% static 'images/assets/kabuhayan/bg/featured.png' %}">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="video-box">
+                <div class="video-box-icon"><a class="video-pop-up" href="https://www.youtube.com/watch?v=S-rbj-GjeB8&feature=youtu.be"><span class="icon-video"></span></a></div>
+                <div class="video-title font-alt">Featured Story</div>
+              </div>
+            </div>
+          </div>
+        </div>
+     </section>
+
+     <section class="module">
+      <div class="container">
+        <div class="row"> 
+            <div class="post">
+              <div class="post-quote">
+                <blockquote class="font-serif">
+                  <p>&quot;Pantabangan, a municipality in the province of Nueva Ecija in Central Luzon is the site of the Pantabangan Dam and Lake. Located in the northern part of Nueva Ecija, Pantabangan is situated at the foot of Mt. Mabilog below Mt. Dalimanok which are found between the Sierra Madre and Caraballo Mountain ranges. The construction of the Dam had great economic and social impact on the lives of Pantabangeños. About 8,100 hectares of productive farmlands and the town center along with the seven outlying barangays of Villarica, Liberty, Cadaclan, San Juan, Napon-Napon, Marikit and Conversion had to be submerged under the new lake to make way for the dam. Residents were relocated to higher ground overlooking the vast reservoir, which became the new Pantabangan town center. Despite the dam’s location in the municipality which generates hydro-electric power and irrigation water for Central Luzon, the poverty incidence in the area remains high. The 2012 poverty estimates of the Philippine Statistics Authority (PSA) reveal that Pantabangan has a 19.5% poverty incidence and ranks 7th among 31 municipalities in Nueva Ecija. Many of its barangays have become geographically isolated and therefore disadvantaged because of the dam’s construction. &quot;</p>
+                  <br>
+                  Recognizing the urgent need to help some barangays in Pantabangan, DOST-III officially adopted the municipality as one of its 25 CEST-assisted communities through its regional program on the Expanded Implementation of Community Empowerment through Science and Technology (CEST) in Region III. To jumpstart the project, the CEST team initially collected socio-economic data about the municipality and its barangays to help identify the pressing issues and areas to be addressed using it as a backdrop to the conduct of the Rapid Rural Appraisal (RRA) in the community. To get a better assessment of the prevailing conditions in the areas, a multi-sectoral consultative dialogue participated by local/barangay leaders, farmer leaders, barangay health workers (BHWs), barangay nutrition scholars (BNS), and school principals and teachers. As an adjunct tool, the Technology Needs Assessment (TNA) instrument was also used to determine the technical needs of the community in the five (5) entry points of CEST.
+                </blockquote>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="module bg-dark-60 pt-0 pb-0 parallax-bg testimonial" data-background="{% static 'images/gifs/mountain.gif' %}">
+      <div class="testimonials-slider pt-140 pb-140">
+      </div>
+    </section>
+
+  
+      {% include 'main/components/footers/modules/FooterModule_1.html' %}
+      {% include 'main/components/footers/Footer.html' %}
+        
+      </div>
+    </main>
+    {% include 'includes/exhibit/js.html' %}
+  </body>
+</html>

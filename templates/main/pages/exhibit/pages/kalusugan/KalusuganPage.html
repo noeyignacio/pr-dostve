@@ -1,0 +1,241 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Document Title -->
+    <title>DOST R3 | Virtual Exhibit</title>
+
+    {% include 'includes/exhibit/favi.html' %}
+    {% include 'includes/exhibit/css.html' %}
+
+  </head>
+  <body data-spy="scroll" data-target=".onpage-navigation" data-offset="60">
+    <main>
+      <div class="page-loader">
+        <div class="loader">Loading...</div>
+      </div>
+      
+      {% include 'main/components/navs/NavExhibit.html' %}
+
+      <section class="home-section home-parallax home-fade" id="home">
+        <div class="hero-slider">
+          <ul class="slides">
+            <li class="bg-dark-30 bg-dark">
+              <div class="titan-caption">
+                <div class="caption-content">
+                  <div class="font-alt mb-30 titan-title-size-1">Kalusugan</div>
+                  <div class="font-alt mb-40 titan-title-size-4">Central Luzon Health Research and Development Consortium (CLHRDC)</div>
+                </div>
+              </div>
+            </li>
+            <li class="bg-dark-30 bg-dark">
+              <div class="titan-caption">
+                <div class="caption-content">
+                    <div class="font-alt mb-30 titan-title-size-1">Kalusugan</div>
+                  <div class="font-alt mb-30 titan-title-size-3">RxBOX</div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <div class="main">
+        <section class="module" id="about">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-8 col-sm-offset-2">
+                <div class="module-subtitle font-serif large-text">Kalusugan means health. This theme refers to projects that aid and benefit our healthcare system especially now in we're in the middle of a pandemic. Projects on this theme includes telemedicine device, and a health research and development consortia..</div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <hr class="divider-w">
+
+        <section class="module bg-dark-60" data-background="{% static 'images/assets/kalusugan/bg/kalusugan.png' %}">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="video-box">
+                    <div class="video-box-icon"><a class="video-pop-up" href="https://www.youtube.com/watch?v=8yIIUICnwu4"><span class="icon-video"></span></a></div>
+                    <div class="video-title font-alt">Central Luzon Health Research and Development Consortium (CLHRDC)</div>
+                    <div class="video-subtitle font-alt">CLHRDC is one of the regional health research and development consortia (RHRDCs) organized by the Philippine Council for Health Research and Development (DOST-PCHRD)
+                        Expected to serve as the regional arm of the Philippine National Health Research System (PNHRS) and assist DOST-PCHRD in promoting health research culture, establishing mechanisms to strengthen health research capabilities, encourage collaboration and resource sharing between institutions, and promote the dissemination of regional/national health research agenda and utilization of health research results in the region.
+                    </div>
+                    <div class="video-subtitle font-alt">CLHRDC’s mission is to strengthen the system of collaboration and enhance the research culture among member institutions towards improving the well-being of the people in Central Luzon
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </section>
+
+        <section class="module bg-dark-60 pt-0 pb-0 parallax-bg testimonial" data-background="{% static 'images/gifs/health.gif' %}">
+            <div class="testimonials-slider pt-140 pb-140">
+            </div>
+        </section>
+
+        <section class="module" id="news">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-6 col-sm-offset-3">
+                  <h2 class="module-title font-alt">CLHRDC MILESTONES</h2>
+                  <h5 class="module-title" style="font-size: 14px;">CLHRDC</h5>
+                </div>
+              </div>
+              <section class="module">
+                  <div class="container">
+                    <hr class="divider-w pt-20">
+                    <div class="row mb-60">
+                      <div class="col-sm-6 col-md-3 col-lg-3">
+                        <div class="alt-features-item">
+                          <div class="alt-features-icon"><i class="fas fa-syringe"></i></div>
+                          <h3 class="alt-features-title font-alt">2011 RESEARCH PROJECTS</h3>
+                          - Patients’ Knowledge of Tuberculosis and the Determinants of Treatment Compliance <br>
+                          - Patient and Health System Factors as Determinants to Delay in Tuberculosis Detection and Treatment in Region III​
+                        </div>
+                        <div class="alt-features-item">
+                            <div class="alt-features-icon"><i class="fas fa-syringe"></i></div>
+                            <h3 class="alt-features-title font-alt">2014 RESEARCH PROJECTS​</h3>
+                              - Assessment of Out-Patient Benefit Package of PhilHealth in Region III​​​ <br>
+                              -  Perinatal Beliefs and Practices of Aeta Mothers in Central Luzon​​​​​ <br>
+                              - Compliance of Public/Government and Private Healthcare Facilities Region III on Waste Management Protocols​
+                          </div>
+                      </div>
+                      <div class="col-sm-6 col-md-3 col-lg-3">
+                        <div class="alt-features-item">
+                          <div class="alt-features-icon"><i class="fas fa-syringe"></i></div>
+                          <h3 class="alt-features-title font-alt">2014 RESEARCH PROJECTS​</h3>
+                            - The Anti-Hyperglycemic Properties of the Ethyl Acetate and Hexane Extracts from Kondol Leaves (Benincasa hispida Cogniaux)​ <br>
+                            - Kinect-Operated Bed: Innovative Posture Detection and Bedsores Preventing Device​​ <br>
+                            - Health Seeking Behavior of Families Identified as Poorest by National Household Targeting System – Poverty Reduction (NHT-PR) in Region III​​​
+                        </div>
+                        <div class="alt-features-item">
+                            <div class="alt-features-icon"><i class="fas fa-syringe"></i></div>
+                            <h3 class="alt-features-title font-alt">2019 RESEARCH PROJECTS​</h3>
+                              - Use of Integrons as Potential Biomarkers in Detecting Multidrug Resistant Escherichia coli in Fresh Produce​<br>
+                              - Isolation and Characterization of Antibiotic Producing Endophytic Microbes from Weeds in Major Landfills in Pampanga​​<br>
+                              - Extraction and Isolation of Collagen Type I from Fish By-products​​ <br> 
+                              - Protective Effects of Mango-derived Pectin on Intestinal Crypt Stem Cells of Gamma-radiated Mice​
+                          </div>
+                        
+                      </div>
+                      <div class="col-sm-6 col-md-3 col-lg-3">
+                          <div class="alt-features-item">
+                              <div class="alt-features-icon"><i class="fas fa-syringe"></i></div>
+                              <h3 class="alt-features-title font-alt">2015 RESEARCH PROJECTS​</h3>
+                                -  Canine Rabies Vaccination Outcome Monitoring and its Implication to Rabies Control and Prevention Program​​​​ <br>
+                                - Molecular Characterization of Lactic Acid Bacteria Isolated from Nile Tilapia (Oreochromus niloticus) as Potential Pathogen Antagonist​<br>
+                            </div>
+                            <div class="alt-features-item">
+                                <div class="alt-features-icon"><i class="fas fa-syringe"></i></div>
+                                <h3 class="alt-features-title font-alt">2018 RESEARCH PROJECTS​</h3>
+                                    - Analgesic Activity of Canaga odorata (Lam.) Hook F & Thomson Leaves Decoction​​ <br>
+                                    - Anti-diarrheal Potential of Cainito (Chrysophyllum cainito) for Young Individuals​​<br>
+                                    - Comparative Antidiabetic Properties of Red Rice and Black Rice Extracts and Germinated Brown Rice (Oryza sativa) using Diabetic Mice Models: Basis for Drug Formulation and Optimization​​<br>
+                              </div>
+                      </div>
+                      <div class="col-sm-6 col-md-3 col-lg-3">
+                          <div class="alt-features-item">
+                              <div class="alt-features-icon"><i class="fas fa-syringe"></i></div>
+                              <h3 class="alt-features-title font-alt">2016 RESEARCH PROJECTS​</h3>
+                              - Effectiveness of a Prototype Gadget for the Administration of Sodium Hypochlorite Solution​
+                          </div>
+                      </div>
+                      <div class="col-sm-6 col-md-3 col-lg-3">
+                        <div class="alt-features-item">
+                            <div class="alt-features-icon"><i class="fas fa-syringe"></i></div>
+                            <h3 class="alt-features-title font-alt">2017 RESEARCH PROJECTS​</h3>
+                            - HIV and AIDS Knowledge, Attitude and Sexual Behaviors among Filipino Youth in Schools​ <br>
+                            - Quality of Life among Senior Residents of Pampanga: Basis for Health Promotion and Intervention​​
+                        </div>
+                        </div>
+                    </div>
+                  </div>
+              </section>
+            </section>
+            <section class="module bg-dark-60" data-background="{% static 'images/assets/kalusugan/bg/RxBox.png' %}">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <div class="video-box">
+                        <div class="video-box-icon"><a class="video-pop-up" href="https://www.youtube.com/watch?v=9Pp_l5KrRzM"><span class="icon-video"></span></a></div>
+                        <div class="video-title font-alt">RxBOX</div>
+                        <div class="video-subtitle font-alt">RxBox is a multi-component program (biomedical device, electronic medical record system and telemedicine training) designed to provide better access to life-saving health care services in isolated and disadvantaged communities nationwide. It is one among the Department of Science and Technology’s efforts for a “Smarter Philippines”. It is also an ICT (Information and Communications Technology) innovation designed to support the Department of Health’s call for Kalusugang Pangakalahatan or Universal Health Care.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </section>
+
+            <section class="module bg-dark-60 pt-0 pb-0 parallax-bg testimonial" data-background="{% static 'images/gifs/health.gif' %}">
+                <div class="testimonials-slider pt-140 pb-140">
+                </div>
+            </section>
+            <section class="module">
+                <div class="container">
+                  <hr class="divider-w pt-20">
+                  <div class="row mb-60">
+                    <div class="col-sm-6 col-md-3 col-lg-3">
+                      <div class="alt-features-item">
+                        <div class="alt-features-icon"><i class="fas fa-stethoscope"></i></div>
+                        <h3 class="alt-features-title font-alt">BLOOD PRESSURE MONITOR​</h3>
+                        Measures the patient’s blood pressure to detect cardiovascular problems especially hypertension, a disease which can also worsen other chronic lifestyle disease conditions.
+                      </div>
+                      <div class="alt-features-item">
+                          <div class="alt-features-icon"><i class="fas fa-stethoscope"></i></div>
+                          <h3 class="alt-features-title font-alt">PULSE OXIMETER</h3>
+                          Measures the level of oxygen in the patient’s blood and can help detect lung and cardiovascular problems, leading causes of death among Filipinos.
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 col-lg-3">
+                      <div class="alt-features-item">
+                        <div class="alt-features-icon"><i class="fas fa-stethoscope"></i></div>
+                        <h3 class="alt-features-title font-alt">ELECTROCARDIOGRAM (ECG)​</h3>
+                        Monitors the heart’s movement to pump blood throughout the body, helpful for those with acute and chronic heart problems, including pregnant mothers with cardiovascular problems.
+                      </div>
+                      <div class="alt-features-item">
+                          <div class="alt-features-icon"><i class="fas fa-stethoscope"></i></div>
+                          <h3 class="alt-features-title font-alt">FETAL HEART MONITOR</h3>
+                            Measures the baby’s heart rate while in the womb, helping detect fetal distress at critical times of the pregnancy and delivery.
+                        </div>
+                      
+                    </div>
+                    <div class="col-sm-6 col-md-3 col-lg-3">
+                        <div class="alt-features-item">
+                            <div class="alt-features-icon"><i class="fas fa-stethoscope"></i></div>
+                            <h3 class="alt-features-title font-alt">MATERNAL TOCOMETER​</h3>
+                            Measures the strength of a mother’s uterine contractions during labor and delivery, enabling early detection of distress to the mother and/or the baby.
+                          </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 col-lg-3">
+                          <div class="alt-features-item">
+                              <div class="alt-features-icon"><i class="fas fa-stethoscope"></i></div>
+                              <h3 class="alt-features-title font-alt">TEMPERATURE SENSOR​</h3>
+                              Measures a patient’s body temperature. It can help detect fever, a common medical sign of infection and other disease conditions.
+                        </div>
+                    </div>
+                  </div>
+                </div>
+            </section>
+          </section>
+
+          <section class="module bg-dark-60 pt-0 pb-0 parallax-bg testimonial" data-background="{% static 'images/gifs/health.gif' %}">
+            <div class="testimonials-slider pt-140 pb-140">
+            </div>
+          </section>
+        
+        {% include 'main/components/footers/modules/FooterModule_1.html' %}
+        {% include 'main/components/footers/Footer.html' %}
+        
+      </div>
+    </main>
+    {% include 'includes/exhibit/js.html' %}
+  </body>
+</html>
