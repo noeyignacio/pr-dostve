@@ -1,29 +1,20 @@
 {% load static %}
-
 <!DOCTYPE html>
-
 <html lang="en-US" dir="ltr">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <!-- Document Title -->
         <title>DOST R3 | Virtual Exhibit</title>
-
         {% include 'includes/exhibit/favi.html' %}
         {% include 'includes/exhibit/css.html' %}
-        
-
     </head>
     <body data-spy="scroll" data-target=".onpage-navigation" data-offset="60">
         <main>
           <div class="page-loader">
             <div class="loader">Loading...</div>
           </div>
-          
           {% include 'main/components/navs/NavExhibit.html' %}
-
           <div class="main">
             <section class="module bg-dark-60 portfolio-page-header" data-background="{% static 'images/gifs/exhibit.gif' %}">
               <div class="container">
@@ -52,7 +43,6 @@
                 </div>
               </div>
               <ul class="works-grid works-grid-masonry works-hover-w" id="works-grid">
-                <!-- Kinabukasan -->
                 <li class="work-item kinabukasan">
                     <a href="{% url 'bataanProjects' %}">
                         <div class="work-image">
@@ -109,9 +99,8 @@
                         </div>
                     </a>
                 </li>
-                <!-- Kaayusan -->
                 <li class="work-item kaayusan">
-                    <a href="{% url 'kaayusan' %}">
+                    <a href="{% url 'clock' %}">
                         <div class="work-image">
                             <img src="{% static 'images/assets/kaayusan/swan/1.png' %}" alt="Kaayusan Item" style="filter: brightness(50%); "/>
                         </div>
@@ -123,18 +112,7 @@
                     </a>
                 </li>
                 <li class="work-item kaayusan">
-                    <a href="{% url 'kaayusan' %}">
-                        <div class="work-image">
-                            <img src="{% static 'images/assets/kaayusan/clock/1.png' %}" alt="Kaayusan Item" style="filter: brightness(50%); "/>
-                        </div>
-                        <div class="work-caption font-alt">
-                            <h3 class="work-title">Juan Time Clock & Display Board
-                            </h3>
-                        </div>
-                    </a>
-                </li>
-                <li class="work-item kaayusan">
-                    <a href="{% url 'kaayusan' %}">
+                    <a href="{% url 'duck' %}">
                         <div class="work-image">
                             <img src="{% static 'images/assets/kaayusan/duck/12.png' %}" alt="Kaayusan Item" style="filter: brightness(50%); "/>
                         </div>
@@ -145,9 +123,8 @@
                         </div>
                     </a>
                 </li>
-                <!-- Kalusugan -->
                 <li class="work-item kalusugan">
-                    <a href="{% url 'kalusugan' %}">
+                    <a href="{% url 'clhrdc' %}">
                         <div class="work-image">
                             <img src="{% static 'images/assets/kalusugan/intro/clhrdc-bg.jpg' %}" alt="Kalusugan Item"/>
                         </div>
@@ -159,7 +136,18 @@
                     </a>
                 </li>
                 <li class="work-item kalusugan">
-                    <a href="{% url 'kalusugan' %}">
+                    <a href="{% url 'feeding' %}">
+                        <div class="work-image">
+                            <img src="{% static 'images/assets/kalusugan/Complementary Food Feeding Program/image1.png' %}" alt="Kalusugan Item"/>
+                        </div>
+                        <div class="work-caption font-alt">
+                            <h3 class="work-title">Complementary Food Feeding Program 
+                            </h3>
+                        </div>
+                    </a>
+                </li>
+                <li class="work-item kalusugan">
+                    <a href="{% url 'rxbox' %}">
                         <div class="work-image">
                             <img src="{% static 'images/assets/kalusugan/intro/RxBox.PNG' %}" alt="Kalusugan Item" style="filter: brightness(50%); "/>
                         </div>
@@ -170,77 +158,49 @@
                         </div>
                     </a>
                 </li>
-                <!-- Kabuhayan -->
                 <li class="work-item kabuhayan">
-                    <a href="{% url 'cest' %}">
+                    <a href="{% url 'ecest' %}">
                         <div class="work-image">
-                            <img src="{% static 'images/assets/kabuhayan/SMART Hybrid Rice Production Project/Compact Impeller Brown Rice Mill/IMG_0009.png' %}" alt="Kabuhayan Item" style="filter: brightness(50%); "/>
+                            <img src="{% static 'images/assets/kabuhayan/cest-vid-bg/vid1-bg.png' %}" alt="Kabuhayan Item" style="filter: brightness(50%); "/>
                         </div>
                         <div class="work-caption font-alt">
-                            <h3 class="work-title">Compact Impeller Brown Rice Mill</h3>
+                            <h3 class="work-title">eCEST</h3>
                             <div class="work-descr">Economic Development</div>
                         </div>
                     </a>
                 </li>
                 <li class="work-item kabuhayan">
-                    <a href="{% url 'cest' %}">
+                    <a href="{% url 'setup' %}">
                         <div class="work-image">
-                            <img src="{% static 'images/assets/kabuhayan/SMART Hybrid Rice Production Project/Transplanting/transplanter.png' %}" alt="Kabuhayan Item" style="filter: brightness(50%); "/>
+                            <img src="{% static 'images/assets/kabuhayan/bg/Setup.png' %}" alt="Kabuhayan Item" style="filter: brightness(50%); "/>
                         </div>
                         <div class="work-caption font-alt">
-                            <h3 class="work-title">Transplanting</h3>
+                            <h3 class="work-title">SETUP 2.0</h3>
                             <div class="work-descr">Economic Development</div>
                         </div>
                     </a>
                 </li>
                 <li class="work-item kabuhayan">
-                    <a href="{% url 'cest' %}">
+                    <a href="{% url 'sntservice' %}">
                         <div class="work-image">
-                            <img src="{% static 'images/assets/kabuhayan/SMART Hybrid Rice Production Project/Carrageenan.png' %}" alt="Kabuhayan Item" style="filter: brightness(50%); "/>
+                            <img src="{% static 'images/assets/kabuhayan/bg/Testing.png' %}" alt="Kabuhayan Item" style="filter: brightness(50%); "/>
                         </div>
                         <div class="work-caption font-alt">
-                            <h3 class="work-title">Carrageenan</h3>
+                            <h3 class="work-title">S&T Services</h3>
                             <div class="work-descr">Economic Development</div>
                         </div>
                     </a>
                 </li>
               </ul>
             </section>
-
             <section class="module bg-dark-60 pt-0 pb-0 parallax-bg testimonial" data-background="{% static 'images/gifs/projects.gif' %}">
                 <div class="testimonials-slider pt-140 pb-140">
                 </div>
             </section>
-
-            <div class="modal fade" id="avatar" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
-                    <div class="modal-body">
-                      ...
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                      <button type="button" class="btn btn-primary">Save changes</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-            
-
             {% include 'main/components/footers/modules/FooterModule_1.html' %}
             {% include 'main/components/footers/Footer.html' %}
-
           </div>
         </main>
-        
         {% include 'includes/exhibit/js.html' %}
-    
     </body>
 </html>

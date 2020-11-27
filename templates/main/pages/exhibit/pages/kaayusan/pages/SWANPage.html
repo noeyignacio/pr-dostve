@@ -1,0 +1,98 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Document Title -->
+    <title>DOST R3 | Virtual Exhibit</title>
+
+    {% include 'includes/exhibit/favi.html' %}
+    {% include 'includes/exhibit/css.html' %}
+
+  </head>
+  <body data-spy="scroll" data-target=".onpage-navigation" data-offset="60">
+    <main>
+      <div class="page-loader">
+        <div class="loader">Loading...</div>
+      </div>
+      
+      {% include 'main/components/navs/NavExhibit.html' %}
+
+      <section class="home-section home-parallax home-fade" id="home">
+        <div class="hero-slider">
+          <ul class="slides">
+            <li class="bg-dark-30 bg-dark">
+              <div class="titan-caption">
+                <div class="caption-content">
+                  <div class="font-alt mb-30 titan-title-size-1">Kaayusan</div>
+                  <div class="font-alt mb-40 titan-title-size-4">Design and Development of Disaster-Use Converted Ketch (D.U.C.K.)</div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <div class="main">
+        <section class="module" id="about">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-8 col-sm-offset-2">
+                <div class="module-subtitle font-serif large-text">Kaayusan refers to order or to the state of things in harmony. The theme focuses on projects that aid in disaster mitigation which includes disaster relief and response operation, disaster risk reduction and management intervention, and information dissemination.</div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <hr class="divider-w">
+
+        <section class="module-small">
+            <div class="container">
+              <div class="row">
+               
+                {% include 'main/pages/exhibit/pages/kaayusan/widgets/KaayusanPost.html' %}
+
+                <div class="col-sm-6 col-sm-offset-1">
+                  <div class="post">
+                    <div class="post-images-slider">
+                        <ul class="slides">
+                          <li><img src="{% static 'images/assets/kaayusan/swan/1.png' %}" alt="Slider Image"/></li>
+                          <li><img src="{% static 'images/assets/kaayusan/swan/2.png' %}" alt="Slider Image"/></li>
+                          <li><img src="{% static 'images/assets/kaayusan/swan/3.png' %}" alt="Slider Image"/></li>
+                          <li><img src="{% static 'images/assets/kaayusan/swan/4.png' %}" alt="Slider Image"/></li>
+                          <li><img src="{% static 'images/assets/kaayusan/swan/5.png' %}" alt="Slider Image"/></li>
+                          <li><img src="{% static 'images/assets/kaayusan/swan/6.png' %}" alt="Slider Image"/></li>
+                        </ul>
+                      </div>
+                    <div class="post-header font-alt">
+                        <h2 class="post-title">Prototype Development of Severe Weather Amphibious Navigator (SWAN) Using Local Abaca Composites</h2>
+                      <div class="post-meta">By&nbsp;Wesleyan University – Philippines, Cabanatuan City</div>
+                    </div>
+                    <div class="post-entry">
+                        <p>The S.W.A.N. (Severe Weather Amphibious Navigator) is a prototype amphibious navigator designed to enhance disaster relief and response to flood operation with its on-road, off-road and amphibious capabilities. Its upper deck is made of abaca fiber composites woven into fabrics. Molded with a glass fiber reinforced composite hull, the SWAN is lighter and stronger. SWAN is a conversion of an existing truck, its under chassis and engine is mounted to the hull to form the whole structure.</p>
+                        <p>The project is funded by the DOST and monitored by the Philippine Council for Industry Energy, and Emerging Technology Research and Development  (DOST PCIEERD). It is a collaborative project among Central Luzon Industry and Energy Research and Development Consortium (CLIERDEC) member institutions and was one of the priority projects of DOST Region III Regional Director Julius Ceasar V. Sicat. (DOST).</p>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          
+          <section class="module bg-dark-60 pt-0 pb-0 parallax-bg testimonial" data-background="{% static 'images/gifs/engine.gif' %}">
+            <div class="testimonials-slider pt-140 pb-140">
+            </div>
+          </section>
+        
+        {% include 'main/components/footers/modules/FooterModule_1.html' %}
+        {% include 'main/components/footers/Footer.html' %}
+        
+      </div>
+    </main>
+    {% include 'includes/exhibit/js.html' %}
+  </body>
+</html>

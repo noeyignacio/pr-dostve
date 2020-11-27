@@ -1,0 +1,29 @@
+{% load static %}
+
+<div class="col-sm-4 col-md-3 sidebar">
+    <div class="widget">
+      <h5 class="widget-title font-alt">KAAYUSAN</h5>
+      <ul class="widget-posts">
+       <li class="clearfix">
+          <div class="widget-posts-image"><a href="{% url 'clock' %}"><img src="{% static 'images/assets/kaayusan/clock/1.png' %}" alt="Post Thumbnail"/></a></div>
+          <div class="widget-posts-body">
+              <div class="widget-posts-title"><a href="{% url 'clock' %}">Juan Time Clock & Display Board</a></div>
+              <div class="widget-posts-meta">By&nbsp;Department of Science and Technology</div>
+          </div>
+          </li><li class="clearfix">
+          <div class="widget-posts-image"><a href="{% url 'swan' %}"><img src="{% static 'images/assets/kaayusan/swan/1.png' %}" alt="Post Thumbnail"/></a></div>
+          <div class="widget-posts-body">
+              <div class="widget-posts-title"><a href="{% url 'swan' %}">S W A N</a></div>
+              <div class="widget-posts-meta">By&nbsp;Wesleyan University – Philippines, Cabanatuan City</div>
+          </div>
+          </li>
+        <li class="clearfix">
+          <div class="widget-posts-image"><a href="{% url 'duck' %}"><img src="{% static 'images/assets/kaayusan/duck/1.png' %}" alt="Post Thumbnail"/></a></div>
+          <div class="widget-posts-body">
+            <div class="widget-posts-title"><a href="{% url 'duck' %}">D.U.C.K.</a></div>
+            <div class="widget-posts-meta">By&nbsp;DHVSU, Bacolor, Pampanga</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>

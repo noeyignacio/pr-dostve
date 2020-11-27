@@ -1,0 +1,106 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+  <!-- Document Title -->
+  <title>DOST R3 | Virtual Exhibit</title>
+
+  {% include 'includes/exhibit/favi.html' %}
+  {% include 'includes/exhibit/css.html' %}
+
+
+</head>
+
+<body data-spy="scroll" data-target=".onpage-navigation" data-offset="60">
+  <main>
+    <div class="page-loader">
+      <div class="loader">Loading...</div>
+    </div>
+
+    {% include 'main/components/navs/NavExhibit.html' %}
+    
+    <div class="main">
+        <section class="module bg-dark-60 portfolio-page-header"
+                data-background="https://media.giphy.com/media/j247L1e4KaY6bEBZQ0/giphy.gif">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 col-sm-offset-3">
+                            <!-- step 2: also change title -->
+                            <h2 class="module-title font-alt">DOST-III PROVIDES LIVELIHOOD EQUIPMENT IN BOCAUE, BULACAN
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="module">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-8 col-lg-8">
+                            <div class="post-images-slider">
+                                <ul class="slides">
+                                    <!-- step 3: change images on slider -->
+                                    <li><img class="center-block"
+                                            src="{% static 'images/assets/kabuhayan/featured articles/5. DOST-III PROVIDES LIVELIHOOD EQUIPMENT IN BOCAUE, BULACAN/images/image1.png' %}"
+                                            alt="Slider Image" /></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-4">
+                            <div class="work-details">
+                                
+                                <!-- step 4: change project details -->
+                                <p>As part of the “Expanded Implementation of CEST (eCEST) in Bocaue, Bulacan”, the DOST
+                                    III together with LGU-Bocaue led the official turn-over of livelihood equipment to
+                                    the members of St. Martha Smile Healthy Kitchen last September 23, 2019 at Brgy.
+                                    Igulot, Bocaue, Bulacan. The said group was awarded with a package of food
+                                    processing equipment through the assistance of the Provincial Science and Technology
+                                    Director for Bulacan, Ms. Angelita Q. Parungao.<br><br>
+
+                                    Most of the members of this group attended the training conducted by Ms. Parungao
+                                    last 2014 about food processing. As shared by Ms. Parungao during the turn-over
+                                    ceremonies, “Ang ibang members po ng grupo ay naturuan ko sa paggawa ng banana
+                                    chips, crispy dilis, kutsinta, puto, at maja blanca. Umaasa po ako na with the
+                                    assistance of LGU-Bocaue ay magamit at makatulong ang mga kagamitan na ito mula sa
+                                    ating gobyerno”. She also highlighted that one of the objectives of the project is
+                                    to financially empower the women to support their families.<br><br>
+
+                                    LGU-Bocaue also expressed its gratitude through the hardworking Mayor, Hon. Eleanor
+                                    J. Villanueva-Tugna. “Ako po ay nagpapasalamat sa DOST III dahil isa na naman pong
+                                    biyaya ang matatanggap ng ating bayan. Naaalala ko po na dati ay pirmahan lang,
+                                    ngunit ngayon po ay totoong nandito na sa ating harapan ang mga kagamitan kaya’t
+                                    nawa po ay gamitin ito ng grupo para sa dagdag nilang pagkakakitaan”.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    
+  
+  
+        <hr class="divider-w">
+      </div>
+
+
+      <hr class="divider-w">
+      
+      {% include 'main/pages/exhibit/pages/kabuhayan/widgets/RelatedArticles.html' %}
+       
+      {% include 'main/components/footers/modules/FooterModule_1.html' %}
+      {% include 'main/components/footers/Footer.html' %}
+
+    </div>
+  </main>
+
+  {% include 'includes/exhibit/js.html' %}
+
+</body>
+
+</html>

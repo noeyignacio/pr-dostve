@@ -11,22 +11,32 @@
       <div class="collapse navbar-collapse" id="custom-collapse">
         <ul class="nav navbar-nav navbar-right">
           <li class="dropdown"><a  href="{% url 'exhibit' %}" >Home</a>
-          <li class="dropdown"><a  href="https://region3.dost.gov.ph/index.php/transparency/2-uncategorised/208-nstw-2020-dost-iii-opening-message#introduction" target="_blank">Programs</a>
           </li>
           <li class="dropdown"><a class="dropdown-toggle" href="{% url 'exhibit'%}" data-toggle="dropdown">Exhibits</a>
             <ul class="dropdown-menu">
-              <li class="dropdown"><a class="dropdown-toggle" href="" data-toggle="dropdown"><i class="fas fa-road"></i>&nbsp;Kinabukasan</a>
+              <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" style="cursor: pointer"><i class="fas fa-road"></i>&nbsp;Kinabukasan</a>
                 <ul class="dropdown-menu">
                   <li><a href="{% url 'bataanProjects' %}"><i class="fas fa-project-diagram"></i>&nbsp;Bataan Projects</a></li>
                   <li><a href="{% url 'bulacanProjects' %}"><i class="fas fa-project-diagram"></i>&nbsp;Bulacan Project</a></li>
                   <li><a href="{% url 'pampangaProjects' %}"><i class="fas fa-project-diagram"></i>&nbsp;Pampanga Projects</a></li>
                   <li><a href="{% url 'tarlacProjects' %}"><i class="fas fa-project-diagram"></i>&nbsp;Tarlac Projects</a></li>
-                  <li><a href="{% url 'otherProjects' %}"><i class="fas fa-stream"></i>&nbsp;Others</a></li>
+                  <li><a href="{% url 'otherProjects' %}"><i class="fas fa-stream"></i>&nbsp;Other Projects</a></li>
                 </ul>
               </li>
-              <li class="dropdown"><a href="{% url 'kaayusan' %}"><i class="fas fa-sort-amount-up-alt"></i>&nbsp;Kaayusan</a></li>
-              <li class="dropdown"><a href="{% url 'kalusugan' %}"><i class="fas fa-heartbeat"></i>&nbsp;Kalusugan</a></li>
-              <li class="dropdown"><a class="dropdown-toggle" href="" data-toggle="dropdown"><i class="fas fa-store-alt"></i>&nbsp;Kabuhayan</a>
+              <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" style="cursor: pointer"><i class="fas fa-sort-amount-up-alt"></i>&nbsp;Kaayusan</a>
+                <ul class="dropdown-menu">
+                  <li><a href="{% url 'duck' %}"><i class="fas fa-truck-monster"></i>&nbsp;D.U.C.K</a></li>
+                  <li><a href="{% url 'clock' %}"><i class="far fa-clock"></i>&nbsp;Juan Time Clock</a></li>
+                  <li><a href="{% url 'swan' %}"><i class="fas fa-truck-monster"></i>&nbsp;S W A N</a></li>
+                </ul></li>
+              <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" style="cursor: pointer"><i class="fas fa-heartbeat"></i>&nbsp;Kalusugan</a>
+                <ul class="dropdown-menu">
+                  <li><a href="{% url 'feeding' %}"><i class="fas fa-utensils"></i>&nbsp;COMPLEMENTARY FOOD <br/>FEEDING PROGRAM</a></li>
+                  <li><a href="{% url 'rxbox' %}"><i class="fas fa-prescription"></i>&nbsp;RXBOX</a></li>
+                  <li><a href="{% url 'clhrdc' %}"><i class="fas fa-utensils"></i>&nbsp;CLHRDC</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a class="dropdown-toggle"  data-toggle="dropdown" style="cursor: pointer"><i class="fas fa-store-alt"></i>&nbsp;Kabuhayan</a>
                 <ul class="dropdown-menu">
                   <li><a href="{% url 'carra' %}"><i class="fab fa-pagelines"></i>&nbsp;Carrageenan</a></li>
                   <li><a href="{% url 'cashew' %}"><i class="fas fa-seedling"></i>&nbsp;Cashew Industry</a></li>
@@ -34,12 +44,44 @@
                   <li><a href="{% url 'women' %}"><i class="fas fa-female"></i>&nbsp;Empowering Women</a></li>
                   <li><a href="{% url 'hydro' %}"><i class="fas fa-water"></i>&nbsp;Hydroponics</a></li>
                   <li><a href="{% url 'pump' %}"><i class="fas fa-solar-panel"></i>&nbsp;Solar Power Pump</a></li>
-                  <li><a href="{% url 'pump' %}"><i class="fas fa-tools"></i>&nbsp;SETUP2.0</a></li>
+                  <li><a href="{% url 'sewing' %}"><i class="fas fa-mitten"></i>&nbsp;Rekindling the sewing</a></li>
+                  <li><a href="{% url 'floridablanca' %}"><i class="fab fa-accessible-icon"></i>&nbsp;LIVELIHOOD FOR PWD</a></li>
+                  <li><a href="{% url 'setup' %}" style="cursor: pointer"><i class="fas fa-tools"></i>&nbsp;SETUP 2.0</a></li>
+                  <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="{% url 'ecest' %}" style="cursor: pointer"><i class="fas fa-cogs"></i>&nbsp;E C E S T</a>
+                    <ul class="dropdown-menu">
+                      <li><a href="{% url 'article1' %}"><i class="fab fa-pagelines"></i>&nbsp;FARMERS IN <br> CENTRAL LUZO</a></li>
+                      <li><a href="{% url 'article2' %}"><i class="fas fa-toolbox"></i>&nbsp;PORTABLE DRYING <br> EQUIPMENT</a></li>
+                      <li><a href="{% url 'article3' %}"><i class="fas fa-industry"></i>&nbsp;COMMUNITIES IN<br> CENTRAL LUZON</a></li>
+                      <li><a href="{% url 'article4' %}"><i class="fas fa-hands-helping"></i>&nbsp;TRIBE IN TARLAC</a></li>
+                      <li><a href="{% url 'article5' %}"><i class="fas fa-hands"></i>&nbsp;BOCAUE, BULACAN</a></li>
+                      <li><a href="{% url 'article6' %}"><i class="fas fa-hands"></i>&nbsp;DINGALAN</a></li>
+                      <li><a href="{% url 'article7' %}"><i class="fas fa-house-damage"></i>&nbsp;SAN FELIPE, ZAMBALES</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="{% url 'sntservice' %}"><i class="fab fa-buffer"></i>&nbsp;S&T Services</a></li>
                 </ul>
               </li>
             </ul>
           </li>
-          <li class="dropdown"><a href="{% url 'guide' %}" >Guide Me</a></li>
+          <li class="dropdown"><a class="dropdown-toggle" href="{% url 'exhibit'%}" data-toggle="dropdown">Gallery</a>
+            <ul class="dropdown-menu">
+              <li class="dropdown"><a href="{% url 'products'%}"><i class="fab fa-product-hunt"></i>&nbsp;SETUP 2.0 PRODUCTS</a></li>
+              <li class="dropdown"><a href="{% url 'stories' %}"><i class="fas fa-thumbs-up"></i>&nbsp;Success Stories</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a class="dropdown-toggle" href="{% url 'exhibit'%}" data-toggle="dropdown">Programs</a>
+            <ul class="dropdown-menu">
+              <li class="dropdown"><a href="https://region3.dost.gov.ph/index.php/transparency/2-uncategorised/208-nstw-2020-dost-iii-opening-message#introduction" target="_blank"><i class="fas fa-tasks"></i>&nbsp;DOST R3 Programs</a></li>
+              <li class="dropdown"><a href="{% url 'guide' %}"><i class="fab fa-leanpub"></i>&nbsp;Guide Me</a></li>
+              <li class="dropdown"><a href="{% url 'survey' %}" target="_blank"><i class="fas fa-comments"></i>&nbsp;Any Feedbacks?</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a class="dropdown-toggle" href="{% url 'exhibit'%}" data-toggle="dropdown">Stores</a>
+            <ul class="dropdown-menu">
+              <li class="dropdown"><a href="https://onestore.ph/" target="_blank"><i class="fas fa-store-alt"></i>&nbsp;DOST ONESTORE</a></li>
+              <li class="dropdown"><a href="https://oneexpert.gov.ph/" target="_blank"><i class="fas fa-store-alt"></i>&nbsp;DOST ONEEXPERT</a></li>
+            </ul>
+          </li>
           <li class="dropdown"><a href="{% url 'home' %}" ><span class="title-glow-2">Exit</span></a></li>
         </ul>
       </div>

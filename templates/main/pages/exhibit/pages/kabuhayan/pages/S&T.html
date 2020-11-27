@@ -1,0 +1,128 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+  <!-- Document Title -->
+  <title>DOST R3 | Virtual Exhibit</title>
+
+  {% include 'includes/exhibit/favi.html' %}
+  {% include 'includes/exhibit/css.html' %}
+
+
+</head>
+
+<body data-spy="scroll" data-target=".onpage-navigation" data-offset="60">
+  <main>
+    <div class="page-loader">
+      <div class="loader">Loading...</div>
+    </div>
+
+    {% include 'main/components/navs/NavExhibit.html' %}
+    
+    <div class="main">
+        <section class="module bg-dark-60 portfolio-page-header"
+                data-background="https://media.giphy.com/media/l2SqgPb6K7L35sXAc/giphy.gif">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 col-sm-offset-3">
+                            <!-- step 2: also change title -->
+                            <h2 class="module-title font-alt">S&T driven livelihood towards empowerment of Abelling
+                                Tribe</h2>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="module">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-8 col-lg-8">
+                            <div class="post-images-slider">
+                                <ul class="slides">
+                                    <!-- step 3: change images on slider -->
+                                    <li><img class="center-block"
+                                            src="{% static 'images/assets/kabuhayan/Livelihood_Projects/S&T driven livelihood towards empowerment of Abelling Tribe/20200204_144037.png' %}"
+                                            alt="Slider Image" /></li>
+                                    <li><img class="center-block"
+                                            src="{% static 'images/assets/kabuhayan/Livelihood_Projects/S&T driven livelihood towards empowerment of Abelling Tribe/20200205_102907.jpg' %}"
+                                            alt="Slider Image" /></li>
+                                    <li><img class="center-block"
+                                            src="{% static 'images/assets/kabuhayan/Livelihood_Projects/S&T driven livelihood towards empowerment of Abelling Tribe/20200205_131405.jpg' %}"
+                                            alt="Slider Image" /></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-4">
+                            <div class="work-details">
+                                <h5 class="work-details-title font-alt">Project Details</h5>
+                                <!-- step 4: change project details -->
+                                <p>The municipality of San Jose in the Province of Tarlac is popularly known for its
+                                    vast agroforestry area covering the mountains stretching up to the Zambales Region.
+                                    Being a thick forested area, only 12% of its 59,282ha land area is dedicated for
+                                    agricultural productivity. However, this does not hinder the people of San Jose to
+                                    thrive on farming as a major source of income. Among these people are the Abelling
+                                    Tribe which are currently residing at the hinterlands of San Jose. Aside from
+                                    farming, the Abellings also thrive on livestock, hunting of wild animals, and
+                                    foraging. As part of the five hundred indigenous people (IP) communities in the
+                                    Philippines, the Abellings are also considered poor, most excluded, and
+                                    disadvantaged sector in our society. With this, the Abellings have highly
+                                    contributed to the poverty incidence of 24% of San Jose (highest record for Tarlac
+                                    based on the 2012 PSA record).<br><br>
+
+                                    The DOST-III, through its CEST program, has provided a package of S&T assistance to
+                                    the Abelling community for them to become an active and sustainable community.
+                                    Through the establishment of a root crop and vegetable processing facility, 24
+                                    Abelling tribe members were able to gain knowledge and skill in processing their
+                                    root crops and vegetables to veggie polvoron, and powdered vegetable burger patties.
+                                    They were also provided with equipment such as digital weighing scale, stainless
+                                    steel working table, steamers, grinder machine, and double burner gas stove. In
+                                    addition to this, the DOST-III, in partnership with Tarlac Agricultural University
+                                    (TAU), provided assistance to the Abellings to develop products from their
+                                    commodities such as karot, katmon, and amukaw. Although the product development is
+                                    still on-going, TAU was able to produce samples of Katmon Jam, Katmon candy,
+                                    Sinigang mix made from katmon, karot flour and chips, amukaw wine and vinegar.<br><br>
+
+                                    DOST-III also provided a water filter technology to aid with the Abelling community
+                                    in Sitio Agus & Sitio Tala in Brgy. Burgos that struggles for an access to potable
+                                    water and avoid water-borne diseases. Five hundred forty-three Abelling tribe
+                                    members benefit from the technology. No water borne disease incidence were reported
+                                    from March to July 2020. Review sessions on Math and Science were also conducted in
+                                    partnership with Tarlac State University for the DOST-SEI Undergraduate Scholarship
+                                    Applicants in San Jose, Tarlac. This was participated by 57 Grade 12 students and a
+                                    significant increase in the pre-test and post-test scores were recorded. This also
+                                    increased the number of DOST-SEI undergraduate scholarship applicants from 15
+                                    applicants in 2018 to 62 applicants in 2019.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+  </div>
+  
+  
+        <hr class="divider-w">
+      </div>
+
+
+      <hr class="divider-w">
+      
+      {% include 'main/pages/exhibit/pages/kabuhayan/widgets/RelatedProjects.html' %}
+       
+      {% include 'main/components/footers/modules/FooterModule_1.html' %}
+      {% include 'main/components/footers/Footer.html' %}
+
+    </div>
+  </main>
+
+  {% include 'includes/exhibit/js.html' %}
+
+</body>
+
+</html>

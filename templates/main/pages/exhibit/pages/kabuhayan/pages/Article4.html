@@ -1,0 +1,127 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+  <!-- Document Title -->
+  <title>DOST R3 | Virtual Exhibit</title>
+
+  {% include 'includes/exhibit/favi.html' %}
+  {% include 'includes/exhibit/css.html' %}
+
+
+</head>
+
+<body data-spy="scroll" data-target=".onpage-navigation" data-offset="60">
+  <main>
+    <div class="page-loader">
+      <div class="loader">Loading...</div>
+    </div>
+
+    {% include 'main/components/navs/NavExhibit.html' %}
+    
+    <div class="main">
+        <section class="module bg-dark-60 portfolio-page-header"
+                data-background="https://media.giphy.com/media/j247L1e4KaY6bEBZQ0/giphy.gif">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 col-sm-offset-3">
+                            <!-- step 2: also change title -->
+                            <h2 class="module-title font-alt">Abelling IP Tribe in Tarlac gets DOST assistance</h2>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="module">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-6 col-lg-6">
+                            <div class="post-images-slider">
+                                <ul class="slides">
+                                    <!-- step 3: change images on slider -->
+                                    <li><img class="center-block"
+                                            src="{% static 'images/assets/kabuhayan/featured articles/4. Abelling IP Tribe in Tarlac Gets DOST Assistance/images/image1.png' %}"
+                                            alt="Slider Image" /></li>
+                                    <li><img class="center-block"
+                                            src="{% static 'images/assets/kabuhayan/featured articles/4. Abelling IP Tribe in Tarlac Gets DOST Assistance/images/image3.jpg' %}""
+                                            alt="Slider Image" /></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-6">
+                            <div class="work-details">
+                                <!-- step 4: change project details -->
+                                <p>Twenty-four members of the Abelling Tribe, a group of indigenous people from San
+                                    Jose, Tarlac recently completed a two-day skills training seminar on processing of
+                                    rootcrops and vegetables last February 4-5, at the town’s training center through
+                                    the initiative of the Department of Science and Technology - Tarlac Provincial
+                                    Science and Technology Center (DOST- Tarlac PSTC).<br><br>
+
+                                    Two technology experts from the Industrial Technology Development Institute
+                                    (DOST-ITDI) Food Processing Division, Una Grace Dollete and Charles Feb Palla served
+                                    as trainers. The participants were taught how to process turmeric, ginger, cassava,
+                                    sweet potato, squash and malunggay which are found aplenty in the municipality.<br><br>
+
+                                    The activity is part of the expanded Community Empowerment through Science and
+                                    Technology (eCEST) program of the DOST which is aimed at helping build resilient and
+                                    smart communities by providing S&T interventions to address social issues such as
+                                    lack of livelihood opportunities, malnutrition, waste management and environmental
+                                    degradation caused by climate change, among others.<br><br>
+
+                                    Aside from the training, Tarlac PSTC, headed by its Provincial Director, Mrs. Karen
+                                    Yañgo-Dañez, will also link the community with the Got Heart Foundation, a
+                                    non-government organization to help market the tribe’s products. “We will also
+                                    coordinate with the Tarlac Agricultural University for further product development,”
+                                    Mrs. Dañez further added. On the other hand, the tribe members said they will
+                                    coordinate with officials of nearby schools to supply their canteens with processed
+                                    veggie polvoron and powdered vegetables burger patties as possible additional
+                                    outlets.<br><br>
+
+                                    Also part of the package of assistance to the community is the provision of various
+                                    food processing equipment such as weighing scale, stainless steel table, steamer,
+                                    grinder, double burner gas stove and foot stamping machine, and installation of a
+                                    water filtration system to supply the tribe with potable water.<br><br>
+
+                                    Review classes for students who took the DOST undergraduate scholarship examination
+                                    last year were also provided.<br><br>
+
+                                    In behalf of the tribe, Edna Villegas who is the Municipal Indigenous People
+                                    Mandatory Representative (MIPMR) expressed their gratitude and appreciation stating
+                                    thus, “Ngayon lang po namin nalaman na marami pa palang ibang recipe ang magagawa
+                                    mula sa mga gulay na mayroon sa aming lugar. Sana po ay magpatuloy pa dahil iyon po
+                                    ang unang beses na nakaranas kami ng ganoong training sa tulong po ng DOST. Maraming
+                                    Salamat po.”
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    
+  
+  
+        <hr class="divider-w">
+      </div>
+
+
+      <hr class="divider-w">
+      
+      {% include 'main/pages/exhibit/pages/kabuhayan/widgets/RelatedArticles.html' %}
+       
+      {% include 'main/components/footers/modules/FooterModule_1.html' %}
+      {% include 'main/components/footers/Footer.html' %}
+
+    </div>
+  </main>
+
+  {% include 'includes/exhibit/js.html' %}
+
+</body>
+
+</html>

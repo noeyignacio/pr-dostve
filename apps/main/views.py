@@ -296,10 +296,157 @@ def transplant(request):
     )
 
 
+def feeding(request):
+    return render(
+        request,
+        "main/pages/exhibit/pages/kalusugan/pages/FeedingPage.html",
+    )
+
+
 def policy(request):
     return render(
         request,
         "main/pages/handlers/PolicyPage.html",
+    )
+
+
+def ecest(request):
+    return render(
+        request,
+        "main/pages/exhibit/pages/kabuhayan/pages/ECestPage.html",
+    )
+
+
+def florida(request):
+    return render(
+        request,
+        "main/pages/exhibit/pages/kabuhayan/pages/FloridaBlanca.html",
+    )
+
+
+def snt(request):
+    return render(
+        request,
+        "main/pages/exhibit/pages/kabuhayan/pages/S&T.html",
+    )
+
+
+def article1(request):
+    return render(
+        request,
+        "main/pages/exhibit/pages/kabuhayan/pages/Article1.html",
+    )
+
+
+def article2(request):
+    return render(
+        request,
+        "main/pages/exhibit/pages/kabuhayan/pages/Article2.html",
+    )
+
+
+def article3(request):
+    return render(
+        request,
+        "main/pages/exhibit/pages/kabuhayan/pages/Article3.html",
+    )
+
+
+def article4(request):
+    return render(
+        request,
+        "main/pages/exhibit/pages/kabuhayan/pages/Article4.html",
+    )
+
+
+def article5(request):
+    return render(
+        request,
+        "main/pages/exhibit/pages/kabuhayan/pages/Article5.html",
+    )
+
+
+def article6(request):
+    return render(
+        request,
+        "main/pages/exhibit/pages/kabuhayan/pages/Article6.html",
+    )
+
+
+def article7(request):
+    return render(
+        request,
+        "main/pages/exhibit/pages/kabuhayan/pages/Article7.html",
+    )
+
+
+def rxbox(request):
+    return render(
+        request,
+        "main/pages/exhibit/pages/kalusugan/pages/RxBoxPage.html",
+    )
+
+
+def clhrdc(request):
+    return render(
+        request,
+        "main/pages/exhibit/pages/kalusugan/pages/CLHRDCPage.html",
+    )
+
+
+def duck(request):
+    return render(
+        request,
+        "main/pages/exhibit/pages/kaayusan/pages/DUCKPage.html",
+    )
+
+
+def clock(request):
+    return render(
+        request,
+        "main/pages/exhibit/pages/kaayusan/pages/JuanTimePage.html",
+    )
+
+
+def swan(request):
+    return render(
+        request,
+        "main/pages/exhibit/pages/kaayusan/pages/SWANPage.html",
+    )
+
+
+def sewing(request):
+    return render(
+        request,
+        "main/pages/exhibit/pages/kabuhayan/pages/Sewing.html",
+    )
+
+
+def sntservice(request):
+    return render(
+        request,
+        "main/pages/exhibit/pages/kabuhayan/pages/S&TServices.html",
+    )
+
+
+def setup(request):
+    return render(
+        request,
+        "main/pages/exhibit/pages/kabuhayan/pages/Setup.html",
+    )
+
+
+def stories(request):
+    return render(
+        request,
+        "main/pages/exhibit/pages/kabuhayan/pages/SuccessStory.html",
+    )
+
+
+def products(request):
+    return render(
+        request,
+        "main/pages/exhibit/pages/kabuhayan/pages/Products.html",
     )
 
 
@@ -351,19 +498,21 @@ def survey(request):
         try:
             validate_email(request.POST["email"])
         except ValidationError:
-            messages.error(request, "Email is Invalid.")
+            messages.warning(request, "Email is Invalid.")
 
         # Phone Number Valdiation
         phone_number_value = request.POST["phone_number"]
         phone_number_regex = re.search(r"^(09|\+639)\d{9}$", phone_number_value)
         if not phone_number_regex:
-            messages.error(request, "Phone Number is Invalid")
+            messages.warning(request, "Phone Number is Invalid")
 
         # Form Validation
         else:
             if form.is_valid():
                 print("IS_VALID")
+                messages.success(request, "Feedback Successfully Sent.")
                 form.save()
+                form = SurveyForm()
             else:
                 print("AN_ERROR_OCCURED")
 

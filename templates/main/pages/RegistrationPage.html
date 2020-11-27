@@ -77,13 +77,16 @@
                                             an Exhibit Attendance.</div>
                                     </div>
                                 </div>
-
+                                <div class="alert alert-success" role="alert">
+                                    <strong>Note!</strong> 
+                                    DOST Region III assures every user of the website that every personal data shall be protected with the agency’s best ability. 
+                                    <span><a href="{% url 'policy' %}" target="_blank"> Click here for more info.</a></span>
+                                </div>
                                 {% for message in messages %}
                                     <div class="alert alert-danger" role="alert">
                                         <button class="close" type="button" data-dismiss="alert" aria-hidden="true">&times;</button><i class="fa fa-diamond"></i>
                                         <strong>Error:</strong>&nbsp;{{ message }}</div>
                                 {% endfor %}
-
                                 <div class="form-group">
                                     <input type="submit" class="btn btn-block btn-round btn-b" />
                                 </div>

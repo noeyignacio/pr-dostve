@@ -1,0 +1,137 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+  <!-- Document Title -->
+  <title>DOST R3 | Virtual Exhibit</title>
+
+  {% include 'includes/exhibit/favi.html' %}
+  {% include 'includes/exhibit/css.html' %}
+
+
+</head>
+
+<body data-spy="scroll" data-target=".onpage-navigation" data-offset="60">
+  <main>
+    <div class="page-loader">
+      <div class="loader">Loading...</div>
+    </div>
+
+    {% include 'main/components/navs/NavExhibit.html' %}
+    
+    <div class="main">
+        <section class="module bg-dark-60 portfolio-page-header"
+        data-background="https://media.giphy.com/media/j247L1e4KaY6bEBZQ0/giphy.gif">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-sm-offset-3">
+                    <!-- step 2: also change title -->
+                    <h2 class="module-title font-alt">ECEST INTERVENTIONS TO EMPOWER COMMUNITIES IN SAN FELIPE,
+                        ZAMBALES</h2>
+                </div>
+            </div>
+        </div>
+        </section>
+        <section class="module">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-6 col-lg-6">
+                        <div class="post-images-slider">
+                            <ul class="slides">
+                                <!-- step 3: change images on slider -->
+                                <li><img class="center-block"
+                                        src="{% static 'images/assets/kabuhayan/featured articles/7. ECEST INTERVENTIONS TO EMPOWER COMMUNITIES IN SAN FELIPE, ZAMBALES/images/image1.png' %}"
+                                        alt="Slider Image" /></li>
+                                <li><img class="center-block"
+                                        src="{% static 'images/assets/kabuhayan/featured articles/7. ECEST INTERVENTIONS TO EMPOWER COMMUNITIES IN SAN FELIPE, ZAMBALES/images/image2.jpg' %}"
+                                        alt="Slider Image" /></li>
+                                <li><img class="center-block"
+                                        src="{% static 'images/assets/kabuhayan/featured articles/7. ECEST INTERVENTIONS TO EMPOWER COMMUNITIES IN SAN FELIPE, ZAMBALES/images/image3.jpg' %}"
+                                        alt="Slider Image" /></li>
+                                <li><img class="center-block"
+                                        src="{% static 'images/assets/kabuhayan/featured articles/7. ECEST INTERVENTIONS TO EMPOWER COMMUNITIES IN SAN FELIPE, ZAMBALES/images/image4.jpg' %}"
+                                        alt="Slider Image" /></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-6">
+                        <div class="work-details">
+                            
+                            <!-- step 4: change project details -->
+                            <p>The Expanded Implementation of Community Empowerment through Science and Technology
+                                or eCEST, is one of the priority programs of Department of Science and Technology
+                                Region 3 (DOST-3), with a vivid and clear objective of fully helping the poor
+                                communities in the region through the adoption of science and technology
+                                interventions in the 5 CEST entry points, namely: (1) Economic Development and
+                                Livelihood Opportunities, (2) Health and Nutrition, (3) Education and Human Resource
+                                Development, (4) Environmental Protection and Conservation, and (5) Disaster Risk
+                                Reduction and Management and Climate Change Adaptation.
+
+                                One of the twenty-five (25) beneficiaries of eCEST is the municipality of San
+                                Felipe, Zambales. Technological assistance and interventions to the beneficiaries
+                                were formally turned over last June 7, 2019 at the turn-over ceremony in Brgy.
+                                Balincaguin Session Hall, San Felipe, Zambales spearheaded by Municipal Mayor Atty.
+                                Carolyn S. Fariñas and attended by eCEST project beneficiaries, DOST-3 Regional
+                                Director Julius Caesar V. Sicat, DOST Provincial Director Bernardita D. Montevirgen,
+                                and eCEST staff.<br><br>
+
+                                Director Sicat and Mayor Fariñas handed over high-speed sewing machines, edging
+                                machine to Kababaihang Zambaleña- Balincaguing Chapter for their livelihood project
+                                as well as new sets of kitchen utensils including a stainless-steel table for making
+                                squash delicacies to Rosete Chapter; and dual drum composter and portable biogas
+                                digester for the environmental protection and conservation program.<br><br>
+
+                                During the event, Regional Director Dr. Julius Caesar V. Sicat addressed the current
+                                state of the livelihood production in the area in which they are experiencing
+                                difficulties of producing crops such as rice, they are currently sticking with their
+                                raw sweet potatoes as their seasonal crop product. And he was also presented with
+                                the particular commodities namely; the chicharon bagnet, their local longganisa,
+                                different squash products, different kinds of rag, and pot holders and the likes.<br><br>
+
+                                With the interventions eCEST has provided, it is expected to have a major impact in
+                                their livelihood as well as the environment. During his message, Dr. Julius Caesar
+                                V. Sicat ended his statement with "Ang DOST ay katulong sa pagpapa-ayos ng kabuhayan
+                                ng ating mga kababayan".<br><br>
+
+                                Municipal Mayor Atty. Carolyn S. Fariñas and the beneficiaries wholeheartedly
+                                expressed their gratitude towards DOST in improving the lives of their fellowmen
+                                through these projects and interventions.<br><br>
+
+                                Other eCEST interventions provided in San Felipe were SMARTer hybrid rice
+                                production, Science and Technology Academic and Research Based Openly Operated
+                                Kiosks (Super STARBOOKS), and Juan Time Clock (Philippine Standard Time clock).
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        </div>
+    
+  
+  
+        <hr class="divider-w">
+      </div>
+
+
+      <hr class="divider-w">
+      
+      {% include 'main/pages/exhibit/pages/kabuhayan/widgets/RelatedArticles.html' %}
+       
+      {% include 'main/components/footers/modules/FooterModule_1.html' %}
+      {% include 'main/components/footers/Footer.html' %}
+
+    </div>
+  </main>
+
+  {% include 'includes/exhibit/js.html' %}
+
+</body>
+
+</html>

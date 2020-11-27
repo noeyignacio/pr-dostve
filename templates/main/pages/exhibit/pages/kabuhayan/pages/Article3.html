@@ -1,0 +1,127 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+  <!-- Document Title -->
+  <title>DOST R3 | Virtual Exhibit</title>
+
+  {% include 'includes/exhibit/favi.html' %}
+  {% include 'includes/exhibit/css.html' %}
+
+
+</head>
+
+<body data-spy="scroll" data-target=".onpage-navigation" data-offset="60">
+  <main>
+    <div class="page-loader">
+      <div class="loader">Loading...</div>
+    </div>
+
+    {% include 'main/components/navs/NavExhibit.html' %}
+    
+    <div class="main">
+        <section class="module bg-dark-60 portfolio-page-header"
+                data-background="https://media.giphy.com/media/j247L1e4KaY6bEBZQ0/giphy.gif">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 col-sm-offset-3">
+                            <!-- step 2: also change title -->
+                            <h2 class="module-title font-alt">DOST Awards Village-type Rice Mills to CEST Communities in
+                                Central Luzon</h2>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="module">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-6 col-lg-6">
+                            <div class="post-images-slider">
+                                <ul class="slides">
+                                    <!-- step 3: change images on slider -->
+                                    <li><img class="center-block"
+                                            src="{% static 'images/assets/kabuhayan/featured articles/3. DOST Awards Villae-Type Rice Mills to CEST Communities in Central Luzon/images/image1.png' %}"
+                                            alt="Slider Image" /></li>
+                                    <li><img class="center-block"
+                                            src="{% static 'images/assets/kabuhayan/featured articles/3. DOST Awards Villae-Type Rice Mills to CEST Communities in Central Luzon/images/image2.jpg' %}"
+                                            alt="Slider Image" /></li>
+                                    <li><img class="center-block"
+                                            src="{% static 'images/assets/kabuhayan/featured articles/3. DOST Awards Villae-Type Rice Mills to CEST Communities in Central Luzon/images/image3.jpg' %}"
+                                            alt="Slider Image" /></li>
+                                    <li><img class="center-block"
+                                            src="{% static 'images/assets/kabuhayan/featured articles/3. DOST Awards Villae-Type Rice Mills to CEST Communities in Central Luzon/images/image4.jpg' %}"
+                                            alt="Slider Image" /></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-6">
+                            <div class="work-details">
+                                
+                                <!-- step 4: change project details -->
+                                <p>Studies had shown that consumption of brown rice could enhance the nutritional status
+                                    of Filipinos. Several government initiatives to promote its consumption had likewise
+                                    been launched in recent years.<br><br>
+
+                                    To date, consumption of brown rice is largely limited to well to do families who
+                                    have access to big grocery stores and supermarket chains. This is largely
+                                    attributable to the fact that very few rice millers produce brown rice leading to
+                                    its considerably higher price tags.<br><br>
+
+                                    In order to address this concern, the Department of Science and Technology (DOST) in
+                                    Central Luzon provided 24 units of village-type rice mills to selected farmer groups
+                                    through the Community Empowerment through Science and Technology (CEST) program
+                                    which was ably supported by Sen. Joel Villanueva.<br><br>
+
+                                    This impeller type rice mills allow the farmer-beneficiaries to mill their own
+                                    harvest saving them from costly transportation as they no longer need to bring their
+                                    produce to commercial rice mills usually located in town centers. More importantly,
+                                    this will give ready access to more nutritious brown rice in the rural communities
+                                    where malnutrition is a problem. With the deployment of these rice mills, the
+                                    DOST-III hopes to encourage more people to patronize brown rice leading to higher
+                                    consumption and in turn improved nutritional status in the countryside.<br><br>
+
+                                    This compact brown rice mill has a milling recovery of around 70% which is much
+                                    higher compared to most common rice mills such as the stone disk or so-called
+                                    ‘kiskisan’ which has a lower milling recovery of 50-55%. The higher recovery and
+                                    more efficient milling will substantially increase the production output and income
+                                    of our local rice farmers.<br><br>
+
+                                    By empowering the rice farmers, DOST is committed to bring science closer to the
+                                    people and to push every rural area to continuously grow as progressive and
+                                    resilient communities. The distribution was made possible with the assistance of the
+                                    Cooperative Development Authority Region III (CDA-III).
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    
+  
+  
+        <hr class="divider-w">
+      </div>
+
+
+      <hr class="divider-w">
+      
+      {% include 'main/pages/exhibit/pages/kabuhayan/widgets/RelatedArticles.html' %}
+       
+      {% include 'main/components/footers/modules/FooterModule_1.html' %}
+      {% include 'main/components/footers/Footer.html' %}
+
+    </div>
+  </main>
+
+  {% include 'includes/exhibit/js.html' %}
+
+</body>
+
+</html>

@@ -1,0 +1,271 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+  <!-- Document Title -->
+  <title>DOST R3 | Virtual Exhibit</title>
+
+  {% include 'includes/exhibit/favi.html' %}
+  {% include 'includes/exhibit/css.html' %}
+
+</head>
+
+<body data-spy="scroll" data-target=".onpage-navigation" data-offset="60">
+  
+  <main>
+    <div class="page-loader">
+      <div class="loader">Loading...</div>
+    </div>
+    {% include 'main/components/navs/NavExhibit.html' %}
+    <section class="home-section home-parallax home-fade bg-dark-30" id="home" data-background="https://media.giphy.com/media/BLUF6jCNSGm2EBAngB/giphy.gif">
+      <div class="titan-caption">
+        <div class="caption-content">
+          <div class="font-alt mb-30 titan-title-size-1">Kabuhayan</div>
+          <div class="font-alt mb-40 titan-title-size-4">S&T Services</div>
+        </div>
+      </div>
+    </section>
+    <div class="main">
+      <section class="module parallax-bg bg-dark-60 pb-0" id="about" data-background="https://media.giphy.com/media/xTiTnxpQ3ghPiB2Hp6/giphy.gif">
+      </section>
+      <section class="module" id="services">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6 col-sm-offset-3">
+              <h2 class="module-title font-alt">TECHNICAL CONSULTANCY</h2>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="module bg-dark-60" data-background="{% static 'images/assets/kabuhayan/bg/Consult.png' %}">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="video-box">
+                <!-- Technical Consultancy.avi -->
+                <div class="video-box-icon"><a class="video-pop-up"
+                    href="https://www.youtube.com/watch?v=5fiVWoPvDUY"><span
+                      class="icon-video"></span></a></div>
+                <div class="video-title font-alt">Technical Consultancy</div>
+                <div class="video-subtitle font-alt">Video</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="module container">
+        <ul class="works-grid works-grid-masonry works-hover-w works-grid-4">
+          <!-- CAPE -->
+          <li class="work-item"><a href="{% static 'images/assets/kabuhayan/Technical Consultancy/CAPE.jpg' %}" target="_blank">
+              <div class="work-image"><img src="{% static 'images/assets/kabuhayan/Technical Consultancy/CAPE.jpg' %}" alt="Portfolio Item" />
+              </div>
+              <div class="work-caption font-alt">
+                <h3 class="work-title">CAPE</h3>
+              </div>
+            </a></li>
+          <!-- Cleaner Production -->
+          <li class="work-item"><a href="{% static 'images/assets/kabuhayan/Technical Consultancy/Cleaner Production.jpg' %}" target="_blank">
+              <div class="work-image"><img src="{% static 'images/assets/kabuhayan/Technical Consultancy/Cleaner Production.jpg' %}"
+                  alt="Portfolio Item" />
+              </div>
+              <div class="work-caption font-alt">
+                <h3 class="work-title">Cleaner Production</h3>
+              </div>
+            </a></li>
+          <!-- MPEX -->
+          <li class="work-item"><a href="{% static 'images/assets/kabuhayan/Technical Consultancy/MPEX.jpg' %}" target="_blank">
+              <div class="work-image"><img src="{% static 'images/assets/kabuhayan/Technical Consultancy/MPEX.jpg' %}" alt="Portfolio Item" />
+              </div>
+              <div class="work-caption font-alt">
+                <h3 class="work-title">MPEX</h3>
+              </div>
+            </a></li>
+          <li class="work-item"><a href="{% static 'images/assets/kabuhayan/Technical Consultancy/Packaging and Labeling.jpg' %}" target="_blank">
+              <div class="work-image"><img src="{% static 'images/assets/kabuhayan/Technical Consultancy/Packaging and Labeling.jpg' %}"
+                  alt="Portfolio Item" />
+              </div>
+              <div class="work-caption font-alt">
+                <h3 class="work-title">Packaging and Labeling</h3>
+              </div>
+            </a></li>
+        </ul>
+      </section>
+      <section class="module parallax-bg bg-dark-60 pb-0" id="about" data-background="https://media.giphy.com/media/xTiTnxpQ3ghPiB2Hp6/giphy.gif">
+      </section>
+      <section class="module" id="services">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6 col-sm-offset-3">
+              <h2 class="module-title font-alt">TECHNOLOGY TRAINING</h2>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="module bg-dark-60" data-background="{% static 'images/assets/kabuhayan/bg/Training.png' %}">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="video-box">
+                <!-- Tachnology Training.avi -->
+                <div class="video-box-icon"><a class="video-pop-up"
+                    href="https://www.youtube.com/watch?v=_UsLxJaBU2Y"><span
+                      class="icon-video"></span></a></div>
+                <div class="video-title font-alt">Technological Training</div>
+                <div class="video-subtitle font-alt">Video</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="module container">
+        <ul class="works-grid works-grid-masonry works-hover-w works-grid-3">
+          <li class="work-item">
+            <div class="col-sm-12 col-lg-12">
+              <div class="alt-features-item">
+                <h3 class="alt-features-title font-alt">Training</h3> Technical Training for manpower on key production
+                issue.
+              </div>
+            </div>
+          </li>
+          <li class="work-item"><a href="{% static 'images/assets/kabuhayan/Technology Training/Trainings.jpg' %}" target="_blank">
+              <div class="work-image"><img src="{% static 'images/assets/kabuhayan/Technology Training/Trainings.jpg' %}" alt="Portfolio Item" />
+              </div>
+              <div class="work-caption font-alt">
+                <h3 class="work-title">Trainings</h3>
+              </div>
+            </a></li>
+          <li class="work-item"></li>
+        </ul>
+      </section>
+      <section class="module parallax-bg bg-dark-60 pb-0" id="about" data-background="https://media.giphy.com/media/xTiTnxpQ3ghPiB2Hp6/giphy.gif">
+      </section>
+      <section class="module container">
+        <section class="module" id="services">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6 col-sm-offset-3">
+                <h2 class="module-title font-alt">Other Consultancy Services</h2>
+              </div>
+            </div>
+          </div>
+        </section>
+        <ul class="works-grid works-grid-masonry works-hover-w works-grid-2">
+          <li class="work-item"><a href="{% static 'images/assets/kabuhayan/Other Consultancy Services/Energy Audit.jpg' %}" target="_blank">
+              <div class="work-image"><img src="{% static 'images/assets/kabuhayan/Other Consultancy Services/Energy Audit.jpg' %}"
+                  alt="Portfolio Item" />
+              </div>
+              <div class="work-caption font-alt">
+                <h3 class="work-title">Energy Audit</h3>
+              </div>
+            </a></li>
+          <li class="work-item"><a href="{% static 'images/assets/kabuhayan/Other Consultancy Services/Food Safety.jpg' %}" target="_blank">
+              <div class="work-image"><img src="{% static 'images/assets/kabuhayan/Other Consultancy Services/Food Safety.jpg' %}"
+                  alt="Portfolio Item" />
+              </div>
+              <div class="work-caption font-alt">
+                <h3 class="work-title">Food Safety</h3>
+              </div>
+            </a></li>
+        </ul>
+      </section>
+      <section class="module parallax-bg bg-dark-60 pb-0" id="about" data-background="https://media.giphy.com/media/xTiTnxpQ3ghPiB2Hp6/giphy.gif">
+      </section>
+      <section class="module" id="services">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6 col-sm-offset-3">
+              <h2 class="module-title font-alt">Laboratory Services</h2>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="module bg-dark-60" data-background="{% static 'images/assets/kabuhayan/bg/Testing.png' %}">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="video-box">
+                <div class="video-box-icon"><a class="video-pop-up"
+                    href="https://www.youtube.com/watch?v=_JD9eTI0TN0"><span
+                      class="icon-video"></span></a></div>
+                <div class="video-title font-alt">Laboratory Services</div>
+                <div class="video-subtitle font-alt">Video</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="module container">
+        <ul class="works-grid works-grid-masonry works-hover-w works-grid-3 row">
+          <!-- RSTL Fees and Charge Leaflet -->
+          <li class="work-item">
+            <div class="col-sm-12 col-lg-12">
+              <div class="alt-features-item">
+
+                <h3 class="alt-features-title font-alt">RSTL Fees and Charges Leaflet in PDF</h3>
+              </div>
+            </div>
+          </li>
+          <li class="work-item"><a href="{% static 'images/assets/kabuhayan/Laboratory Services/RSTL Fees and Charges Leaflet.pdf' %}" target="_blank">
+              <div class="work-image"><img src="{% static 'images/assets/kabuhayan/bg/PDF.png' %}" alt="Portfolio Item" />
+              </div>
+              <div class="work-caption font-alt">
+                <h3 class="work-title">RSTL Fees and Charges Leaflet</h3>
+              </div>
+            </a></li>
+        </ul>
+      </section>
+      <section class="module-small parallax-bg bg-dark-60"
+        data-background="https://media.giphy.com/media/YmcIK6A7Y29UPxM1Ze/giphy.gif">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6 col-md-8 col-lg-6 col-lg-offset-2">
+              <div class="callout-text font-alt">
+                <h3 class="callout-title">DOST oneSTore</h3>
+                <p>Link to the oneSTore website, Shop quality local products!</p>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-2">
+              <div class="callout-btn-box"><a class="btn btn-w btn-round" href="https://onestore.ph/" target="_blank">This way to DOST
+                  oneSTore >></a></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="module-small parallax-bg bg-dark-60"
+        data-background="https://media.giphy.com/media/fefXhtGG2NeynEUHtU/giphy.gif">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6 col-md-8 col-lg-6 col-lg-offset-2">
+              <div class="callout-text font-alt">
+                <h3 class="callout-title">DOST OneExpert</h3>
+                <p>Link to the OneExpert website, Learn from their line up of Free Online Webinars on various S&T
+                  topics, brought to you by their very own experts in OneExpert.</p>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-2">
+              <div class="callout-btn-box"><a class="btn btn-w btn-round" href="https://oneexpert.gov.ph/" target="_blank">This way to
+                  DOST OneExpert >></a></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+
+
+      {% include 'main/components/footers/modules/FooterModule_1.html' %}
+      {% include 'main/components/footers/Footer.html' %}
+    </div>
+  </main>
+    
+
+    {% include 'includes/exhibit/js.html' %}
+
+</body>
+
+</html>

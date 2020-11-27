@@ -1,0 +1,121 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+  <!-- Document Title -->
+  <title>DOST R3 | Virtual Exhibit</title>
+
+  {% include 'includes/exhibit/favi.html' %}
+  {% include 'includes/exhibit/css.html' %}
+
+
+</head>
+
+<body data-spy="scroll" data-target=".onpage-navigation" data-offset="60">
+  <main>
+    <div class="page-loader">
+      <div class="loader">Loading...</div>
+    </div>
+
+    {% include 'main/components/navs/NavExhibit.html' %}
+    
+    <div class="main">
+        <section class="module bg-dark-60 portfolio-page-header"
+                data-background="https://media.giphy.com/media/j247L1e4KaY6bEBZQ0/giphy.gif">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 col-sm-offset-3">
+                            <!-- step 2: also change title -->
+                            <h2 class="module-title font-alt">DOST III PROVIDES LIVELIHOOD EQUIPMENT TO ECEST
+                                BENEFICIARIES IN DINGALAN</h2>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="module">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-8 col-lg-8">
+                            <div class="post-images-slider">
+                                <ul class="slides">
+                                    <!-- step 3: change images on slider -->
+                                    <li><img class="center-block"
+                                            src="{% static 'images/assets/kabuhayan/featured articles/6. DOST III PROVIDES LIVELIHOOD EQUIPMENT TO ECEST BENEFICIARIES IN DINGALAN/images/image1.png' %}"
+                                            alt="Slider Image" /></li>
+                                    <li><img class="center-block"
+                                            src="{% static 'images/assets/kabuhayan/featured articles/6. DOST III PROVIDES LIVELIHOOD EQUIPMENT TO ECEST BENEFICIARIES IN DINGALAN/images/image2.jpg' %}"
+                                            alt="Slider Image" /></li>
+                                    <li><img class="center-block"
+                                            src="{% static 'images/assets/kabuhayan/featured articles/6. DOST III PROVIDES LIVELIHOOD EQUIPMENT TO ECEST BENEFICIARIES IN DINGALAN/images/image3.jpg' %}"
+                                            alt="Slider Image" /></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-4">
+                            <div class="work-details">
+                                
+                                <!-- step 4: change project details -->
+                                <p>The Department of Science and Technology thru the Expanded Implementation of CEST in
+                                    Region III turned over livelihood equipment to the Samahang Ugnayan ng Mag-iisda ng
+                                    Paltik and Ibona Small Coconut Multi-Purpose Cooperative in Dingalan, Aurora last
+                                    September 10, 2019. The activity was attended by the DOST III Regional Director Dr.
+                                    Julius Caesar V. Sicat, DOST-Aurora Provincial Director Maricel M. Sicat and Hon.
+                                    Mayor Shierwin H. Taay of Dingalan and the eCEST project beneficiaries. The project
+                                    is expected to improve processing operations, product quality, and as well as
+                                    generate greater income and employment for the members.<br><br>
+
+                                    In 2018, the PSTC-Aurora together with eCEST staff Mr. Ralph Louie C. Binene
+                                    conducted the Technology Needs Assessment to the organizations. The Samahang Ugnayan
+                                    ng Mag-iisda ng Paltik produces fish products like fish longganisa, fish tocino,
+                                    tuna flakes, and tunapa. Meanwhile, the Ibona Small Coconut Multi-Purpose
+                                    Cooperative produces coco jam and will soon start making buko pie. To enhance and
+                                    make the production technique and method more efficient, the DOST III proposed
+                                    necessary and appropriate technological assistance which accounted for P1M worth of
+                                    livelihood equipment.<br><br>
+
+                                    The turn-over ceremony started at 10:10 am at the Municipal hall of Dingalan,
+                                    Aurora. SB members and ex-MAO Mrs. Zenia Abaya expressed their message of gratitude
+                                    for being selected as one of the municipalities covered by eCEST. Mayor Shierwin H.
+                                    Taay meanwhile, encouraged the beneficiaries to make use of the funds provided by
+                                    the government and left a phrase, “Bigyan mo ng isda ang isang tao at kakain siya sa
+                                    loob ng isang araw, ngunit turuan mo siyang mangisda at kakain siya habambuhay”.<br><br>
+
+                                    DOST III - Regional Director Julius Caesar V. Sicat supplemented the message
+                                    delivered by Mayor Taay and added that the success of these projects depend on the
+                                    perseverance of the beneficiaries and ended his message with his catch phrase,
+                                    “Believe in Science, it works”.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    
+  
+  
+        <hr class="divider-w">
+      </div>
+
+
+      <hr class="divider-w">
+      
+      {% include 'main/pages/exhibit/pages/kabuhayan/widgets/RelatedArticles.html' %}
+       
+      {% include 'main/components/footers/modules/FooterModule_1.html' %}
+      {% include 'main/components/footers/Footer.html' %}
+
+    </div>
+  </main>
+
+  {% include 'includes/exhibit/js.html' %}
+
+</body>
+
+</html>

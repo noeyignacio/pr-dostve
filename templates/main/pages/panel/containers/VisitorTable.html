@@ -127,17 +127,13 @@
                 <h3 class="mb-0">Attendance/Registered</h3>
                 <br>
                 <p class="text-sm mb-0">
-                  1. Press <span style="color: red; font-weight: bold;">Copy</span> to copy these data on your clipboard.
-                </p>
-                <p class="text-sm mb-0">
-                  2. Press <span style="color: rgb(17, 37, 153); font-weight: bold;"">CSV</span> to download the datatables' data.
-                </p>
-                <p class="text-sm mb-0">
-                  3. Press <span style="color: rgb(255, 0, 119); font-weight: bold;"">Print</span> to print these data as PDF.
+                  Press <span style="color: red; font-weight: bold;">
+                    <button class="btn btn-danger btn-sm" onclick="visitorsData('visitor')">Download</button>
+                  </span> to export datatables' data to Excel file.
                 </p>
               </div>
               <div class="table-responsive py-4">
-                <table class="table table-flush " id="datatable-buttons">
+                <table class="table table-flush" id="visitor">
                   <thead class="thead-light">
                     <tr>
                       <th>Name</th>

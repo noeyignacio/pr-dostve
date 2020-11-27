@@ -1,0 +1,111 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+  <!-- Document Title -->
+  <title>DOST R3 | Virtual Exhibit</title>
+
+  {% include 'includes/exhibit/favi.html' %}
+  {% include 'includes/exhibit/css.html' %}
+
+
+</head>
+
+<body data-spy="scroll" data-target=".onpage-navigation" data-offset="60">
+  <main>
+    <div class="page-loader">
+      <div class="loader">Loading...</div>
+    </div>
+
+    {% include 'main/components/navs/NavExhibit.html' %}
+    
+    <div class="main">
+        <section class="module bg-dark-60 portfolio-page-header"
+                data-background="https://media.giphy.com/media/l2RnDuq70SlFTuTqU/giphy.gif">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 col-sm-offset-3">
+                            <!-- step 2: also change title -->
+                            <h2 class="module-title font-alt">Enabling Livelihood for PWD Group in Floridablanca,
+                                Pampanga</h2>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="module">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-8 col-lg-8">
+                            <div class="post-images-slider">
+                                <ul class="slides">
+                                    <!-- step 3: change images on slider -->
+                                    <li><img class="center-block"
+                                            src="{% static 'images/assets/kabuhayan/Livelihood_Projects/Enabling Livelihood for PWD group in Floridablanca, Pampanga/Article Pics FAWPD.png' %}"
+                                            alt="Slider Image" /></li>
+                                    <li><img class="center-block"
+                                            src="{% static 'images/assets/kabuhayan/Livelihood_Projects/Enabling Livelihood for PWD group in Floridablanca, Pampanga/bambute - Florida.png' %}"
+                                            alt="Slider Image" /></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-4">
+                            <div class="work-details">
+                                <h5 class="work-details-title font-alt">Project Details</h5>
+                                <!-- step 4: change project details -->
+                                <p>The Florida Association of Persons with Disability (FAPWDs) continuously seek for a
+                                    sustainable livelihood that will enable them to help provide for the needs of their
+                                    family. As stated in Republic Act No. 7277 Sec. 40, Role of National Agencies and
+                                    Local Government Units - Local government units shall promote the establishment of
+                                    organizations of disabled persons in their respective territorial jurisdictions.
+                                    National agencies and local government units may enter joint ventures with
+                                    organizations or associations of persons with disabilities to explore livelihood
+                                    opportunities and other undertakings that shall enhance their health, physical
+                                    fitness, and the economic and social well-being. Relatively, one of the priority
+                                    sectors of CEST is the PWDs. It is in response to the government’s National Program
+                                    on Poverty Alleviation.<br><br>
+
+                                    The DOST-III through its Community Empowerment through Science and Technology (CEST)
+                                    provided a training cum production to the members of the FAPWDs. Through this, the
+                                    productivity of the PWDs was improved through the enhancement of their skills and
+                                    abilities in handicrafts making specifically on bamboo-based materials.<br><br>
+
+                                    The FAPWDs now have eight (8) members who are ready to start production of their
+                                    bamboo-based handicraft products. The LGU on the other hand have committed to aid in
+                                    the promotion of the bamboo-handicrafts to be produced by the FAPWDs.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+  
+  </div>
+  
+  
+        <hr class="divider-w">
+      </div>
+
+
+      <hr class="divider-w">
+      
+      {% include 'main/pages/exhibit/pages/kabuhayan/widgets/RelatedProjects.html' %}
+       
+      {% include 'main/components/footers/modules/FooterModule_1.html' %}
+      {% include 'main/components/footers/Footer.html' %}
+
+    </div>
+  </main>
+
+  {% include 'includes/exhibit/js.html' %}
+
+</body>
+
+</html>

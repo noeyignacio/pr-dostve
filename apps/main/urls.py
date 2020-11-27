@@ -67,6 +67,14 @@ urlpatterns = [
         "exhibit/bataanprojects/ultimaker3extended", views.ultimaker, name="ultimaker"
     ),
     path("exhibit/bataanprojects/sonicbath", views.sonicBath, name="sonicBath"),
+    # KAAYUSAN
+    path("exhibit/kaayusan/duck", views.duck, name="duck"),
+    path("exhibit/kaayusan/jauntimeclock", views.clock, name="clock"),
+    path("exhibit/kaayusan/swan", views.swan, name="swan"),
+    # KALUGUSAN
+    path("exhibit/kalugusan/feedingprogram", views.feeding, name="feeding"),
+    path("exhibit/kalugusan/rxbox", views.rxbox, name="rxbox"),
+    path("exhibit/kalugusan/clhrdc", views.clhrdc, name="clhrdc"),
     # KABUHAYAN
     path("exhibit/kabuhayan/cashew", views.cashew, name="cashew"),
     path("exhibit/kabuhayan/doublemulching", views.double, name="double"),
@@ -78,6 +86,21 @@ urlpatterns = [
     path("exhibit/kabuhayan/starbooks", views.books, name="books"),
     path("exhibit/kabuhayan/mushroomforimprovement", views.mushroom, name="mushroom"),
     path("exhibit/kabuhayan/transplanting", views.transplant, name="transplant"),
+    path("exhibit/kabuhayan/ecest", views.ecest, name="ecest"),
+    path("exhibit/kabuhayan/floridablanca", views.florida, name="floridablanca"),
+    path("exhibit/kabuhayan/snt", views.snt, name="snt"),
+    path("exhibit/kabuhayan/sewing", views.sewing, name="sewing"),
+    path("exhibit/kabuhayan/article1", views.article1, name="article1"),
+    path("exhibit/kabuhayan/article2", views.article2, name="article2"),
+    path("exhibit/kabuhayan/article3", views.article3, name="article3"),
+    path("exhibit/kabuhayan/article4", views.article4, name="article4"),
+    path("exhibit/kabuhayan/article5", views.article5, name="article5"),
+    path("exhibit/kabuhayan/article6", views.article6, name="article6"),
+    path("exhibit/kabuhayan/article7", views.article7, name="article7"),
+    path("exhibit/kabuhayan/sntservices", views.sntservice, name="sntservice"),
+    path("exhibit/kabuhayan/setup2.0", views.setup, name="setup"),
+    path("exhibit/kabuhayan/successstories", views.stories, name="stories"),
+    path("exhibit/kabuhayan/products", views.products, name="products"),
     # ADMIN PANEL
     path("dostr3adminpanel/", views.admin, name="dostr3adminpanellogin"),
     path("logout/", views.logoutAdmin, name="logout"),

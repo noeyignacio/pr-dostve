@@ -12,7 +12,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "vmi5fmzc85_zezjh$g7(ij8(p39y5_&al4ywd-f@n-yn&f+%31"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
 
@@ -70,25 +70,25 @@ WSGI_APPLICATION = "dost-ve.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
-# DATABASES = {
-#     "default": {
-#         "ENGINE": "django.db.backends.sqlite3",
-#         "NAME": BASE_DIR / "db.sqlite3",
-#     }
-# }
+DATABASES = {
+    "default": {
+        "ENGINE": "django.db.backends.sqlite3",
+        "NAME": BASE_DIR / "db.sqlite3",
+    }
+}
 
 # MYSQL DATABASE
 
-DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.mysql",
-        "NAME": "dostvedb",
-        "USER": "dostadmin",
-        "PASSWORD:": ".bX.Dj-dW5-z^]7&",
-        "HOST": "dost.dbms-cuunkiyhr0rn.us-east-2.rds.amazonaws.com",
-        "PORT": "3306",
-    }
-}
+# DATABASES = {
+#     "default": {
+#         "ENGINE": "django.db.backends.mysql",
+#         "NAME": "dostvedb",
+#         "USER": "dostadmin",
+#         "PASSWORD:": ".bX.Dj-dW5-z^]7&",
+#         "HOST": "dost.dbms-cuunkiyhr0rn.us-east-2.rds.amazonaws.com",
+#         "PORT": "3306",
+#     }
+# }
 
 
 # Password validation
@@ -131,7 +131,7 @@ USE_TZ = True
 # STATIC_ROOT = "/staticfiles/"
 
 # AWS-Hosted Static files
-
+#
 AWS_ACCESS_KEY_ID = "AKIATEHUPH2FS54OJYRY"
 AWS_SECRET_ACCESS_KEY = "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"
 AWS_STORAGE_BUCKET_NAME = "dost-ve-bucket"

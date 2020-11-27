@@ -1,0 +1,97 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+  <!-- Document Title -->
+  <title>DOST R3 | Virtual Exhibit</title>
+
+  {% include 'includes/exhibit/favi.html' %}
+  {% include 'includes/exhibit/css.html' %}
+
+</head>
+
+<body data-spy="scroll" data-target=".onpage-navigation" data-offset="60">
+  <main>
+    <div class="page-loader">
+      <div class="loader">Loading...</div>
+    </div>
+    <!-- nav here -->
+
+    {% include 'main/components/navs/NavExhibit.html' %}
+
+    <section class="home-section home-parallax home-fade home-full-height bg-dark-30" id="home"
+      data-background="https://media.giphy.com/media/3o85g3loeiLcF26OZy/giphy.gif">
+      <div class="titan-caption">
+        <div class="caption-content">
+          <div class="font-alt mb-30 titan-title-size-1">Kalusugan</div>
+          <div class="font-alt mb-40 titan-title-size-4">Complementary Food Feeding Program</div>
+        </div>
+      </div>
+    </section>
+
+    <div class="main">
+      <!-- Feeding Program section -->
+      </section>
+      <section class="module" id="portfolio">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6 col-md-8 col-lg-8">
+              <div class="post-images-slider">
+                <ul class="slides">
+                  <li><img class="center-block" src="{% static 'images/assets/kalusugan/Complementary Food Feeding Program/01.png' %}"
+                      alt="Slider Image" /></li>
+                  <li><img class="center-block" src="{% static 'images/assets/kalusugan/Complementary Food Feeding Program/02.png' %}"
+                      alt="Slider Image" /></li>
+                  <li><img class="center-block" src="{% static 'images/assets/kalusugan/Complementary Food Feeding Program/03.png' %}"
+                      alt="Slider Image" /></li>
+                <li><img class="center-block" src="{% static 'images/assets/kalusugan/Complementary Food Feeding Program/04.png' %}"
+                      alt="Slider Image" /></li>
+                      <li><img class="center-block" src="{% static 'images/assets/kalusugan/Complementary Food Feeding Program/05.png' %}"
+                      alt="Slider Image" /></li>
+                      <li><img class="center-block" src="{% static 'images/assets/kalusugan/Complementary Food Feeding Program/06.png' %}"
+                        alt="Slider Image" /></li>
+                        <li><img class="center-block" src="{% static 'images/assets/kalusugan/Complementary Food Feeding Program/07.png' %}"
+                            alt="Slider Image" /></li>  
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4">
+              <div class="work-details">
+                <h5 class="work-details-title font-alt">Project Details:</h5>
+                <p>
+                  For 120 days, DOST-3 partners with BHWs and BNS who patiently prepared a nutritious complementary food
+                  blend every day for 985 children aged 6 to 36 months made of rice and legumes rich in protein. BHWs
+                  and BNS have also taken the initiative to make a variety of dishes using food blends such as pancakes,
+                  champorado, porridge, and mixing eggs and nutritious vegetables such as carrots and sweet potatoes to
+                  make it delightful and pleasent for the children.<br><br>
+
+                  In total, out of 985 underweight children, 684 of them graduated from a 120-day feeding program in
+                  which 50% of them had a normal weight. The weight gain recorded ranged from 8.57% to 22.90% in 120
+                  days.
+                </p>
+                <p>for more info visit: <a
+                    href="https://region3.dost.gov.ph/index.php/transparency/annual-procurement-plan-and-contracts-awarded/8-news/105-complementary-food-feeding-program-kaakibat-sa-pagsugpo-ng-malnutrisyon-sa-gitnang-luzon">region3.dost.gov.ph</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {% include 'main/components/footers/modules/FooterModule_1.html' %}
+      {% include 'main/components/footers/Footer.html' %}
+
+    </div>
+  </main>
+  
+  {% include 'includes/exhibit/js.html' %}
+
+</body>
+
+</html>
