@@ -101,6 +101,7 @@ urlpatterns = [
     path("exhibit/kabuhayan/setup2.0", views.setup, name="setup"),
     path("exhibit/kabuhayan/successstories", views.stories, name="stories"),
     path("exhibit/kabuhayan/products", views.products, name="products"),
+    path("exhibit/kabuhayan/story", views.story, name="story"),
     # ADMIN PANEL
     path("dostr3adminpanel/", views.admin, name="dostr3adminpanellogin"),
     path("logout/", views.logoutAdmin, name="logout"),

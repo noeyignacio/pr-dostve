@@ -450,6 +450,13 @@ def products(request):
     )
 
 
+def story(request):
+    return render(
+        request,
+        "main/pages/exhibit/pages/kabuhayan/pages/Story.html",
+    )
+
+
 # METHODS
 def registerAttendance(request):
 
