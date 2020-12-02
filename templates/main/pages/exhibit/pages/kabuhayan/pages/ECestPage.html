@@ -23,8 +23,8 @@
       <div class="loader">Loading...</div>
     </div>
     {% include 'main/components/navs/NavExhibit.html' %}
-    <section class="home-section bg-dark-30" id="home" data-background="assets/images/section-5.jpg">
-      <div class="video-player" data-property="{videoURL:'https://www.youtube.com/watch?v=eQuJYpgoyYI', containment:'.home-section', startAt:13, mute:false, autoPlay:true, loop:true, opacity:1, showControls:false, showYTLogo:false, vol:25}">
+    <section class="home-section bg-dark-30" id="home">
+      <div class="video-player" data-property="{videoURL:'https://www.youtube.com/watch?v=1gNObw6ty4c', containment:'.home-section', startAt:1, mute:false, autoPlay:true, loop:true, opacity:1, showControls:false, showYTLogo:false, vol:25}">
       </div>
       <div class="video-controls-box">
         <div class="container">
@@ -97,14 +97,87 @@
           </div>
         </div>
       </section>
+
+      <section class="module">
+        <section class="module" id="services">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6 col-sm-offset-3">
+                <h2 class="module-title font-alt">SMART HYBRID RICE PRODUCTION PROJECTS</h2>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="container">
+          <p style="text-align: justify;">
+            For the past years, Filipino farmers face challenges in farming caused by the increasing population and climate change. The need to sustain food security and produce agricultural products of good quality has been a struggle for most farmers as they are deprived with the knowledge and skills to adapt to our changing environment.
+
+            Other than that, fewer and fewer people seem to engage in farming. A lot of our agricultural lands are being converted for industrial purposes. The age of Filipino farmers have become older while their children seem to choose high paying careers instead of farming. The intense labor equating to smaller profit is what largely drives them off of farming. If this keeps on happening, imagine what would happen if the last farmer quits tomorrow?
+
+            With high hopes of reviving agriculture in the country, the eCEST program aimed to empower communities by providing a package of S&T interventions for farmers. Being rice as the staple food of Filipinos, technological interventions were focused on rice production. And since Region 3 is the central rice production of the Philippines, these interventions may help the country to attain rice self—sufficiency.<br><br>
+          </p>
+          <section class="module bg-dark-60" id="portfolio">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="video-box">
+                    <div class="video-box-icon"><a class="video-pop-up"
+                        href="https://www.youtube.com/watch?v=Pkj5DDCnr2Y"><span
+                          class="icon-video"></span></a></div>
+                    <div class="video-title font-alt">ECEST SDE TRAINING ON MRT</div>
+                    <div class="video-subtitle font-alt">WATCH THE VIDEO</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <p style="text-align: justify;">
+            With this goal, DOST 3 partnered with the Philippine Sino-Center for Agricultural Technologies (PhilSCAT) identified proper technologies to increase the yield of farmers.  This led to the project entitled “SMART Rice Production” which aims to promote the mechanized hybrid rice production to farmers. This project was first piloted to thirteen (13) demo farms in Central Luzon resulting to an average of 30% increase in yield with a maximum of 175 cavans per hectare. The project makes use of the following technologies:
+          </p>
+          <ul class="works-grid works-grid-masonry works-hover-w">
+            <li class="work-item rice-production"><a href="{% url 'double'%}">
+              <div class="work-image"><img
+                  src="{% static 'images/assets/kabuhayan/SMART_Hybrid_Rice_Production_Project/Double Mulching Technique/DMT.jpg' %}"
+                  alt="Portfolio Item" />
+              </div>
+              <div class="work-caption font-alt">
+                <h3 class="work-title">Double Mulching Technique (DMT)</h3>
+                <div class="work-descr">SMART Hybrid Rice Production Projects</div>
+              </div>
+            </a></li>
+            <li class="work-item rice-production"><a href="{% url 'transplant'%}">
+              <div class="work-image"><img
+                  src="{% static 'images/assets/kabuhayan/SMART_Hybrid_Rice_Production_Project/Tranplanting/transplanter.jpg' %}"
+                  alt="Portfolio Item" />
+              </div>
+              <div class="work-caption font-alt">
+                <h3 class="work-title">Mechanical Rice Tranplanting Technology</h3>
+                <div class="work-descr">SMART Hybrid Rice Production Projects</div>
+              </div>
+            </a></li>
+            <li class="work-item rice-production"><a href="{% url 'carra'%}">
+              <div class="work-image"><img
+                  src="{% static 'images/assets/kabuhayan/SMART_Hybrid_Rice_Production_Project/Carrageenan/Carrageenan.JPG' %}"
+                  alt="Portfolio Item" />
+              </div>
+              <div class="work-caption font-alt">
+                <h3 class="work-title">Carrageenan Plan Growth Promoter Technology</h3>
+                <div class="work-descr">SMART Hybrid Rice Production Projects</div>
+              </div>
+            </a></li>
+          </ul>
+        </div>
+      </section>
       <section class="module pb-0">
         <div class="container">
           <div class="row">
             <div class="col-sm-12">
               <ul class="filter font-alt" id="filters">
                 <li><a class="current wow fadeInUp" href="#" data-filter="*">All</a></li>
-                <li><a class="wow fadeInUp" href="#" data-filter=".rice-production" data-wow-delay="0.2s">SMART Hybrid
-                    Rice Production Projects</a></li>
                 <li><a class="wow fadeInUp" href="#" data-filter=".livelihood" data-wow-delay="0.4s">Livelihood
                     Projects</a></li>
                 <li><a class="wow fadeInUp" href="#" data-filter=".hydroponics" data-wow-delay="0.6s">High Value Crops
@@ -116,16 +189,6 @@
           </div>
         </div>
         <ul class="works-grid works-grid-masonry works-hover-w" id="works-grid">
-          <li class="work-item rice-production"><a href="{% url 'double'%}">
-              <div class="work-image"><img
-                  src="{% static 'images/assets/kabuhayan/SMART_Hybrid_Rice_Production_Project/Double Mulching Technique/DMT.jpg' %}"
-                  alt="Portfolio Item" />
-              </div>
-              <div class="work-caption font-alt">
-                <h3 class="work-title">Double Mulching Technique (DMT)</h3>
-                <div class="work-descr">SMART Hybrid Rice Production Projects</div>
-              </div>
-            </a></li>
           <li class="work-item livelihood"><a href="{% url 'women'%}">
               <div class="work-image"><img
                   src="{% static 'images/assets/kabuhayan/Livelihood_Projects/Empowering Women through Science and Technology/Fish Processing-0.PNG' %}"
@@ -134,16 +197,6 @@
               <div class="work-caption font-alt">
                 <h3 class="work-title">Empowering Women through Science and Technology</h3>
                 <div class="work-descr">Livelihood Projects</div>
-              </div>
-            </a></li>
-          <li class="work-item rice-production"><a href="{% url 'transplant'%}">
-              <div class="work-image"><img
-                  src="{% static 'images/assets/kabuhayan/SMART_Hybrid_Rice_Production_Project/Tranplanting/transplanter.jpg' %}"
-                  alt="Portfolio Item" />
-              </div>
-              <div class="work-caption font-alt">
-                <h3 class="work-title">Mechanical Rice Tranplanting Technology</h3>
-                <div class="work-descr">SMART Hybrid Rice Production Projects</div>
               </div>
             </a></li>
           <li class="work-item hydroponics"><a href="{% url 'hydro'%}">
@@ -184,16 +237,6 @@
                 <h3 class="work-title">Expanded Implementation CEST in Pantabangan, Nueva Ecija: Process and Product
                   Improvement of Cashew Products of the Nagkakaisang Kababaihan ng Conversion</h3>
                 <div class="work-descr">Livelihood Projects</div>
-              </div>
-            </a></li>
-          <li class="work-item rice-production"><a href="{% url 'carra'%}">
-              <div class="work-image"><img
-                  src="{% static 'images/assets/kabuhayan/SMART_Hybrid_Rice_Production_Project/Carrageenan/Carrageenan.JPG' %}"
-                  alt="Portfolio Item" />
-              </div>
-              <div class="work-caption font-alt">
-                <h3 class="work-title">Carrageenan Plan Growth Promoter Technology</h3>
-                <div class="work-descr">SMART Hybrid Rice Production Projects</div>
               </div>
             </a></li>
           <li class="work-item livelihood"><a href="{% url 'floridablanca'%}">
@@ -238,90 +281,13 @@
             </a></li>
         </ul>
       </section>
-      <br />
-      <section class="module bg-dark-60 parallax-bg"
-        data-background="https://media.giphy.com/media/3oKIPEqDGUULpEU0aQ/giphy.gif">
-      </section>
-      
+      <br />   
       <section class="module bg-dark-60 parallax-bg"
         data-background="https://media.giphy.com/media/pfPA6Bp9EhLji/giphy.gif">
       </section>
-      <section class="module container">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-6 col-sm-offset-3">
-              <h2 class="module-title font-alt">FEATURED ARTICLES</h2>
-            </div>
-          </div>
-        </div>
-        <ul class="works-grid works-grid-masonry works-hover-w works-grid-4">
-          <li class="work-item"><a href="{% url 'article1' %}">
-              <div class="work-image"><img
-                  src="{% static 'images/assets/kabuhayan/featured articles/1. DOST Provides Transplanters to Rice Farmers in Central Luzon/images/image2.png' %}"
-                  alt="Portfolio Item" />
-              </div>
-              <div class="work-caption font-alt">
-                <h3 class="work-title">DOST Provides Transplanters to Rice Farmers in Central Luzon</h3>
-              </div>
-            </a></li>
-          <li class="work-item"><a href="{% url 'article2' %}">
-              <div class="work-image"><img
-                  src="{% static 'images/assets/kabuhayan/Solar_Powered_Pump/81309393_467813730782018_3243659245828177920_n (2).png' %}"
-                  alt="Portfolio Item" />
-              </div>
-              <div class="work-caption font-alt">
-                <h3 class="work-title">Improvement of Irrigation Practice through Solar Powered Pump</h3>
-              </div>
-            </a></li>
-          <li class="work-item"><a href="{% url 'article3' %}">
-              <div class="work-image"><img
-                  src="{% static 'images/assets/kabuhayan/featured articles/3. DOST Awards Villae-Type Rice Mills to CEST Communities in Central Luzon/images/image1.png' %}"
-                  alt="Portfolio Item" />
-              </div>
-              <div class="work-caption font-alt">
-                <h3 class="work-title">Expanded Implementation CEST in Pantabangan, Nueva Ecija: Process and Product
-                  Improvement of Cashew Products of the Nagkakaisang Kababaihan ng Conversion</h3>
-              </div>
-            </a></li>
-          <li class="work-item"><a href="{% url 'article4' %}">
-              <div class="work-image"><img
-                  src="{% static 'images/assets/kabuhayan/featured articles/4. Abelling IP Tribe in Tarlac Gets DOST Assistance/images/image1.png' %}"
-                  alt="Portfolio Item" />
-              </div>
-              <div class="work-caption font-alt">
-                <h3 class="work-title">Mush-Room for Improvement: Establishment of Mushroom Production for the
-                  livelihood of the Indigenous People of Bangkal, Bataan</h3>
-              </div>
-            </a></li>
-          <li class="work-item"><a href="{% url 'article5' %}">
-              <div class="work-image"><img
-                  src="{% static 'images/assets/kabuhayan/featured articles/5. DOST-III PROVIDES LIVELIHOOD EQUIPMENT IN BOCAUE, BULACAN/images/image1.png' %}"
-                  alt="Portfolio Item" />
-              </div>
-              <div class="work-caption font-alt">
-                <h3 class="work-title">Carrageenan Plan Growth Promoter Technology</h3>
-              </div>
-            </a></li>
-          <li class="work-item"><a href="{% url 'article6' %}">
-              <div class="work-image"><img
-                  src="{% static 'images/assets/kabuhayan/featured articles/6. DOST III PROVIDES LIVELIHOOD EQUIPMENT TO ECEST BENEFICIARIES IN DINGALAN/images/image1.png' %}"
-                  alt="Portfolio Item" />
-              </div>
-              <div class="work-caption font-alt">
-                <h3 class="work-title">S&T driven livelihood towards empowerment of Abelling Tribe</h3>
-              </div>
-            </a></li>
-          <li class="work-item"><a href="{% url 'article7' %}">
-              <div class="work-image"><img
-                  src="{% static 'images/assets/kabuhayan/featured articles/7. ECEST INTERVENTIONS TO EMPOWER COMMUNITIES IN SAN FELIPE, ZAMBALES/images/image1.png' %}"
-                  alt="Portfolio Item" />
-              </div>
-              <div class="work-caption font-alt">
-                <h3 class="work-title">Samahang Zambaleña Sews Their Way to Success</h3>
-              </div>
-            </a></li>
-        </ul>
-      </section>
+
+      {% include 'main/pages/exhibit/pages/kabuhayan/widgets/RelatedArticles.html' %}
+
       <section class="module-small parallax-bg bg-dark-60"
         data-background="https://media.giphy.com/media/YmcIK6A7Y29UPxM1Ze/giphy.gif">
         <div class="container">
