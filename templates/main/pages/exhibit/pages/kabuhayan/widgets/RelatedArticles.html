@@ -4,12 +4,11 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-6 col-sm-offset-3">
-          <h2 class="module-title font-alt">OTHER MAJOR TECHNOLOGIES PROVIDED TO THE COMMUNITIES</h2>
+          <h2 class="module-title font-alt"> MAJOR TECHNOLOGIES PROVIDED TO THE COMMUNITIES</h2>
         </div>
       </div>
     </div>
     <ul class="works-grid works-grid-masonry works-hover-w works-grid-3">
-      <!-- article 1 -->
       <li class="work-item"><a href="{% url 'article1' %}">
           <div class="work-image"><img
               src="{% static 'images/assets/kabuhayan/featured articles/1. DOST Provides Transplanters to Rice Farmers in Central Luzon/images/image2.png' %}"
@@ -19,17 +18,33 @@
             <h3 class="work-title">Manual Pull-type Transplanters</h3>
           </div>
         </a></li>
-      <!-- article 2 -->
       <li class="work-item"><a href="{% url 'article2' %}">
           <div class="work-image"><img
-              src="{% static 'images/assets/kabuhayan/Solar_Powered_Pump/81309393_467813730782018_3243659245828177920_n (2).png' %}"
+              src="{% static 'images/assets/kabuhayan/featured articles/2. DOST Provides Farmers and Fisherfols Portable Drying Equipment/images/image1.png' %}"
               alt="Portfolio Item" />
           </div>
           <div class="work-caption font-alt">
             <h3 class="work-title">PORTABLE DRYING EQUIPMENT</h3>
           </div>
         </a></li>
-      <!-- article 3 -->
+        <li class="work-item"><a href="{% url 'pump' %}">
+          <div class="work-image"><img
+              src="{% static 'images/assets/kabuhayan/Solar_Powered_Pump/81309393_467813730782018_3243659245828177920_n (2).png' %}"
+              alt="Portfolio Item" />
+          </div>
+          <div class="work-caption font-alt">
+            <h3 class="work-title">Solar Powered Pump</h3>
+          </div>
+        </a></li>
+        <li class="work-item"><a href="{% url 'hydro' %}">
+          <div class="work-image"><img
+              src="{% static 'images/assets/kabuhayan/High Value Crops Production through Hydroponics Technology/64702812_1376715222467172_1655448234610393088_n.png' %}"
+              alt="Portfolio Item" />
+          </div>
+          <div class="work-caption font-alt">
+            <h3 class="work-title">Hydroponics</h3>
+          </div>
+        </a></li>
       <li class="work-item"><a href="{% url 'article3' %}">
           <div class="work-image"><img
               src="{% static 'images/assets/kabuhayan/featured articles/3. DOST Awards Villae-Type Rice Mills to CEST Communities in Central Luzon/images/image1.png' %}"

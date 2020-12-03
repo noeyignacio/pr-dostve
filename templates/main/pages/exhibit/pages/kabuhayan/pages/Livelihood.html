@@ -1,0 +1,62 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+  <!-- Document Title -->
+  <title>DOST R3 | Virtual Exhibit</title>
+
+  {% include 'includes/exhibit/favi.html' %}
+  {% include 'includes/exhibit/css.html' %}
+
+
+</head>
+
+<body data-spy="scroll" data-target=".onpage-navigation" data-offset="60">
+  <main>
+    <div class="page-loader">
+      <div class="loader">Loading...</div>
+    </div>
+
+    {% include 'main/components/navs/NavExhibit.html' %}
+    
+    <div class="main">
+        <section class="module bg-dark-60 portfolio-page-header"
+                data-background="https://newtodesign.com/wp-content/uploads/2018/09/Anime-js-Color-Changing.gif">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 col-sm-offset-3">
+                            <h2 class="module-title font-alt">Livelihood <br>Projects</h2>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="module">
+                <div class="container">
+                  <p style="text-align: justify;">
+                    One of the entry points of CEST is the economic development and livelihood opportunities. This entry point focused on creating livelihood projects appropriate for the benefit of the community members. Product quality and process improvement to existing production, community livelihood and education projects, provision of livelihood possibilities, and establishment of livelihood projects to communities. <br><br>
+                    These livelihood projects aim to establish rural-based enterprises with infusion of appropriate technologies to improve/develop products/services and/or operations. Through these assistance, the products produced by the community can penetrate new markets and will provide additional income for the community. These will also create employment opportunities for the people in the countryside.
+                  </p>
+                </div>
+            </section>
+        </div>
+      </div>
+      
+      {% include 'main/pages/exhibit/pages/kabuhayan/widgets/RelatedProjects.html' %}
+       
+      {% include 'main/components/footers/modules/FooterModule_1.html' %}
+      {% include 'main/components/footers/Footer.html' %}
+
+    </div>
+  </main>
+
+  {% include 'includes/exhibit/js.html' %}
+
+</body>
+
+</html>

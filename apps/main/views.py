@@ -457,6 +457,27 @@ def story(request):
     )
 
 
+def smart(request):
+    return render(
+        request,
+        "main/pages/exhibit/pages/kabuhayan/pages/SmartHybrid.html",
+    )
+
+
+def live(request):
+    return render(
+        request,
+        "main/pages/exhibit/pages/kabuhayan/pages/Livelihood.html",
+    )
+
+
+def tech(request):
+    return render(
+        request,
+        "main/pages/exhibit/pages/kabuhayan/pages/Tech.html",
+    )
+
+
 # METHODS
 def registerAttendance(request):
 
