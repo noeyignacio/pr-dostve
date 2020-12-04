@@ -383,7 +383,7 @@ def article7(request):
 def rxbox(request):
     return render(
         request,
-        "main/pages/exhibit/pages/kalusugan/pages/RxBoxPage.html",
+        "main/pages/exhibit/pages/kalusugan/pages/RxboxPage.html",
     )
 
 
