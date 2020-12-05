@@ -478,6 +478,97 @@ def tech(request):
     )
 
 
+def amrel(request):
+    return render(
+        request,
+        "main/pages/exhibit/pages/kinabukasan/AdditiveManufacturing.html",
+    )
+
+
+def automated(request):
+    return render(
+        request,
+        "main/pages/exhibit/pages/kinabukasan/AutomatedGuide.html",
+    )
+
+
+def adoption(request):
+    return render(
+        request,
+        "main/pages/exhibit/pages/kinabukasan/Adoption.html",
+    )
+
+
+def innovative(request):
+    return render(
+        request,
+        "main/pages/exhibit/pages/kinabukasan/Innovative.html",
+    )
+
+
+def food(request):
+    return render(
+        request,
+        "main/pages/exhibit/pages/kinabukasan/FoodInnovation.html",
+    )
+
+
+def agri(request):
+    return render(
+        request,
+        "main/pages/exhibit/pages/kinabukasan/ImprovingAgricultural.html",
+    )
+
+
+def tbi(request):
+    return render(
+        request,
+        "main/pages/exhibit/pages/kinabukasan/TBI.html",
+    )
+
+
+def tamarind(request):
+    return render(
+        request,
+        "main/pages/exhibit/pages/kinabukasan/Tamarind.html",
+    )
+
+
+def sweet(request):
+    return render(
+        request,
+        "main/pages/exhibit/pages/kinabukasan/SweetPotato.html",
+    )
+
+
+def mist(request):
+    return render(
+        request,
+        "main/pages/exhibit/pages/kinabukasan/Mist.html",
+    )
+
+
+def safety(request):
+    return render(
+        request,
+        "main/pages/exhibit/pages/kinabukasan/FoodSafety.html",
+    )
+
+
+def development(request):
+    return render(
+        request,
+        "main/pages/exhibit/pages/kinabukasan/DesignAndDevelopment.html",
+    )
+
+
+def support(request):
+    return render(
+        request,
+        "main/pages/exhibit/pages/kinabukasan/Support.html",
+    )
+
+
 # METHODS
 def registerAttendance(request):
 
