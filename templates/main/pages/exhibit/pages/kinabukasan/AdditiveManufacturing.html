@@ -1,0 +1,205 @@
+{% load static %}
+
+<!DOCTYPE html>
+
+<html lang="en-US" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Document Title -->
+        <title>DOST R3 | Virtual Exhibit</title>
+
+        {% include 'includes/exhibit/favi.html' %}
+        {% include 'includes/exhibit/css.html' %}
+        
+
+    </head>
+    <body>
+
+    <main>
+        <div class="page-loader">
+            <div class="loader">Loading...</div>
+        </div>
+
+        {% include 'main/components/navs/NavExhibit.html' %}
+
+        <div class="main">
+            <section class="module bg-dark-60 blog-page-header" data-background="https://media.giphy.com/media/t4DcI9P3dNVoA/giphy.gif">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-sm-6 col-sm-offset-3">
+                      <h2 class="module-title font-alt">ADDITIVE MANUFACTURING RESEARCH LABORATORY (AMREL)</h2>
+                      <div class="module-subtitle font-serif">Kinabukasan</div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section class="module">
+                <div class="container">
+                  <p style="text-align: justify;">
+                    AMREL is the first additive manufacturing research laboratory in the Philippines and since July 2, 2018, AMREL has been utilized to conduct research for undergraduate and graduate theses. Prof. John Ryan Dizon, project leader of AMREL, proudly shared these studies on the applications of 3D printing for defense applications and health care. He was also able to do technology demonstration with junior high school students of the Bataan National High School who then successfully created a 3D printed drone.
+                    <br>
+                  </p>
+                  <section class="module bg-dark-60" data-background="{% static 'images/assets/kinabukasan/bg/R&D.PNG' %}" id="portfolio">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <div class="video-box">
+                            <div class="video-box-icon"><a class="video-pop-up"
+                                href="https://www.youtube.com/watch?v=MoW145qQpbg"><span
+                                  class="icon-video"></span></a></div>
+                            <div class="video-title font-alt">Additive Manufacturing Research Laboratory (AMReL)</div>
+                            <div class="video-subtitle font-alt">Click to watch.</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                  <br />
+                  <p style="text-align: justify;">
+                    “We are launching two centers for 3D printing research and development and we, in DOST-PCIEERD, are privileged to be part of this game-changing initiative. The additive manufacturing research industry will open the doors to previously unimaginable possibilities, and every single 3D-printed product will unfold more innovations. Soon, how we create things will be different from what we’re used to,”
+                        <br>
+                        -Dr. Enrico Paringit | DOST-PCIEERD Executive Director
+                  </p>
+                </div>
+              </section>
+              <section class="module">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <ul class="filter font-alt" id="filters">
+                        <li><a class="current wow fadeInUp" href="#" data-filter="*">Equipments</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <ul class="works-grid works-grid-masonry works-hover-w works-grid-4" id="works-grid">
+                    <li class="work-item"><a href="{% url 'filamentWinder' %}">
+                        <div class="work-image"><img src="{% static 'images/assets/kinabukasan/Equipment for AMRel Cropped/3ROIN WINDERFILAMENT.jpg' %}" alt="Portfolio Item"/></div>
+                        <div class="work-caption font-alt">
+                          <h3 class="work-title">Filament Winder</h3>
+                          <div class="work-descr">(Click for more info)</div>
+      
+                        </div></a>
+                    </li>
+                    <li class="work-item"><a href="{% url 'microwaveFurnace' %}">
+                      <div class="work-image"><img src="{% static 'images/assets/kinabukasan/Equipment for AMRel Cropped/MICROWAVE FUNRACE!.jpg' %}" alt="Portfolio Item"/></div>
+                      <div class="work-caption font-alt">
+                        <h3 class="work-title">MICROWAVE FUNRACE</h3>
+                        <div class="work-descr">(Click for more info)</div>
+                      </div></a>
+                    </li>
+                    <li class="work-item"><a href="{% url 'creatorPro' %}">
+                      <div class="work-image"><img src="{% static 'images/assets/kinabukasan/Equipment for AMRel Cropped/creatorflashj-5_37182756.jpg' %}" alt="Portfolio Item"/></div>
+                      <div class="work-caption font-alt">
+                        <h3 class="work-title">Creator Pro Flash Forge</h3>
+                        <div class="work-descr">(Click for more info)</div>
+                      </div></a>
+                    </li>
+                    <li class="work-item"><a href="{% url 'formLab' %}">
+                      <div class="work-image"><img src="{% static 'images/assets/kinabukasan/Equipment for AMRel Cropped/form-5c-2069669_37182756.jpg' %}" alt="Portfolio Item"/></div>
+                      <div class="work-caption font-alt">
+                        <h3 class="work-title">Form Lab Form 2</h3>
+                        <div class="work-descr">(Click for more info)</div>
+                      </div></a>
+                    </li>
+                    <li class="work-item"><a href="{% url 'injectionModeling' %}">
+                      <div class="work-image"><img src="{% static 'images/assets/kinabukasan/Equipment for AMRel Cropped/hr0in Injecthorsadsa.jpg' %}" alt="Portfolio Item"/></div>
+                      <div class="work-caption font-alt">
+                        <h3 class="work-title">Injection Modeling Machine</h3>
+                        <div class="work-descr">(Click for more info)</div>
+                      </div></a>
+                    </li>
+                    <li class="work-item"><a href="{% url 'impactTester' %}">
+                      <div class="work-image"><img src="{% static 'images/assets/kinabukasan/Equipment for AMRel Cropped/impact3st3st3r_37182756.jpg' %}" alt="Portfolio Item"/></div>
+                      <div class="work-caption font-alt">
+                        <h3 class="work-title">Impact Tester</h3>
+                        <div class="work-descr">(Click for more info)</div>
+                      </div></a>
+                    </li>
+                    <li class="work-item"><a href="{% url 'microscope' %}">
+                      <div class="work-image"><img src="{% static 'images/assets/kinabukasan/Equipment for AMRel Cropped/microtelescope_37182756.jpg' %}" alt="Portfolio Item"/></div>
+                      <div class="work-caption font-alt">
+                        <h3 class="work-title">Microscope</h3>
+                        <div class="work-descr">(Click for more info)</div>
+                      </div></a>
+                    </li>
+                    <li class="work-item"><a href="{% url 'shimadzuAgs' %}">
+                      <div class="work-image"><img src="{% static 'images/assets/kinabukasan/Equipment for AMRel Cropped/shimadzuxxx_37182756.jpg' %}" alt="Portfolio Item"/></div>
+                      <div class="work-caption font-alt">
+                        <h3 class="work-title">Shimadzu Ags-x Series</h3>
+                        <div class="work-descr">(Click for more info)</div>
+                      </div></a>
+                    </li>
+                    <li class="work-item"><a href="{% url 'shimadzuRockwell' %}">
+                      <div class="work-image"><img src="{% static 'images/assets/kinabukasan/Equipment for AMRel Cropped/shimadzuxxxrock_37182756.jpg' %}" alt="Portfolio Item"/></div>
+                      <div class="work-caption font-alt">
+                        <h3 class="work-title">Shimadzu Rockwell Type Hardness Tester</h3>
+                        <div class="work-descr">(Click for more info)</div>
+                      </div></a>
+                    </li>
+                    <li class="work-item"><a href="{% url 'shining3d' %}">
+                      <div class="work-image"><img src="{% static 'images/assets/kinabukasan/Equipment for AMRel Cropped/SHINING GADGAD.jpg' %}" alt="Portfolio Item"/></div>
+                      <div class="work-caption font-alt">
+                        <h3 class="work-title">Shining 3D EinScan-SE</h3>
+                        <div class="work-descr">(Click for more info)</div>
+                      </div></a>
+                    </li>
+                    <li class="work-item"><a href="{% url 'filamentExtruder' %}">
+                      <div class="work-image"><img src="{% static 'images/assets/kinabukasan/Equipment for AMRel Cropped/t3st3s.jpg' %}" alt="Portfolio Item"/></div>
+                      <div class="work-caption font-alt">
+                        <h3 class="work-title">Filament Extruder</h3>
+                        <div class="work-descr">(Click for more info)</div>
+                      </div></a>
+                    </li>
+                    <li class="work-item"><a href="{% url 'uvCuring' %}">
+                      <div class="work-image"><img src="{% static 'images/assets/kinabukasan/Equipment for AMRel Cropped/ultra-5c-20viol_37182756.jpg' %}" alt="Portfolio Item"/></div>
+                      <div class="work-caption font-alt">
+                        <h3 class="work-title">UV Curing Apparatus</h3>
+                        <div class="work-descr">(Click for more info)</div>
+                      </div></a>
+                    </li>
+                    <li class="work-item"><a href="{% url 'sonicBath' %}">
+                      <div class="work-image"><img src="{% static 'images/assets/kinabukasan/Equipment for AMRel Cropped/ultra-5c-20sani_37182756.jpg' %}" alt="Portfolio Item"/></div>
+                      <div class="work-caption font-alt">
+                        <h3 class="work-title">Sonic Bath</h3>
+                        <div class="work-descr">(Click for more info)</div>
+                      </div></a>
+                    </li>
+                    <li class="work-item"><a href="{% url 'ultimaker' %}">
+                      <div class="work-image"><img src="{% static 'images/assets/kinabukasan/Equipment for AMRel Cropped/ultramakererr-5_37182756.jpg' %}" alt="Portfolio Item"/></div>
+                      <div class="work-caption font-alt">
+                        <h3 class="work-title">Ultimaker 3 Extended</h3>
+                        <div class="work-descr">(Click for more info)</div>
+                      </div></a>
+                    </li>
+                    <li class="work-item"><a href="{% url 'viscometer' %}">
+                      <div class="work-image"><img src="{% static 'images/assets/kinabukasan/Equipment for AMRel Cropped/wixcometer-5c_37182756.jpg' %}" alt="Portfolio Item"/></div>
+                      <div class="work-caption font-alt">
+                        <h3 class="work-title">Viscometer</h3>
+                        <div class="work-descr">(Click for more info)</div>
+                      </div></a>
+                    </li>
+                    <li class="work-item"><a href="{% url 'zortrax' %}">
+                      <div class="work-image"><img src="{% static 'images/assets/kinabukasan/Equipment for AMRel Cropped/zotraxxxxxxxx_37182756.jpg' %}" alt="Portfolio Item"/></div>
+                      <div class="work-caption font-alt">
+                        <h3 class="work-title">Zortrax M200</h3>
+                        <div class="work-descr">(Click for more info)</div>
+                      </div></a>
+                    </li>
+                  </ul>
+                </div>
+              </section>
+
+
+            {% include 'main/components/footers/modules/FooterModule_1.html' %}
+            {% include 'main/components/footers/Footer.html' %}
+
+        </div>
+    </main>
+
+
+    {% include 'includes/exhibit/js.html' %}    
+    </body>
+</html>
