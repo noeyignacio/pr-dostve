@@ -569,6 +569,27 @@ def support(request):
     )
 
 
+def kinabukasan(request):
+    return render(
+        request,
+        "main/pages/exhibit/pages/kinabukasan/KinabuhasanPage.html",
+    )
+
+
+def starbooks(request):
+    return render(
+        request,
+        "main/pages/exhibit/pages/kinabukasan/StarBooks.html",
+    )
+
+
+def far(request):
+    return render(
+        request,
+        "main/pages/exhibit/pages/kinabukasan/FAR.html",
+    )
+
+
 # METHODS
 def registerAttendance(request):
 

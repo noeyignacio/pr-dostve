@@ -1,0 +1,129 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+    <!-- Document Title -->
+    <title>DOST R3 | Virtual Exhibit</title>
+
+    {% include 'includes/exhibit/favi.html' %}
+    {% include 'includes/exhibit/css.html' %}
+
+  </head>
+  <body data-spy="scroll" data-target=".onpage-navigation" data-offset="60">
+    <main>
+      <div class="page-loader">
+        <div class="loader">Loading...</div>
+      </div>
+
+      {% include 'main/components/navs/NavExhibit.html' %}
+
+
+      <section class="home-section home-parallax home-fade bg-dark-30" id="home" data-background="https://media.giphy.com/media/5ba7Il0evF1LO/giphy.gif">
+        <div class="titan-caption">
+          <div class="caption-content">
+            <div class="font-alt mb-40 titan-title-size-4">Kinabukasan</div>
+          </div>
+        </div>
+      </section>
+      <div class="main">
+        <section class="module pb-0">
+            <ul class="works-grid works-grid-masonry works-grid-2 works-hover-w" id="works-grid">
+              <li class="work-item"><a href="{% url 'amrel' %}">
+                  <div class="work-image"><img src="{% static 'images/assets/kinabukasan/bg/R&D.PNG' %}" alt="Item" style="opacity: .7"/></div>
+                  <div class="work-caption font-alt">
+                    <h3 class="work-title">ADDITIVE MANUFACTURING RESEARCH LABORATORY (AMREL)</h3>
+                  </div></a></li>
+              <li class="work-item"><a href="{% url 'automated' %}">
+                  <div class="work-image"><img src="{% static 'images/assets/kinabukasan/train/img-9.png' %}" alt="Item" style="opacity: .7"/></div>
+                  <div class="work-caption font-alt">
+                    <h3 class="work-title">AUTOMATED GUIDE-WAY TRANSIT</h3>
+                  </div></a></li>
+              <li class="work-item"><a href="{% url 'adoption' %}">
+                  <div class="work-image"><img src="{% static 'images/assets/kinabukasan/Balanga City National High School/image2.png' %}" alt="Item" style="opacity: .7"/></div>
+                  <div class="work-caption font-alt">
+                    ADOPTION OF DOST-SEI DESIGNED 21ST CENTURY CLASSROOM FOR BALANGA CITY NATIONAL SCIENCE HIGH SCHOOL
+                  </div></a></li>
+              <li class="work-item"><a href="{% url 'innovative' %}">
+                  <div class="work-image"><img src="{% static 'images/assets/kinabukasan/bg/iLAB.PNG' %}" alt="Item"/></div>
+                  <div class="work-caption font-alt">
+                    <h3 class="work-title">INNOVATIVE TISSUE CULTURE LABORATORY(ILAB)</h3>
+                  </div></a></li>
+              <li class="work-item"><a href="{% url 'food' %}">
+                  <div class="work-image"><img src="{% static 'images/assets/kinabukasan/intro/spice-poster.jpg' %}" alt="Item" style="opacity: .7"/></div>
+                  <div class="work-caption font-alt">
+                    <h3 class="work-title">FOOD INNOVATION CENTER</h3>
+                  </div></a></li>
+              <li class="work-item"><a href="{% url 'agri' %}">
+                  <div class="work-image"><img src="{% static 'images/assets/kinabukasan/pcaarrd-vid-bg/vid1-bg.png' %}" alt="Item" style="opacity: .7"/></div>
+                  <div class="work-caption font-alt">
+                    <h3 class="work-title">IMPROVING AGRICULTURAL PRODUCTIVITY AND SUSTAINABILITY OF THE BUSTOS AND PULILAN COMMUNITIES THROUGH SMART S&T-BASED TECHNOLOGIES</h3>
+                  </div></a></li>
+              <li class="work-item"><a href="{% url 'tbi' %}">
+                  <div class="work-image"><img src="{% static 'images/assets/kinabukasan/bg/tbi.PNG' %}" alt="Item" style="opacity: .7"/></div>
+                  <div class="work-caption font-alt">
+                    <h3 class="work-title">ENCEPHALON HOLY ANGEL UNIVERSITY’S TECHNOLOGY BUSINESS INCUBATOR(TBI)</h3>
+                  </div></a></li>
+            <li class="work-item"><a href="{% url 'tamarind' %}">
+                  <div class="work-image"><img src="{% static 'images/assets/kinabukasan/bg/psau.PNG' %}" alt="Item" style="opacity: .7"/></div>
+                  <div class="work-caption font-alt">
+                    <h3 class="work-title">PSAU Tamarind Center</h3>
+                  </div></a></li>
+            <li class="work-item"><a href="{% url 'sweet' %}">
+                  <div class="work-image"><img src="{% static 'images/assets/kinabukasan/bg/sweet.PNG' %}" alt="Item" style="opacity: .7"/></div>
+                  <div class="work-caption font-alt">
+                    <h3 class="work-title">SWEET POTATO R&D CENTER</h3>
+                  </div></a></li>
+            <li class="work-item"><a href="{% url 'mist' %}">
+                  <div class="work-image"><img src="{% static 'images/assets/kinabukasan/bg/mist.PNG' %}" alt="Item" style="opacity: .7"/></div>
+                  <div class="work-caption font-alt">
+                    <h3 class="work-title">ROJECT MIST (MUNICIPAL INNOVATION THROUGH SCIENCE AND TECHNOLOGY)</h3>
+                  </div></a></li>
+            <li class="work-item"><a href="{% url 'safety' %}">
+                  <div class="work-image"><img src="{% static 'images/assets/kinabukasan/bg/food-safety.PNG' %}" alt="Item" style="opacity: .7"/></div>
+                  <div class="work-caption font-alt">
+                    <h3 class="work-title">FOOD SAFETY CONTROL SYSTEM FOR STREET FOOD AND AMBULANT VENDORS</h3>
+                  </div></a></li>
+            <li class="work-item"><a href="{% url 'development' %}">
+                  <div class="work-image"><img src="{% static 'images/assets/kinabukasan/bg/design.PNG' %}" alt="Item" style="opacity: .7"/></div>
+                  <div class="work-caption font-alt">
+                    <h3 class="work-title">DESIGN AND DEVELOPMENT OF TYPHOON RESILIENT VERTICAL INDOOR FARMING SYSTEM</h3>
+                  </div></a></li>
+            <li class="work-item"><a href="{% url 'support' %}">
+                  <div class="work-image"><img src="{% static 'images/assets/kinabukasan/bg/psau.PNG' %}" alt="Item" style="opacity: .7"/></div>
+                  <div class="work-caption font-alt">
+                    <h3 class="work-title">SUPPORT TO THE CONTINUOUS OPERATION OF THE NEUST METAL INNOVATION CENTER</h3>
+                  </div></a></li>
+            <li class="work-item"><a href="{% url 'starbooks' %}">
+                  <div class="work-image"><img src="{% static 'images/assets/kinabukasan/STARBOOKS/01.png' %}" alt="Item" style="opacity: .7"/></div>
+                  <div class="work-caption font-alt">
+                    <h3 class="work-title">STARBOOKS</h3>
+                  </div></a></li>
+            <li class="work-item"><a href="{% url 'far' %}">
+                <div class="work-image"><img src="{% static 'images/assets/kinabukasan/STARBOOKS/far-uvc-sc.png' %}" alt="Item" style="opacity: .7"/></div>
+                <div class="work-caption font-alt">
+                    <h3 class="work-title">FAR-UVC GATE</h3>
+                </div></a></li>
+            </ul>
+          </section>
+          <br>
+        <section class="module bg-dark-60 pt-0 pb-0 parallax-bg testimonial" data-background="https://media.giphy.com/media/l3V0iU0s9WkauP5N6/giphy.gif">
+            <div class="testimonials-slider pt-140 pb-140">
+            </div>
+        </section>
+
+
+        {% include 'main/components/footers/modules/FooterModule_1.html' %}
+        {% include 'main/components/footers/Footer.html' %}
+
+      </div>
+    </main>
+
+    {% include 'includes/exhibit/js.html' %}
+    
+  </body>
+</html>

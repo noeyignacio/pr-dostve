@@ -86,6 +86,26 @@ urlpatterns = [
         views.support,
         name="support",
     ),
+    path(
+        "exhibit/kinabukasan/support",
+        views.support,
+        name="support",
+    ),
+    path(
+        "exhibit/kinabukasan/",
+        views.kinabukasan,
+        name="kinabukasan",
+    ),
+    path(
+        "exhibit/kinabukasan/starbooks",
+        views.starbooks,
+        name="starbooks",
+    ),
+    path(
+        "exhibit/kinabukasan/far-uvcgate",
+        views.far,
+        name="far",
+    ),
     # KAAYUSAN
     path("exhibit/kaayusan/duck", views.duck, name="duck"),
     path("exhibit/kaayusan/jauntimeclock", views.clock, name="clock"),
