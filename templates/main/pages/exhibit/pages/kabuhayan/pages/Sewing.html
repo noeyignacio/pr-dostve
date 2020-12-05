@@ -4,29 +4,29 @@
 <html lang="en-US" dir="ltr">
 
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-  <!-- Document Title -->
-  <title>DOST R3 | Virtual Exhibit</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  {% include 'includes/exhibit/favi.html' %}
-  {% include 'includes/exhibit/css.html' %}
+    <!-- Document Title -->
+    <title>DOST R3 | Virtual Exhibit</title>
+
+    {% include 'includes/exhibit/favi.html' %}
+    {% include 'includes/exhibit/css.html' %}
 
 
 </head>
 
 <body data-spy="scroll" data-target=".onpage-navigation" data-offset="60">
-  <main>
-    <div class="page-loader">
-      <div class="loader">Loading...</div>
-    </div>
+    <main>
+        <div class="page-loader">
+            <div class="loader">Loading...</div>
+        </div>
 
-    {% include 'main/components/navs/NavExhibit.html' %}
-    
-    <div class="main">
-        <section class="module bg-dark-60 portfolio-page-header"
+        {% include 'main/components/navs/NavExhibit.html' %}
+
+        <div class="main">
+            <section class="module bg-dark-60 portfolio-page-header"
                 data-background="https://media.giphy.com/media/XyUb48MK5LS1QCylW8/giphy.gif">
                 <div class="container">
                     <div class="row">
@@ -38,63 +38,65 @@
                     </div>
                 </div>
             </section>
-        <section class="module">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6 col-md-8 col-lg-8">
-                        <div class="post-images-slider">
-                            <ul class="slides">
-                                <!-- step 3: change images on slider -->
-                                <li><img class="center-block"
-                                        src="{% static 'images/assets/kabuhayan/Livelihood_Projects/Rekindling the Sewing and Embroidery Industry of Bocaue/123866914_407514630611038_1932040945774633121_n.jpg' %}"
-                                        alt="Slider Image" /></li>
-                                <li><img class="center-block"
-                                        src="{% static 'images/assets/kabuhayan/Livelihood_Projects/Rekindling the Sewing and Embroidery Industry of Bocaue/124078723_1266839526983886_4777515555875712537_n.jpg' %}"
-                                        alt="Slider Image" /></li>
-                                <li><img class="center-block"
-                                        src="{% static 'images/assets/kabuhayan/Livelihood_Projects/Rekindling the Sewing and Embroidery Industry of Bocaue/124539646_673904866648077_1696579769142060750_n.jpg' %}"
-                                        alt="Slider Image" /></li>
-                            </ul>
+            <section class="module">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-8 col-lg-8">
+                            <div class="post-images-slider">
+                                <ul class="slides">
+                                    <!-- step 3: change images on slider -->
+                                    <li><img class="center-block"
+                                            src="{% static 'images/assets/kabuhayan/Livelihood_Projects/Rekindling the Sewing and Embroidery Industry of Bocaue/123866914_407514630611038_1932040945774633121_n.jpg' %}"
+                                            alt="Slider Image" /></li>
+                                    <li><img class="center-block"
+                                            src="{% static 'images/assets/kabuhayan/Livelihood_Projects/Rekindling the Sewing and Embroidery Industry of Bocaue/124078723_1266839526983886_4777515555875712537_n.jpg' %}"
+                                            alt="Slider Image" /></li>
+                                    <li><img class="center-block"
+                                            src="{% static 'images/assets/kabuhayan/Livelihood_Projects/Rekindling the Sewing and Embroidery Industry of Bocaue/124539646_673904866648077_1696579769142060750_n.jpg' %}"
+                                            alt="Slider Image" /></li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-4">
-                        <div class="work-details">
-                            <h5 class="work-details-title font-alt">Project Details</h5>
-                            <!-- step 4: change project details -->
-                            <p>With the help of Mayor Joni Villanueva, a group was identified to rekindle the
-                                weakened industry of sewing and embroidery of Bocaue. Bocaue Rivertown Wonders
-                                Multi-Products Sewers was established in 2017. Their main products are curtain
-                                makers, bedsheet and sofa cover makers, slippers makers, bag makers and designers.
-                                Despite having significant skills in sewing and embroidery, their main problem lies
-                                on the absence of the necessary equipment.<br><br>
+                        <div class="col-sm-6 col-md-4 col-lg-4">
+                            <div class="work-details">
+                                <h5 class="work-details-title font-alt">Project Details</h5>
+                                <!-- step 4: change project details -->
+                                <p>With the help of Mayor Joni Villanueva, a group was identified to rekindle the
+                                    weakened industry of sewing and embroidery of Bocaue. Bocaue Rivertown Wonders
+                                    Multi-Products Sewers was established in 2017. Their main products are curtain,
+                                    bedsheets and sofa cover, slippers, and bags. Despite having significant skills in
+                                    sewing and embroidery, their main problem lies on the absence of the necessary
+                                    equipment.<br><br>
+                                    The DOST through the recommendation of Mayor Joni Villanueva, conducted an initial
+                                    Technology Needs Assessment to identify the needed technology to make their
+                                    production more efficient. The group was given with attachment buttonhole hi-speed
+                                    machine, edging machine, computerized embroidery machine, cutting machine and garter
+                                    machine to upgrade their production. Through this assistance, the sewing and
+                                    embroider industry in Bocaue have shown signs of life and is on its way to revival.
+                                    The Bocaue Rivertown Wonders Multi-Products Sewers also managed to produce an
+                                    estimate of 5,000 pcs of face mask during the pandemic.
 
-                                The DOST through the recommendation of Mayor Joni Villanueva, conducted an initial
-                                Technology Needs Assessment to identify the needed technology to make their
-                                production more efficient. Through this, the sewing and embroider industry in Bocaue
-                                have shown signs of life and is on its way to revival. The Bocaue Rivertown Wonders
-                                Multi-Products Sewers managed to produce an estimate of 5,000 pcs of face mask and
-                                200 pcs of tshirt since the technological assistance was delivered.
-                            </p>
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
 
-        <hr class="divider-w">
-        
-    </div>
-      
-      {% include 'main/pages/exhibit/pages/kabuhayan/widgets/RelatedProjects.html' %}
-       
-      {% include 'main/components/footers/modules/FooterModule_1.html' %}
-      {% include 'main/components/footers/Footer.html' %}
+            <hr class="divider-w">
 
-    </div>
-  </main>
+        </div>
 
-  {% include 'includes/exhibit/js.html' %}
+        {% include 'main/pages/exhibit/pages/kabuhayan/widgets/RelatedProjects.html' %}
+
+        {% include 'main/components/footers/modules/FooterModule_1.html' %}
+        {% include 'main/components/footers/Footer.html' %}
+
+        </div>
+    </main>
+
+    {% include 'includes/exhibit/js.html' %}
 
 </body>
 

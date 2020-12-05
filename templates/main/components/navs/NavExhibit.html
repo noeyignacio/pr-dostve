@@ -38,7 +38,16 @@
               </li>
               <li class="dropdown"><a class="dropdown-toggle"  data-toggle="dropdown" style="cursor: pointer"><i class="fas fa-store-alt"></i>&nbsp;Kabuhayan</a>
                 <ul class="dropdown-menu">
-                  <li><a href="{% url 'setup' %}" style="cursor: pointer"><i class="fas fa-tools"></i>&nbsp;SETUP 2.0</a></li>
+                  <!-- <li><a href="{% url 'setup' %}" style="cursor: pointer"><i class="fas fa-tools"></i>&nbsp;SETUP 2.0</a></li> -->
+                  <!-- edited by adiadi -->
+                  <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="{% url 'setup' %}" style="cursor: pointer"><i class="fas fa-tools"></i>&nbsp;SETUP 2.0</a>
+                    <ul class="dropdown-menu">
+                      <li class="dropdown"><a href="{% url 'products'%}"><i class="fab fa-product-hunt"></i>&nbsp;SETUP 2.0 PRODUCTS</a></li>
+                      <li class="dropdown"><a href="{% url 'stories' %}"><i class="fas fa-thumbs-up"></i>&nbsp;Success Stories</a></li>
+                      <li class="dropdown"><a href="https://onestore.ph/" target="_blank"><i class="fas fa-store-alt"></i>&nbsp;DOST ONESTORE</a></li>
+                      <li class="dropdown"><a href="https://oneexpert.gov.ph/" target="_blank"><i class="fas fa-store-alt"></i>&nbsp;DOST ONEEXPERT</a></li>
+                    </ul>
+                  </li>
                   <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="{% url 'ecest' %}" style="cursor: pointer"><i class="fas fa-cogs"></i>&nbsp;E C E S T</a>
                     <ul class="dropdown-menu">
                       <li class="dropdown"><a href="{% url 'smart' %}"><i class="fab fa-pagelines"></i>&nbsp;SMART Hybrid <br> Rice Production</a>
@@ -47,7 +56,7 @@
                       </li>
                       <li class="dropdown"><a href="{% url 'tech' %}"><i class="fas fa-project-diagram"></i>&nbsp;Other Major <br>Technologies</a>
                       </li>
-                      <li class="dropdown"><a href="{% url 'story' %}"><i class="fas fa-star"></i>&nbsp;Success Story</a></li>
+                      <li class="dropdown"><a href="{% url 'story' %}"><i class="fas fa-star"></i>&nbsp;2020 Regional Best CEST <br> Community</a></li>
                     </ul>
                   </li>
                   <li><a href="{% url 'sntservice' %}"><i class="fab fa-buffer"></i>&nbsp;S&T Services</a></li>
@@ -55,12 +64,13 @@
               </li>
             </ul>
           </li>
-          <li class="dropdown"><a class="dropdown-toggle" href="{% url 'exhibit'%}" data-toggle="dropdown">Gallery</a>
+          <!-- edited by adiadi -->
+          <!-- <li class="dropdown"><a class="dropdown-toggle" href="{% url 'exhibit'%}" data-toggle="dropdown">Gallery</a>
             <ul class="dropdown-menu">
               <li class="dropdown"><a href="{% url 'products'%}"><i class="fab fa-product-hunt"></i>&nbsp;SETUP 2.0 PRODUCTS</a></li>
               <li class="dropdown"><a href="{% url 'stories' %}"><i class="fas fa-thumbs-up"></i>&nbsp;Success Stories</a></li>
             </ul>
-          </li>
+          </li> -->
           <li class="dropdown"><a class="dropdown-toggle" href="{% url 'exhibit'%}" data-toggle="dropdown">Programs</a>
             <ul class="dropdown-menu">
               <li class="dropdown"><a href="https://region3.dost.gov.ph/index.php/transparency/2-uncategorised/208-nstw-2020-dost-iii-opening-message#introduction" target="_blank"><i class="fas fa-tasks"></i>&nbsp;DOST R3 Programs</a></li>
@@ -68,12 +78,13 @@
               <li class="dropdown"><a href="{% url 'survey' %}" target="_blank"><i class="fas fa-comments"></i>&nbsp;Any Feedbacks?</a></li>
             </ul>
           </li>
-          <li class="dropdown"><a class="dropdown-toggle" href="{% url 'exhibit'%}" data-toggle="dropdown">Stores</a>
+          <!-- edited by adiadi -->
+          <!-- <li class="dropdown"><a class="dropdown-toggle" href="{% url 'exhibit'%}" data-toggle="dropdown">Stores</a>
             <ul class="dropdown-menu">
               <li class="dropdown"><a href="https://onestore.ph/" target="_blank"><i class="fas fa-store-alt"></i>&nbsp;DOST ONESTORE</a></li>
               <li class="dropdown"><a href="https://oneexpert.gov.ph/" target="_blank"><i class="fas fa-store-alt"></i>&nbsp;DOST ONEEXPERT</a></li>
             </ul>
-          </li>
+          </li> -->
           <li class="dropdown"><a href="{% url 'home' %}" ><span class="title-glow-2">Exit</span></a></li>
         </ul>
       </div>

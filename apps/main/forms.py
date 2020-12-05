@@ -25,8 +25,6 @@ class VisitorAttendanceForm(ModelForm):
         ("Student", "Student"),
         ("General Public", "General Public"),
         ("PWD", "PWD"),
-        ("RNV", "RNV"),
-        ("JCM", "JCM"),
     }
 
     name = forms.CharField(

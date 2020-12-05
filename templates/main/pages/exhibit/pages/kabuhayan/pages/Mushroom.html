@@ -4,29 +4,29 @@
 <html lang="en-US" dir="ltr">
 
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-  <!-- Document Title -->
-  <title>DOST R3 | Virtual Exhibit</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  {% include 'includes/exhibit/favi.html' %}
-  {% include 'includes/exhibit/css.html' %}
+    <!-- Document Title -->
+    <title>DOST R3 | Virtual Exhibit</title>
+
+    {% include 'includes/exhibit/favi.html' %}
+    {% include 'includes/exhibit/css.html' %}
 
 
 </head>
 
 <body data-spy="scroll" data-target=".onpage-navigation" data-offset="60">
-  <main>
-    <div class="page-loader">
-      <div class="loader">Loading...</div>
-    </div>
+    <main>
+        <div class="page-loader">
+            <div class="loader">Loading...</div>
+        </div>
 
-    {% include 'main/components/navs/NavExhibit.html' %}
-    
-    <div class="main">
-        <section class="module bg-dark-60 portfolio-page-header"
+        {% include 'main/components/navs/NavExhibit.html' %}
+
+        <div class="main">
+            <section class="module bg-dark-60 portfolio-page-header"
                 data-background="https://media.giphy.com/media/gO48yi3X6WCHe/giphy.gif">
                 <div class="container">
                     <div class="row">
@@ -38,47 +38,68 @@
                     </div>
                 </div>
             </section>>
-        <section class="module">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6 col-md-8 col-lg-8">
-                        <div class="post-images-slider">
-                            <ul class="slides">
-                                <li><img class="center-block"
-                                        src="{% static 'images/assets/kabuhayan/Livelihood Projects/Mush-room for Improvement/124693457_389206922520178_307719661316999667_n.png' %}"
-                                        alt="Slider Image" />
-                                </li>
-                                <li><img class="center-block"
-                                    src="{% static 'images/assets/kabuhayan/Livelihood Projects/Mush-room for Improvement/BPSU.Mushroom5.png' %}"
-                                    alt="Slider Image" />
-                                </li>
-                            </ul>
+            <section class="module">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-8 col-lg-8">
+                            <div class="post-images-slider">
+                                <ul class="slides">
+                                    <li><img class="center-block"
+                                            src="{% static 'images/assets/kabuhayan/Livelihood Projects/Mush-room for Improvement/124693457_389206922520178_307719661316999667_n.png' %}"
+                                            alt="Slider Image" />
+                                    </li>
+                                    <li><img class="center-block"
+                                            src="{% static 'images/assets/kabuhayan/Livelihood Projects/Mush-room for Improvement/BPSU.Mushroom5.png' %}"
+                                            alt="Slider Image" />
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-4">
-                        <div class="work-details">
-                            <h5 class="work-details-title font-alt">Nutritive and health-promoting value of mushrooms.</h5>
-                            <p>Health-promoting value of mushrooms is the effect of readily available proteins, carbohydrates, essential unsaturated fatty acids, as well as minerals and vitamins contained in them. Many cultivated and wildgrowing species also exhibit salutogenic properties. They are to be attributed to the presence of bioactive substances, mainly polysaccharides, triterpenoids, and phenolic compounds. The immunostimulatory, antibacterial, antiviral, anti-inflammatory, anticarcinogenic, antidiabetic, and antiallergenic actions were documented for different mushroom species. Substances obtained from fungi are also capable of reducing blood cholesterol and triglyceride levels, they normalise blood pressure and protect the liver. At present, mushrooms are considered to be functional food. Beneficial health effects may be achieved through the direct consumption of fruiting bodies or the use of dietary supplements in the form of ready-to-use preparations containing mushroom extracts.<br><br>
+                        <div class="col-sm-6 col-md-4 col-lg-4">
+                            <div class="work-details">
+                                <h5 class="work-details-title font-alt">Nutritive and health-promoting value of
+                                    mushrooms.</h5>
+                                <p>The Indigenous People (commonly called Aeta) represent nearly 14% of the country’s
+                                    population. They are among the poorest and the most disadvantaged ethnic group in
+                                    the country. Illiteracy, unemployment, and incidence of poverty are much higher
+                                    among them than the rest of the population. IP settlements are remote, without
+                                    access to basic services, and are characterized by a high incidence of morbidity,
+                                    mortality, and malnutrition. In this endeavor, the Bataan Peninsula State University
+                                    in partnership with different agencies assisted the community through research,
+                                    production, and extension services. One of the regular extension activities offered
+                                    by the Abucay campus of BPSU is the promotion of mushroom specifically oyster
+                                    mushrooms and rice straw/banana mushroom and their economic importance.<br><br>
+
+                                    The DOST-III through its Community Empowerment through Science and Technology (CEST)
+                                    Program, provided appropriate technology and a mushroom production facility and
+                                    processing to provide a livelihood program for the IPs in Bangkal, Abucay. Eleven
+                                    (11) Aetas along with their community chieftain attended the capacity building
+                                    conducted at the Central Luzon State University last September 19 & 20, 2019. In
+                                    addition to that, an Interactive Multimedia Audio Visual Teaching Aids was also
+                                    given to the Samal National High School Annex Bangkal Extension. At present there
+                                    are currently five (5) members who goes to the BPSU to continue their mushroom
+                                    processing even with the on-going pandemic.
+
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
 
-        <hr class="divider-w">
-        
-    </div>
-      
-      {% include 'main/pages/exhibit/pages/kabuhayan/widgets/RelatedProjects.html' %}
-       
-      {% include 'main/components/footers/modules/FooterModule_1.html' %}
-      {% include 'main/components/footers/Footer.html' %}
+            <hr class="divider-w">
 
-    </div>
-  </main>
+        </div>
 
-  {% include 'includes/exhibit/js.html' %}
+        {% include 'main/pages/exhibit/pages/kabuhayan/widgets/RelatedProjects.html' %}
+
+        {% include 'main/components/footers/modules/FooterModule_1.html' %}
+        {% include 'main/components/footers/Footer.html' %}
+
+        </div>
+    </main>
+
+    {% include 'includes/exhibit/js.html' %}
 
 </body>
 
