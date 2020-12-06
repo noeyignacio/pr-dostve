@@ -1,0 +1,80 @@
+{% load static %}
+
+<!DOCTYPE html>
+
+<html lang="en-US" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Document Title -->
+        <title>DOST R3 | Virtual Exhibit</title>
+
+        {% include 'includes/exhibit/favi.html' %}
+        {% include 'includes/exhibit/css.html' %}
+        
+
+    </head>
+    <body>
+
+    <main>
+        <div class="page-loader">
+            <div class="loader">Loading...</div>
+        </div>
+
+        {% include 'main/components/navs/NavExhibit.html' %}
+
+        <div class="main">
+            <section class="module bg-dark-60 blog-page-header" data-background="https://media.giphy.com/media/EkjAe716PwD96/giphy.gif">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-sm-6 col-sm-offset-3">
+                      <h2 class="module-title font-alt">SUPPORT TO THE CONTINUOUS OPERATION OF THE NEUST METAL INNOVATION CENTER (PHASE II): “UPGRADING OF THE NEUST MIC METAL CASTING FACILITY”</h2>
+                      <div class="module-subtitle font-serif">Kinabukasan</div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section class="module">
+                <div class="container">
+                  <section class="module bg-dark-60" data-background="{% static 'images/assets/kinabukasan/bg/design.PNG' %}" id="portfolio">
+                    
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <div class="video-box">
+                            <div class="video-box-icon"><a class="video-pop-up"
+                                href="https://www.youtube.com/watch?v=BR818uiBq94"><span
+                                  class="icon-video"></span></a></div>
+                            <div class="video-title font-alt">
+                                SUPPORT TO THE CONTINUOUS OPERATION <br> OF THE NEUST METAL INNOVATION CENTER</div>
+                            <div class="video-subtitle font-alt">Click to watch.</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                  <br />
+                  <p style="text-align: justify;">
+                    Pampanga State Agricultural University (PSAU) NICER Tamarind R&D Center The Pampanga State Agricultural University (PSAU) Tamarind RDE Center was established in 2010. The Center has generated one registered variety of sweet tamarind ‘Aglibut Sweet’. Processed products have been developed for commercialization. The Center has been quite successful in the commercialization of sweet tamarind at least at the regional level. Meanwhile, sour tamarind is an underutilized crop, but there has been an expanding demand by food processing companies for broth. This program is intended to expand the tamarind industry focusing on sour types in the Philippines. The present tamarind production system is fragmented and unorganized with many intermediaries from farm to market or to processing entities. Pampanga recorded the highest number of trees in Central Luzon, followed by Nueva Ecija. However, food ingredient companies require pods of at least three segments, no breakage and free from molds as quality standard. With the present traditional production system in tamarind households, S&T interventions is deemed necessary to expand the supply of quality pods to meet the quality and quantity requirements for small and medium processing entrepreneurs.s
+                  </p>   
+              </div>
+              </section>
+              
+              <section class="module bg-dark-60 pt-0 pb-0 parallax-bg testimonial" data-background="https://media.giphy.com/media/t4DcI9P3dNVoA/giphy.gif">
+                <div class="testimonials-slider pt-140 pb-140">
+                </div>
+              </section>
+
+
+            {% include 'main/components/footers/modules/FooterModule_1.html' %}
+            {% include 'main/components/footers/Footer.html' %}
+
+        </div>
+    </main>
+
+
+    {% include 'includes/exhibit/js.html' %}    
+    </body>
+</html>

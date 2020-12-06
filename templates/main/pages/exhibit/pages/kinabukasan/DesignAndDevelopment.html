@@ -1,0 +1,84 @@
+{% load static %}
+
+<!DOCTYPE html>
+
+<html lang="en-US" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Document Title -->
+        <title>DOST R3 | Virtual Exhibit</title>
+
+        {% include 'includes/exhibit/favi.html' %}
+        {% include 'includes/exhibit/css.html' %}
+        
+
+    </head>
+    <body>
+
+    <main>
+        <div class="page-loader">
+            <div class="loader">Loading...</div>
+        </div>
+
+        {% include 'main/components/navs/NavExhibit.html' %}
+
+        <div class="main">
+            <section class="module bg-dark-60 blog-page-header" data-background="https://media.giphy.com/media/1xJtguRiOFPKU/giphy.gif">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-sm-6 col-sm-offset-3">
+                      <h2 class="module-title font-alt">DESIGN AND DEVELOPMENT OF TYPHOON RESILIENT VERTICAL INDOOR FARMING SYSTEM</h2>
+                      <div class="module-subtitle font-serif">Kinabukasan</div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section class="module">
+                <div class="container">
+                  <section class="module bg-dark-60" data-background="{% static 'images/assets/kinabukasan/bg/design.PNG' %}" id="portfolio">
+                    
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <div class="video-box">
+                            <div class="video-box-icon"><a class="video-pop-up"
+                                href="https://www.youtube.com/watch?v=9oCGDi5f6Ek"><span
+                                  class="icon-video"></span></a></div>
+                            <div class="video-title font-alt">Design and Development of Typhoon Resilient Vertical Indoor Farming System</div>
+                            <div class="video-subtitle font-alt">Click to watch.</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                  <br />
+                  <p style="text-align: justify;">
+                    Aurora is a coastal province facing the Pacific Ocean. It experiences significant rainfall throughout the year and frequently visited by typhoon. At least five typhoons yearly come across the province, which significantly affect the agricultural sector. The weather condition in the province highly damage the farms and major agricultural crop and vegetable products grown in Aurora. The production of high yield and quality vegetables especially the high value crops are tremendously affected.
+                  </p>   
+                  <p style="text-align: justify;">
+                    This brought the Aurora State College of Technology to develop a design of a typhoon-resilient vertical indoor farm. The project will be using container vans rather than the conventional greenhouses as housing facility for the farm to protect it from harsh weather conditions. It also aims to showcase the use of soilless technologies such as hydroponics and aquaponics systems, the use of renewable energy to power the water supply and lighting system of the farm, the use of power-saving technologies such as LED and fiber optics to provide the light requirements of crops, and the use of internet-of-things to maintain the optimal conditions inside the farm.
+                    At the end of the project, ASCOT expects to produce a typhoon-resilient design of an indoor farm that will ensure a steady supply of high value vegetables in the province all year round.
+                  </p> 
+                  
+              </div>
+              </section>
+              
+              <section class="module bg-dark-60 pt-0 pb-0 parallax-bg testimonial" data-background="https://media.giphy.com/media/t4DcI9P3dNVoA/giphy.gif">
+                <div class="testimonials-slider pt-140 pb-140">
+                </div>
+              </section>
+
+
+            {% include 'main/components/footers/modules/FooterModule_1.html' %}
+            {% include 'main/components/footers/Footer.html' %}
+
+        </div>
+    </main>
+
+
+    {% include 'includes/exhibit/js.html' %}    
+    </body>
+</html>

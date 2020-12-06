@@ -1,0 +1,78 @@
+{% load static %}
+
+<!DOCTYPE html>
+
+<html lang="en-US" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Document Title -->
+        <title>DOST R3 | Virtual Exhibit</title>
+
+        {% include 'includes/exhibit/favi.html' %}
+        {% include 'includes/exhibit/css.html' %}
+        
+
+    </head>
+    <body>
+
+    <main>
+        <div class="page-loader">
+            <div class="loader">Loading...</div>
+        </div>
+
+        {% include 'main/components/navs/NavExhibit.html' %}
+
+        <div class="main">
+            <section class="module bg-dark-60 blog-page-header" data-background="{% static 'images/gifs/store.gif' %}">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-sm-6 col-sm-offset-3">
+                      <h2 class="module-title font-alt">Food Safety Control System for Street Food and Ambulant Vendors</h2>
+                      <div class="module-subtitle font-serif">Kinabukasan</div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section class="module">
+                <div class="container">
+                  <section class="module bg-dark-60" data-background="{% static 'images/assets/kinabukasan/bg/food-safety.PNG' %}" id="portfolio">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <div class="video-box">
+                            <div class="video-box-icon"><a class="video-pop-up"
+                                href="https://www.youtube.com/watch?v=VDsCo-eIAc4"><span
+                                  class="icon-video"></span></a></div>
+                            <div class="video-title font-alt">Food Safety Control System for Street Food and Ambulant Vendors</div>
+                            <div class="video-subtitle font-alt">Click to watch.</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                  <br />
+                  <p style="text-align: justify;">
+                    The project aims to establish Food Safety Control System Pilot Model through research-based assessment among selected food service establishments and ambulant street food vendors of Tarlac City. Through Tarlac State University’s Food Technology Department, profiling, environmental scanning and product sampling among respondents were conducted. The activities resulted to reliable data and information which will serve as basis for factual decision approach among policy making bodies of the LGU of Tarlac City towards its mandate of protecting the consumers’ health and welfare.
+                  </p>   
+              </div>
+              </section>
+              
+              <section class="module bg-dark-60 pt-0 pb-0 parallax-bg testimonial" data-background="https://media.giphy.com/media/t4DcI9P3dNVoA/giphy.gif">
+                <div class="testimonials-slider pt-140 pb-140">
+                </div>
+              </section>
+
+
+            {% include 'main/components/footers/modules/FooterModule_1.html' %}
+            {% include 'main/components/footers/Footer.html' %}
+
+        </div>
+    </main>
+
+
+    {% include 'includes/exhibit/js.html' %}    
+    </body>
+</html>

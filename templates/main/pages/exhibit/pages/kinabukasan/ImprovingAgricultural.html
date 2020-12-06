@@ -1,0 +1,114 @@
+{% load static %}
+
+<!DOCTYPE html>
+
+<html lang="en-US" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Document Title -->
+        <title>DOST R3 | Virtual Exhibit</title>
+
+        {% include 'includes/exhibit/favi.html' %}
+        {% include 'includes/exhibit/css.html' %}
+        
+
+    </head>
+    <body>
+
+    <main>
+        <div class="page-loader">
+            <div class="loader">Loading...</div>
+        </div>
+
+        {% include 'main/components/navs/NavExhibit.html' %}
+
+        <div class="main">
+            <section class="module bg-dark-60 blog-page-header" data-background="https://media.giphy.com/media/IfsxP5r7WmhP5P6seN/giphy.gif">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-sm-6 col-sm-offset-3">
+                      <h2 class="module-title font-alt"> Improving Agricultural Productivity and Sustainability of the Bustos
+                        and Pulilan Communities through Smart S&T-Based Technologies</h2>
+                      <div class="module-subtitle font-serif">Kinabukasan</div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section class="module">
+                <div class="container">
+                  <p style="text-align: justify;">
+                    As the Coronavirus-19 pandemic continue to negatively affect communities, agriculture-based solutions seem
+            to be becoming more and more attractive and viable to address at least one of its most acute effect, that is
+            food insecurity especially in urban centers and densely populated rural areas.<br><br>
+            Many stories has since come out about the resurgence of interest in communal gardening and urban agriculture
+            as a response to possible food shortages brought on by diminished supply as its transport, as do everything
+            else are hampered by localized community quarantine. This time around, though, the Department of Science and
+            Technology (DOST) in Central Luzon, would like to ensure the sustainability of such undertakings and not
+            just for the short term.<br><br>
+            In partnership with the Philippine Council for Agriculture, Aquatic and Natural Resources Research and
+            Development Council or PCAARRD-DOST, Central Luzon State University, and Provincial Agriculture Office of
+            Bulacan, the agency hopes that two communities in Bulacan will soon lead the way towards not only
+            sustainable urban agriculture but a showcase of how smart S&T solutions can transform a community into
+            vibrant and self-sufficient enterprises.
+                    <br>
+                  </p>
+                  <section class="module bg-dark-60" data-background="{% static 'images/assets/kinabukasan/pcaarrd-vid-bg/vid1-bg.png' %}" id="portfolio">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <div class="video-box">
+                            <div class="video-box-icon"><a class="video-pop-up"
+                                href="https://www.youtube.com/watch?v=MPWm_LFkK38"><span
+                                  class="icon-video"></span></a></div>
+                            <div class="video-title font-alt">IMPROVING AGRICULTURAL</div>
+                            <div class="video-subtitle font-alt">Click to watch.</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                  <p style="text-align: justify">
+                    <br>
+                    In the town of Bustos, the Bahay ay Yaman ni San Martin de Porres, Inc., (BYSMPI), an orphanage located in
+                    Brgy. Bonga Menor will received a package of assistance comprised of technologies on brown rice production,
+                    aquaponics, automated solar-powered vertical farming system, native chicken production, and veggie-bread
+                    production. Around 8 hectares of the orphanage’s property will be used for this purpose. They will also
+                    received non agri-based assistance in the form of interactive multi-media teaching aids and installation of
+                    STARBOOKS in order to promote e-learning to the children in the community. The Religious Cathecists of Mary
+                    School, on the other hand, located in the Rafaela Homes, Brgy. Taal in Pulilan will receive assistance in
+                    putting up their vertical farming system and edible garden. These technologies can both be adopted for small
+                    spaces or utilize idle lots commonly found urban communities.<br><br>
+                    In times of any public health emergency, hunger is a very real threat. As the effective vaccine against the
+                    Covid-19 disease continue to defy a definite timeline, measures to mitigate the resulting economic fallout
+                    are essential. We are all in this in the long haul and as stressed by Dr. Julius Caesar V. Sicat, DOST
+                    Central Luzon Director, “building resilient communities which can minimize their dependence on external
+                    support for their food on the table, especially in times of possible isolation due to pandemic, is
+                    imperative to augment dwindling government resources. Not only will these smart S&T-based technologies
+                    ensure accessibility, availability and affordability of ready supply of food for the table it will also
+                    ensure healthier nutrition to offset prolonged lack or limited physical activity due to lockdowns. Such
+                    resilient community can become a model that can be replicated to other localities within the country, and
+                    thus show how Science and Technology truly works for the People.”
+                  </p>
+                </div>
+              </section>
+          </div>
+              
+              <section class="module bg-dark-60 pt-0 pb-0 parallax-bg testimonial" data-background="https://media.giphy.com/media/t4DcI9P3dNVoA/giphy.gif">
+                <div class="testimonials-slider pt-140 pb-140">
+                </div>
+              </section>
+
+
+            {% include 'main/components/footers/modules/FooterModule_1.html' %}
+            {% include 'main/components/footers/Footer.html' %}
+
+        </div>
+    </main>
+
+
+    {% include 'includes/exhibit/js.html' %}    
+    </body>
+</html>
