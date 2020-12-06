@@ -106,6 +106,11 @@ urlpatterns = [
         views.far,
         name="far",
     ),
+    path(
+        "exhibit/kinabukasan/teachingaids",
+        views.teach,
+        name="teach",
+    ),
     # KAAYUSAN
     path("exhibit/kaayusan/duck", views.duck, name="duck"),
     path("exhibit/kaayusan/jauntimeclock", views.clock, name="clock"),

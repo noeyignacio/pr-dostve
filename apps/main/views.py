@@ -590,6 +590,13 @@ def far(request):
     )
 
 
+def teach(request):
+    return render(
+        request,
+        "main/pages/exhibit/pages/kinabukasan/Teaching.html",
+    )
+
+
 # METHODS
 def registerAttendance(request):
 

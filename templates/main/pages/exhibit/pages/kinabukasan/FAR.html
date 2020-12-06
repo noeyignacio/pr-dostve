@@ -1,0 +1,112 @@
+{% load static %}
+
+<!DOCTYPE html>
+
+<html lang="en-US" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Document Title -->
+        <title>DOST R3 | Virtual Exhibit</title>
+
+        {% include 'includes/exhibit/favi.html' %}
+        {% include 'includes/exhibit/css.html' %}
+        
+
+    </head>
+    <body>
+
+    <main>
+        <div class="page-loader">
+            <div class="loader">Loading...</div>
+        </div>
+
+        {% include 'main/components/navs/NavExhibit.html' %}
+
+        <div class="main">
+            <section class="module bg-dark-60 blog-page-header" data-background="{% static 'images/assets/kinabukasan/STARBOOKS/far-uvc.gif' %}">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-sm-6 col-sm-offset-3">
+                      <h2 class="module-title font-alt">Far-UVC Gate</h2>
+                      <div class="module-subtitle font-serif">Kinabukasan</div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <section class="module">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-sm-12"><img src="{% static 'images/assets/kinabukasan/STARBOOKS/brohure-far-uvc.png' %}" alt="Title of Image"/></div>
+                  </div>
+                </div>
+              </section>
+              <section>
+                <div class="container">
+                  <div class="row">
+                    <div class="col-sm-6 col-sm-offset-3">
+                      <h2 class="module-title font-alt">Far-UVC Gate</h2>
+                      <div class="module-subtitle font-serif">A novel technology for routine human decontamination in
+                        international and local transport gateways, infectious disease control, mitigation, and pandemic
+                        prevention.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6 col-lg-6 hidden-lg hidden-md">
+                      <div class="alt-services-image align-center"><img src="{% static 'images/assets/kinabukasan/STARBOOKS/far-uvc.gif' %}" alt="Feature Image">
+                      </div>
+                      <div class="alt-services-image align-center"><img src="{% static 'images/assets/kinabukasan/STARBOOKS/far-uvc-sc.png' %}" alt="Feature Image">
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 col-lg-3">
+                      <div class="alt-features-item">
+                        <h3 class="alt-features-title font-alt">Far-UVC is a special kind of UV</h3></div>
+                      <div class="alt-features-item">
+                        <h3 class="alt-features-title font-alt">Far-UVC can kill microbes without harming human cells.</h3></div>
+                      <div class="alt-features-item">
+                        <h3 class="alt-features-title font-alt">Far-UVC can’t penetrate biological material with a thickness of more than 1 micrometer (µm), such as human cells.</h3></div>
+                      <div class="alt-features-item">
+                        <h3 class="alt-features-title font-alt">far-UVC can reach the genetic material of germs but not that within human tissue.</h3></div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 hidden-xs hidden-sm">
+                      <div class="alt-services-image align-center"><img src="{% static 'images/assets/kinabukasan/STARBOOKS/far-uvc.gif' %}" alt="Feature Image">
+                      </div>
+                      <div class="alt-services-image align-center"><img src="{% static 'images/assets/kinabukasan/STARBOOKS/far-uvc-sc.png' %}" alt="Feature Image">
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 col-lg-3">
+                      <div class="alt-features-item">
+                        <h3 class="alt-features-title font-alt">In general, viruses and bacteria have a size of less than 1 micrometer (µm).</h3></div>
+                      <div class="alt-features-item">
+                        <h3 class="alt-features-title font-alt">With a precise dose, it is safe to use for germicidal purposes even in the presence of humans.</h3></div>
+                      <div class="alt-features-item">
+                        <h3 class="alt-features-title font-alt">Unlike Conventional UV that causes Cataracts, far-UVC cannot go past tear layers.</h3></div>
+                      <div class="alt-features-item">
+                        <h3 class="alt-features-title font-alt">Conventional UV can damage your skin, while Far-UVC cannot go past top layer of your skin.</h3></div>
+                    </div>
+                  </div>
+                </div>
+                <br />
+              </section>
+
+              
+              <section class="module bg-dark-60 pt-0 pb-0 parallax-bg testimonial" data-background="https://media.giphy.com/media/t4DcI9P3dNVoA/giphy.gif">
+                <div class="testimonials-slider pt-140 pb-140">
+                </div>
+              </section>
+
+
+            {% include 'main/components/footers/modules/FooterModule_1.html' %}
+            {% include 'main/components/footers/Footer.html' %}
+
+        </div>
+    </main>
+
+
+    {% include 'includes/exhibit/js.html' %}    
+    </body>
+</html>

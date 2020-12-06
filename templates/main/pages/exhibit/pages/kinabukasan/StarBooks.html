@@ -1,0 +1,85 @@
+{% load static %}
+
+<!DOCTYPE html>
+
+<html lang="en-US" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Document Title -->
+        <title>DOST R3 | Virtual Exhibit</title>
+
+        {% include 'includes/exhibit/favi.html' %}
+        {% include 'includes/exhibit/css.html' %}
+        
+
+    </head>
+    <body>
+
+    <main>
+        <div class="page-loader">
+            <div class="loader">Loading...</div>
+        </div>
+
+        {% include 'main/components/navs/NavExhibit.html' %}
+
+        <div class="main">
+            <section class="module bg-dark-60 blog-page-header" data-background="https://media.giphy.com/media/uDj0Fa3q8ipBS/giphy.gif">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-sm-6 col-sm-offset-3">
+                      <h2 class="module-title font-alt">STARBOOKS</h2>
+                      <div class="module-subtitle font-serif">Kinabukasan</div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section class="module">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-sm-6 col-md-8 col-lg-8">
+                      <div class="post-images-slider">
+                        <ul class="slides">
+                          <li><img class="center-block" src="{% static 'images/assets/kinabukasan/STARBOOKS/01.png' %}" alt="Slider Image" /></li>
+                          <li><img class="center-block" src="{% static 'images/assets/kinabukasan/STARBOOKS/02.png' %}" alt="Slider Image" /></li>
+                          <li><img class="center-block" src="{% static 'images/assets/kinabukasan/STARBOOKS/03.png' %}" alt="Slider Image" /></li>
+                          <li><img class="center-block" src="{% static 'images/assets/kinabukasan/STARBOOKS/03.png' %}" alt="Slider Image" /></li>
+                          <li><img class="center-block" src="{% static 'images/assets/kinabukasan/STARBOOKS/04.png' %}" alt="Slider Image" /></li>
+                          <li><img class="center-block" src="{% static 'images/assets/kinabukasan/STARBOOKS/05.png' %}" alt="Slider Image" /></li>
+                          <li><img class="center-block" src="{% static 'images/assets/kinabukasan/STARBOOKS/06.png' %}" alt="Slider Image" /></li>
+                          <li><img class="center-block" src="{% static 'images/assets/kinabukasan/STARBOOKS/07.png' %}" alt="Slider Image" /></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-4">
+                      <div class="work-details">
+                        <h5 class="work-details-title font-alt">STARBOOKS</h5>
+                        <p>
+                          STARBOOKS provides opportunity for students and teachers to access thousands of digital reference
+                          materials offline. It contains S&T resources, videos, and educational games. STARBOOKS is designed as
+                          a standalone information kiosk but it can be networked to a number of computers.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              
+              <section class="module bg-dark-60 pt-0 pb-0 parallax-bg testimonial" data-background="https://media.giphy.com/media/t4DcI9P3dNVoA/giphy.gif">
+                <div class="testimonials-slider pt-140 pb-140">
+                </div>
+              </section>
+
+
+            {% include 'main/components/footers/modules/FooterModule_1.html' %}
+            {% include 'main/components/footers/Footer.html' %}
+
+        </div>
+    </main>
+
+
+    {% include 'includes/exhibit/js.html' %}    
+    </body>
+</html>
