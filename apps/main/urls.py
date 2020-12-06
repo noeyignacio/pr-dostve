@@ -113,7 +113,7 @@ urlpatterns = [
     ),
     # KAAYUSAN
     path("exhibit/kaayusan/duck", views.duck, name="duck"),
-    path("exhibit/kaayusan/jauntimeclock", views.clock, name="clock"),
+    path("exhibit/kaayusan/juantimeclock", views.clock, name="clock"),
     path("exhibit/kaayusan/swan", views.swan, name="swan"),
     # KALUGUSAN
     path("exhibit/kalugusan/feedingprogram", views.feeding, name="feeding"),
