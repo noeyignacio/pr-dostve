@@ -8,10 +8,9 @@
           <img src="{% static 'images/logo/DOST.png' %}" width="20">&nbsp;NSTW<span style="color: #00ADEC">DOST III</span></a>
         </a>
       </div>
-      <div class="collapse navbar-collapse" id="custom-collapse">
-        <ul class="nav navbar-nav navbar-right">
-          <li class="dropdown"><a  href="{% url 'exhibit' %}" >Home</a>
-          </li>
+      <div class="collapse navbar-collapse" id="custom-collapse" >
+        <ul class="nav navbar-nav navbar-right" style="margin-right: 210px">
+          <li class="dropdown"><a  href="{% url 'exhibit' %}" >Home</a></li>
           <li class="dropdown"><a class="dropdown-toggle" href="{% url 'exhibit'%}" data-toggle="dropdown">Exhibits</a>
             <ul class="dropdown-menu">
               <li class="dropdown"><a href="{% url 'kinabukasan'%}"><i class="fas fa-road"></i>&nbsp;Kinabukasan</a>
@@ -50,7 +49,7 @@
                       </li>
                       <li class="dropdown"><a href="{% url 'tech' %}"><i class="fas fa-project-diagram"></i>&nbsp;Other Major <br>Technologies</a>
                       </li>
-                      <li class="dropdown"><a href="{% url 'story' %}"><i class="fas fa-star"></i>&nbsp;2020 Regional Best CEST <br> Community</a></li>
+                      <li class="dropdown"><a href="{% url 'story' %}"><i class="fas fa-star"></i>&nbsp;2020 Regional <br> Best CEST <br> Community</a></li>
                     </ul>
                   </li>
                   <li><a href="{% url 'sntservice' %}"><i class="fab fa-buffer"></i>&nbsp;S&T Services</a></li>
