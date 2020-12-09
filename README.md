@@ -27,19 +27,19 @@ BY DEPARTMENT OF SCIENCE AND TECHNOLOGY | REGION 3
 
 #### PUBLIC IPv4
 
-- 3.22.119.131
+- http://54.179.75.226/
 
 #### AWS DBMS
 
-- Username: dostadmin
-- Password: .bX.Dj-dW5-z^]7&
-- Endpoint: dost-dbms.cuunkiyhr0rn.us-east-2.rds.amazonaws.com
+- Username:
+- Password:
+- Endpoint:
 - Port: 3306
-- DBName: dostvedb
+- DBName:
 
 #### NOTES:
 
-1. Remove `djangoserver.pem` file in deployment-stage
+1. Remove `dostr3djangoserver.pem` file in deployment-stage
 
 #### AWS CORS Configuration
 
