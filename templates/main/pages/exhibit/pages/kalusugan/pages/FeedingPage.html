@@ -2,41 +2,31 @@
 
 <!DOCTYPE html>
 <html lang="en-US" dir="ltr">
-
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
- 
-  <!-- Document Title -->
   <title>DOST R3 | Virtual Exhibit</title>
-
   {% include 'includes/exhibit/favi.html' %}
   {% include 'includes/exhibit/css.html' %}
-
 </head>
-
 <body data-spy="scroll" data-target=".onpage-navigation" data-offset="60">
   <main>
     <div class="page-loader">
       <div class="loader">Loading...</div>
     </div>
-    <!-- nav here -->
-
     {% include 'main/components/navs/NavExhibit.html' %}
-
-    <section class="home-section home-parallax home-fade home-full-height bg-dark-30" id="home"
-      data-background="https://media.giphy.com/media/3o85g3loeiLcF26OZy/giphy.gif">
-      <div class="titan-caption">
-        <div class="caption-content">
-          <div class="font-alt mb-30 titan-title-size-1">Kalusugan</div>
-          <div class="font-alt mb-40 titan-title-size-4">Complementary Food Feeding Program</div>
+    <section class="module bg-dark-60 blog-page-header" data-background="https://media.giphy.com/media/3o85g3loeiLcF26OZy/giphy.gif">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-sm-offset-3">
+            <h2 class="module-title font-alt">Complementary Food Feeding Program</h2>
+            <div class="module-subtitle font-serif">Kalusugan</div>
+          </div>
         </div>
       </div>
     </section>
-
     <div class="main">
-      <!-- Feeding Program section -->
       </section>
       <section class="module" id="portfolio">
         <div class="container">
@@ -83,15 +73,10 @@
           </div>
         </div>
       </section>
-
       {% include 'main/components/footers/modules/FooterModule_1.html' %}
       {% include 'main/components/footers/Footer.html' %}
-
     </div>
   </main>
-  
   {% include 'includes/exhibit/js.html' %}
-
 </body>
-
 </html>

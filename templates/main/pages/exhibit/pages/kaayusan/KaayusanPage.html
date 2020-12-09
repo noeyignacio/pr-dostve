@@ -7,22 +7,16 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <!-- Document Title -->
     <title>DOST R3 | Virtual Exhibit</title>
-
     {% include 'includes/exhibit/favi.html' %}
     {% include 'includes/exhibit/css.html' %}
-
   </head>
   <body data-spy="scroll" data-target=".onpage-navigation" data-offset="60">
     <main>
       <div class="page-loader">
         <div class="loader">Loading...</div>
       </div>
-      
       {% include 'main/components/navs/NavExhibit.html' %}
-
       <section class="home-section home-parallax home-fade" id="home">
         <div class="hero-slider">
           <ul class="slides">
@@ -66,7 +60,6 @@
           </div>
         </section>
         <hr class="divider-w">
-
         <section class="module">
             <div class="container">
               <div class="row">
@@ -157,15 +150,12 @@
                   </div>
             </div>
           </section>
-          
           <section class="module bg-dark-60 pt-0 pb-0 parallax-bg testimonial" data-background="{% static 'images/gifs/engine.gif' %}">
             <div class="testimonials-slider pt-140 pb-140">
             </div>
           </section>
-        
         {% include 'main/components/footers/modules/FooterModule_1.html' %}
         {% include 'main/components/footers/Footer.html' %}
-        
       </div>
     </main>
     {% include 'includes/exhibit/js.html' %}

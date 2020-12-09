@@ -7,23 +7,16 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <!-- Document Title -->
     <title>DOST R3 | Virtual Exhibit</title>
-
     {% include 'includes/exhibit/favi.html' %}
     {% include 'includes/exhibit/css.html' %}
-
   </head>
   <body data-spy="scroll" data-target=".onpage-navigation" data-offset="60">
     <main>
       <div class="page-loader">
         <div class="loader">Loading...</div>
-      </div>
-      
-      {% include 'main/components/navs/NavExhibit.html' %}
-
-      
+      </div>  
+      {% include 'main/components/navs/NavExhibit.html' %}  
         <section class="module bg-dark-60 blog-page-header" data-background="{% static 'images/assets/kaayusan/swan/1.png' %}">
           <div class="container">
             <div class="row">
@@ -35,23 +28,10 @@
           </div>
         </section>
         <div class="main">
-          <section class="module" id="about">
-            <div class="container">
-              <div class="row">
-                <div class="col-sm-8 col-sm-offset-2">
-                  <div class="module-subtitle font-serif large-text">Kaayusan refers to order or to the state of things in harmony. The theme focuses on projects that aid in disaster mitigation which includes disaster relief and response operation, disaster risk reduction and management intervention, and information dissemination.</div>
-                </div>
-              </div>
-            </div>
-          </section>
-        <hr class="divider-w">
-
         <section class="module-small">
             <div class="container">
-              <div class="row">
-               
+              <div class="row">              
                 {% include 'main/pages/exhibit/pages/kaayusan/widgets/KaayusanPost.html' %}
-
                 <div class="col-sm-6 col-sm-offset-1">
                   <div class="post">
                     <div class="post-images-slider">
@@ -78,16 +58,12 @@
               </div>
             </div>
           </section>
-
-          
           <section class="module bg-dark-60 pt-0 pb-0 parallax-bg testimonial" data-background="{% static 'images/gifs/engine.gif' %}">
             <div class="testimonials-slider pt-140 pb-140">
             </div>
-          </section>
-        
+          </section>       
         {% include 'main/components/footers/modules/FooterModule_1.html' %}
-        {% include 'main/components/footers/Footer.html' %}
-        
+        {% include 'main/components/footers/Footer.html' %}       
       </div>
     </main>
     {% include 'includes/exhibit/js.html' %}
